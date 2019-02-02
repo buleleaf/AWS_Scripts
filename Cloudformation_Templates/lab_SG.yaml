@@ -1,0 +1,66 @@
+  AWSTemplateFormatVersion:        '2010-09-09'
+
+  Description:                     "PRACTICE Security Groups"
+
+  Parameters:
+    NetworkStackName:
+      Description: 'Name of the NETWORK stack'
+      Type: "String"
+      Default: "NETWORK"
+
+  Resources:
+
+    LoadBalancerSecurityGroup:
+      Type: "AWS::EC2::SecurityGroup"
+      Properties:
+        GroupDescription: "Enable HTTP Ingress"
+        VpcId:
+          Fn::ImportValue:
+            !Sub '${NetworkStackName}-VPC'
+        SecurityGroupIngress:
+          IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+
+    BastionSecurityGroup:
+      Type: "AWS::EC2::SecurityGroup"
+      Properties:
+        GroupDescription: "Enable SSH Ingress"
+        VpcId:
+          Fn::ImportValue:
+            !Sub '${NetworkStackName}-VPC'
+        SecurityGroupIngress:
+          IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+
+    WebServerSecurityGroup:
+      Type: "AWS::EC2::SecurityGroup"
+      Properties:
+        GroupDescription: "Enable HTTP from ELB"
+        VpcId:
+          Fn::ImportValue:
+            !Sub '${NetworkStackName}-VPC'
+        SecurityGroupIngress:
+          IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          SourceSecurityGroupId: !Ref LoadBalancerSecurityGroup
+  Outputs:
+    LoadBalancerSecurityGroup:
+      Description:                 "LoadBalancerSecurityGroup"
+      Value:                       !Ref LoadBalancerSecurityGroup
+      Export:
+        Name: !Join [ ":", [ !Ref "AWS::StackName", LoadBalancerSecurityGroup ] ]
+    BastionSecurityGroup:
+      Description:                 "BastionSecurityGroup"
+      Value:                       !Ref BastionSecurityGroup
+      Export:
+        Name: !Join [ ":", [ !Ref "AWS::StackName", BastionSecurityGroup ] ]
+    WebServerSecurityGroup:
+      Description:                 "WebServerSecurityGroup"
+      Value:                       !Ref WebServerSecurityGroup
+      Export:
+        Name: !Join [ ":", [ !Ref "AWS::StackName", WebServerSecurityGroup ] ]

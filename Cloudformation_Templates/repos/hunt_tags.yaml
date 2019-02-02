@@ -1,0 +1,49 @@
+Tags:
+  -
+    Key: "Name"
+    Value: "Onbase1"
+  -
+    Key: "Application"
+    Value: "Onbase"
+  -
+    Key: "Environment"
+    Value: "prod, test"
+  -
+    Key: "Company"
+    Value: "HMG"
+  -
+    Key: "CostCenter"
+    Value: ""
+  -
+    Key: "Creator"
+    Value: "user@hunt.com"
+  -
+    Key: "TechOwner"
+    Value: "Frank Soto"
+  -
+    Key: "TechOwnerEmail"
+    Value: "Frank.soto@hunt.com"
+  -
+    Key: "Stack"
+    Value: ""
+  -
+    Key: "Service"
+    Value: "proxy, middleware, db"
+  -
+    Key: "Role"
+    Value: "fe, be, db-name"
+  -
+    Key: "DataClassification"
+    Value: "none, sensitive, regulated, sensitive-refulated"
+  -
+    Key: "PowerOn"
+    Value: "0900"
+  -
+    Key: "PowerOff"
+    Value: "1700"
+  -
+    Key: "Backup"
+    Value: "true, false"
+  -
+    Key: "BackupHourly"
+    Value: "true, false"

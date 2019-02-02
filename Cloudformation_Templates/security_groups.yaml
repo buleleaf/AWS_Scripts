@@ -1,0 +1,118 @@
+AWSTemplateFormatVersion:        '2010-09-09'
+
+Description:                     "Hunt Client-Server Web Security Groups 1.0.0"
+
+Parameters:
+  Environment:
+    Description: "Environment Name"
+    Type: String
+    Default: "test"
+  VpcId:
+    Description: "VpcId for environment"
+    Type: "AWS::EC2::VPC::Id"
+  Application:
+    Description: "Application Name"
+    Type: String
+    Default: app
+  Company:
+    Description: "Company Name"
+    Type: String
+  CostCenter:
+    Description: "Cost Center"
+    Type: String
+  TechOwner:
+    Description: "Tech Owner"
+    Type: String
+  TechOwnerEmail:
+    Description: "Tech Owner email"
+    Type: String
+
+Resources:
+  ServerSecurityGroup:
+    Type:                        "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription:          "Application Server Security Group"
+      VpcId:                     !Ref VpcId
+      SecurityGroupIngress:
+        -
+          IpProtocol:            "tcp"
+          FromPort:              "80"
+          ToPort:                "80"
+          SourceSecurityGroupId: !Ref ClientSecurityGroup
+        -
+          IpProtocol:            "tcp"
+          FromPort:              "443"
+          ToPort:                "443"
+          SourceSecurityGroupId: !Ref ClientSecurityGroup
+      SecurityGroupEgress:
+        -
+          IpProtocol:            "-1"
+          FromPort:              "0"
+          ToPort:                "65535"
+          CidrIp:                "0.0.0.0/0"
+      Tags:
+        - Key:                   "Name"
+          Value:                 !Join [ "-", [ !Ref Environment, !Ref Application, ServerSecurityGroup ] ]
+
+        - Key:                    Application
+          Value:                  !Ref Application
+
+        - Key:                    Company
+          Value:                  !Ref Company
+
+        - Key:                    Environment
+          Value:                  !Ref Environment
+
+        - Key:                    TechOwner
+          Value:                  !Ref TechOwner
+
+        - Key:                    TechOwnerEmail
+          Value:                  !Ref TechOwnerEmail
+
+        - Key:                    CostCenter
+          Value:                  !Ref CostCenter
+
+  ClientSecurityGroup:
+    Type:                        "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription:          "Application Client Security Group"
+      VpcId:                     !Ref VpcId
+      SecurityGroupEgress:
+        -
+          IpProtocol:            "-1"
+          FromPort:              "0"
+          ToPort:                "65535"
+          CidrIp:                "0.0.0.0/0"
+      Tags:
+        - Key:                   "Name"
+          Value:                 !Join [ "-", [ !Ref Environment, !Ref Application, ClientSecurityGroup ] ]
+
+        - Key:                    Application
+          Value:                  !Ref Application
+
+        - Key:                    Company
+          Value:                  !Ref Company
+
+        - Key:                    Environment
+          Value:                  !Ref Environment
+
+        - Key:                    TechOwner
+          Value:                  !Ref TechOwner
+
+        - Key:                    TechOwnerEmail
+          Value:                  !Ref TechOwnerEmail
+
+        - Key:                    CostCenter
+          Value:                  !Ref CostCenter
+
+Outputs:
+  ServerSecurityGroup:
+    Description:                 "ServerSecurityGroup"
+    Value:                       !Ref ServerSecurityGroup
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", ServerSecurityGroup ] ]
+  ClientSecurityGroup:
+    Description:                 "ClientSecurityGroup"
+    Value:                       !Ref ClientSecurityGroup
+    Export:
+      Name: !Join [ ":", [ !Ref "AWS::StackName", ClientSecurityGroup ] ]  

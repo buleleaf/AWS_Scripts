@@ -1,0 +1,32 @@
+Resources:
+  NotesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      # Generate a name based on the stage
+      TableName: DynamoDB_Table
+      AttributeDefinitions:
+        - AttributeName: AlertId
+          AttributeType: 'S'
+        - AttributeName: Error
+          AttributeType: 'S'
+        # - AttributeName: TimeOfAlert
+        #   AttributeType: 'S'
+      KeySchema:
+        - AttributeName: AlertId
+          KeyType: 'HASH'
+        # - AttributeName: Error
+        #   KeyType: 'RANGE'
+      # GlobalSecondaryIndexes:
+      #   - IndexName: 'GSI'
+      #     KeySchema:
+      #       - AttributeName: TimeOfAlert
+      #         KeyType: 'HASH'
+      #     Projection:
+      #       ProjectionType: 'ALL'
+      #     ProvisionedThroughput:
+      #       ReadCapacityUnits: 5
+      #       WriteCapacityUnits: 5
+        # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5

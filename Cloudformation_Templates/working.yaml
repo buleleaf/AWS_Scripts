@@ -1,0 +1,65 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  CustomerName:
+    Description: 'Customer Name'
+    Type: String
+    Default: 'Onica'
+  Application:
+    Description: 'Application Name'
+    Type: String
+    Default: 'PagerDuty'
+  Environment:
+    Description: 'Environment'
+    Type: String
+    Default: 'Dev'
+
+
+Resources:
+  DDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub ${CustomerName}-${Application}-${Environment}
+      AttributeDefinitions:
+        -
+          AttributeName: AlertId
+          AttributeType: "S"
+        -
+          AttributeName: Error
+          AttributeType: "S"
+        -
+          AttributeName: TimeOfAlert
+          AttributeType: "S"
+      KeySchema:
+        -
+          AttributeName: AlertId
+          KeyType: "HASH"
+
+      GlobalSecondaryIndexes:
+        -
+          IndexName: "AlertId"
+          KeySchema:
+            -
+              AttributeName:
+              KeyType: "HASH"
+          Projection:
+            ProjectionType: "KEYS_ONLY"
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+    Outputs:
+     TemplateID:
+       Description: 'cloudonaut.io template id.'
+       Value: 'state/dynamodb'
+     TemplateVersion:
+       Description: 'cloudonaut.io template version.'
+       Value: '__VERSION__'
+     StackName:
+       Description: 'Stack name.'
+       Value: !Sub '${AWS::StackName}'
+     TableName:
+       Description: 'Name of the table'
+       Value: !Ref Table

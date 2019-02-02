@@ -1,0 +1,84 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: SQS Template for Caz Creek - 1.0.1
+
+Parameters:
+  CustomerName:
+    Description: 'Customer Name'
+    Type: 'String'
+#  Change Default: value to desired Customer
+    Default: 'Hunt'
+  Application:
+    Description: 'Application Name'
+    Type: 'String'
+#  Change Default: value to desired Application
+    Default: ''
+  Environment:
+    Description: 'Environment'
+    Type: 'String'
+#  Change Default: value to desired Environment
+    Default: ''
+
+
+Resources:
+  SQSQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: !Ref Application
+      Tags:
+        -
+          Key: 'Name'
+          Value: 'Test'
+        # -
+        #   Key: "Application"
+        #   Value: "Onbase"
+        # -
+        #   Key: "Environment"
+        #   Value: "prod, test"
+        # -
+        #   Key: "Company"
+        #   Value: "HMG"
+        # -
+        #   Key: "CostCenter"
+        #   Value: ""
+        # -
+        #   Key: "Creator"
+        #   Value: "user@hunt.com"
+        # -
+        #   Key: "TechOwner"
+        #   Value: "Frank Soto"
+        # -
+        #   Key: "TechOwnerEmail"
+        #   Value: "Frank.soto@hunt.com"
+        # -
+        #   Key: "Stack"
+        #   Value: ""
+        # -
+        #   Key: "Service"
+        #   Value: "proxy, middleware, db"
+        # -
+        #   Key: "Role"
+        #   Value: "fe, be, db-name"
+        # -
+        #   Key: "DataClassification"
+        #   Value: "none, sensitive, regulated, sensitive-refulated"
+        # -
+        #   Key: "PowerOn"
+        #   Value: "0900"
+        # -
+        #   Key: "PowerOff"
+        #   Value: "1700"
+        # -
+        #   Key: "Backup"
+        #   Value: "true, false"
+        # -
+        #   Key: "BackupHourly"
+        #   Value: "true, false"
+
+
+
+Outputs:
+  TemplateID:
+   Description: 'SQS Template for Caz Creek'
+   Value: 'state/sqs'
+  TableName:
+   Value: !Sub ${CustomerName}-${Application}-${Environment}

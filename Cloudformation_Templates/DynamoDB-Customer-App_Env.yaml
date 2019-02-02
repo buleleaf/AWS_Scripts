@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: DynamoDB Table works with Lamba - 1.0.1
+
+Parameters:
+  CustomerName:
+    Description: 'Customer Name'
+    Type: String
+#  Change Default: value to desired Customer
+    Default: 'Onica'
+  Application:
+    Description: 'Application Name'
+    Type: String
+#  Change Default: value to desired Application
+    Default: 'PagerDuty'
+  Environment:
+    Description: 'Environment'
+    Type: String
+#  Change Default: value to desired Environment
+    Default: 'Dev'
+
+
+Resources:
+  DDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub ${CustomerName}-${Application}-${Environment}
+      AttributeDefinitions:
+        - AttributeName: AlertId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: AlertId
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+Outputs:
+  TemplateID:
+   Description: 'DynamoDB Table for Lambas'
+   Value: 'state/dynamodb'
+  TableName:
+   Value: !Sub ${CustomerName}-${Application}-${Environment}
