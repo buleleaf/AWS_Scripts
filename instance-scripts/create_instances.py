@@ -14,6 +14,7 @@ region_virginia = 'us-east-1'
 ami_virginia = 'ami-0c6b1d09930fac512'
 subnet_virginia = 'subnet-030f50401cb8ad57e'
 keyname_virginia = 'virginia'
+sg_virginia = 'sg-0d3e40abd56c94f31'
 
 region_ohio = 'us-east-2'
 ami_ohio = 'ami-0cd3dfa4e37921605'
@@ -32,12 +33,23 @@ instance = ec2.create_instances(
     MaxCount=2,
     InstanceType='t2.micro',
     KeyName=keyname_virginia,
-    # SecurityGroupIds=[DMZ_Web_Work],
     NetworkInterfaces=[
         {
             'AssociatePublicIpAddress': True,
             'DeviceIndex': 0,
-            'SubnetId': subnet_virginia
+            'SubnetId': subnet_virginia,
+            'Groups': [sg_virginia]
+        }
+    ],
+    TagSpecifications=[
+        {
+            'ResourceType': 'instance',
+            'Tags': [
+                {
+                    'Key': 'Name',
+                    'Value': 'INSTANCE'
+                },
+            ]
         }
     ]
         )
