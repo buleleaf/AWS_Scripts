@@ -1,0 +1,25 @@
+﻿InstanceId,Name,Schedule,FileBackup,ApplicationTier,Environment,Application,ContactPreference,Purpose,Validated,TechnicalOwner,CorpInfoMSP:TakeNightlySnapshot
+i-0c3699af33b90cc62 (TKOEDI01),TKOEDI01,AlwaysOn,No,Application,Production,EDI System,Email,EDI Server (Bridge Server),Yes,Japan IT,Yes
+i-0b4fa87c446e37042 (TKOHR01),TKOHR01,AlwaysOn,No,Application,Production,FX HR system (Payroll data storage),Email,Payroll data storage managed by Japan HR,No,Japan IT,Yes
+i-09dc5ef7b9ec73d9a (TKOLBLLFT01),TKOLBLLFT01,AlwaysOn,No,Application,Production,Print server,Email,Print server for Loftware,No,Japan IT,Yes
+i-07befd38d3bbf96ef (TKOOPIFAX01),TKOOPIFAX01,AlwaysOn,No,Application,Production,OPI FAX order receipt system,Email,Fax PDF Server ,Yes,Japan IT,Yes
+i-03e72a826653c08b4 (TKOOPIFAX01-TEST1),TKOOPIFAX01-TEST1,OnDemand,No,Application,Test,OPI Fax order receipt system,Email,Test Fax PDF Server,No,Japan IT,Yes
+i-042851accade4f6cd (TKOPRT01),TKOPRT01,AlwaysOn,No,Application,Production,Print Server,Email,Print Server for JDE E9 ,No,Japan IT,Yes
+i-0d740cbf1994f84fc (TKOPRT02),TKOPRT02,AlwaysOn,No,Application,Production,Print Server,Email,Print server for Ricoh,No,Japan IT,Yes
+i-0e2be6f2569db0067 (TKOSQL01),TKOSQL01,AlwaysOn,No,Database,Production,JIPR (Implant Management Data)/OPI popup screen,Email,JDE BI Server (SQL),Yes,Japan IT,Yes
+i-0348ceed409c5cfc1 (TKOSQL03),TKOSQL03,AlwaysOn,No,Database,Production,ELBIS (End User Usage),Email,ELBIS Server ,Yes,Japan IT,Yes
+i-0734af507c178b508 (TKOSQLTEST01),TKOSQLTEST01,OnDemand,No,Database,Test,SQL (JDE BI Server),Email,Test JDE BI Server (SQL),No,Japan IT,Yes
+i-04998f8c18973385c (TKOSQLTEST03),TKOSQLTEST03,OnDemand,No,Database,Test,SQL (ELBIS Server),Email,Test ELBIS Server (SQL),No,Japan IT,Yes
+i-011f164b3570c8c73 (TKOWIL01),TKOWIL01,AlwaysOn,No,Application,Production,Print server,Email,Print Server for Wilcomm,No,Japan IT,Yes
+i-00db0302bda7078ed (TKOWIL02),TKOWIL02,AlwaysOn,No,Application,Production,Print server,Email,Print server for Wilcomm,No,Japan IT,Yes
+i-0c9a103268698ff54 (TOKEDI01),TOKEDI01,AlwaysOn,No,Application,Production,EDI System,Email,EDI Server ,Yes,Japan IT,Yes
+i-02be5e406f607b3dd (TOKEDI02),TOKEDI02,OnDemand,No,Application,Test,EDI System,Email,Test EDI Server ,No,Japan IT,Yes
+i-0a6f8f2c8a2e61ed5 (TOKOPISQL02),TOKOPISQL02,AlwaysOn,No,Database,Production,OPI FAX order receipt system,Email,Fax DB Server (SQL),Yes,Japan IT,Yes
+i-039c1ade6d6d186e9 (TOKOPISQL02-DEV),TOKOPISQL02-DEV,OnDemand,No,Database,Test,OPI Fax order receipt system,Email,Test Fax DB Server (SQL),No,Japan IT,Yes
+i-0f886c5b7776b9544 (TOKSPTSQL01),TOKSPTSQL01,AlwaysOn,No,Database,Production,SQL (PIRS),Email,PIRS,Yes,Japan IT,Yes
+i-0abba1d12f763c5ad (TOKYOMOSS1),TOKYOMOSS1,AlwaysOn,No,Application,Production,PIRS,Email,PIRS,Yes,Japan IT,Yes
+i-0c780637b07dcab8d (AWJP-PDAMDC20),AWJP-PDAMDC20,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-0c9013bfe906caf77 (AWJP-PDAMUTIL03),AWJP-PDAMUTIL03,AlwaysOn,No,Application,Production,AD migration tool server,Phone,AD migration tool server,No,Michael Lee,No
+i-097a3929e269d51a7 (JPTOINPLMAPP01),JPTOINPLMAPP01,AlwaysOn,No,Application,Test,PLM|Teamcenter|Ignite,Email,PLM|Teamcenter|Ignite,No,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-09d62fe1c302506ad (JPTOPDPLMAPP01),JPTOPDPLMAPP01,AlwaysOn,No,Application,Production,PLM|Teamcenter|Ignite,Email,Remote File Server,Yes,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-06bc8b20ec5b26112 (TKOTCUENT01-TRN),TKOTCUENT01-TRN,AlwaysOn,No,Application,Test,PLM|Teamcenter|Ignite,Email,Remote File Server,No,Vivek Ratnaswamy | Rajesh Pudota,Yes

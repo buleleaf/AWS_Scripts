@@ -1,0 +1,6 @@
+﻿InstanceId,Name,Schedule,FileBackup,ApplicationTier,Environment,Application,ContactPreference,Purpose,Validated,TechnicalOwner,CorpInfoMSP:TakeNightlySnapshot
+i-03c14eb44fcf030bd,AWOR-PDCSWDB01,AlwaysOn,No,Database,Production,CaseWare Monitor,Email,Database Server for CaseWare Monitor Application,No,Abel Casanova,Yes
+i-0e03e677205a12b00,AWOR-PDCWMAPP01,AlwaysOn,No,Application,Production,CaseWare Monitor,Email,Application and Web Server for Caseware Monitor,No,Abel Casanova,Yes
+i-040f5e93247d149a5,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test
+i-05a8bb2859938b0fc,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test
+i-023e5648600173353,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test

@@ -1,0 +1,8 @@
+InstanceId,Name,aws:cloudformation:logical-id,aws:cloudformation:stack-id,Environment,Application,aws:cloudformation:stack-name,aws:autoscaling:groupName
+i-0cac3d21a3f75af8d,bastion-host,BastionInstance,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,,,LAB-DELETE-ME,
+i-0ec9a91eab266ca9b,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL
+i-00f38799a034d7c9d,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL
+i-0e6033d168a0f16f7,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL
+i-0df97724a1acd5cd8,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL
+i-024154b01120ce0b5,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL
+i-0cc069e5280bffeea,instance-wordpress,AutoScalingGroup,arn:aws:cloudformation:us-east-1:753955134882:stack/LAB-DELETE-ME/865f9500-3569-11e9-bc2b-0a4a1f15abc2,Lab,Wordpress,LAB-DELETE-ME,LAB-DELETE-ME-AutoScalingGroup-NB3M3L5PEVVL

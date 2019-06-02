@@ -1,0 +1,55 @@
+﻿InstanceId,Name,Schedule,FileBackup,ApplicationTier,Environment,Application,ContactPreference,Purpose,Validated,TechnicalOwner,CorpInfoMSP:TakeNightlySnapshot
+i-04393c95f4043b1c7 (AWSI-PDDHCP01),AWSI-PDDHCP01,AlwaysOn,No,Application,Production,DHCP,Email,DHCP Server,No,Chew Leong Toh,Yes
+i-07329bba8c8e2a601 (AWSI-PDPRINT01),AWSI-PDPRINT01,AlwaysOn,No,Application,Production,PRINT,Email,Print Server,No,Chew Leong Toh,Yes
+i-04888ef892d7e3c58 (SINENGLIC01),SINENGLIC01,Office Hours?,No,Application,Production,Autocad Licensing,Email,AutoCAD License Server,No,Chew Leong Toh,Yes
+i-09ec868064d575ab9 (SINENGLIC02),SINENGLIC02,Office Hours?,No,Application,Production,Autocad Licensing,Email,AutoCAD License Server,No,Chew Leong Toh,Yes
+i-0ff430d403a97c741 (SINFTP01),SINFTP01,AlwaysOn,No,Application,Production,FTP,Email,Log Server,No,Chew Leong Toh,Yes
+i-035ae3198533a2519 (BKKSAP01),BKKSAP01,OnDemand,No,Application,Production,"SAP B1, SQL Server",Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-00597a6d7a20151bd (K+A2:A12ULSAP01),KULSAP01,OnDemand,No,Application,Production,"SAP B1, SQL Server",Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0acf779db5d737187 (MUMSAP01),MUMSAP01,OnDemand,No,Application,Production,SAP B1 Server,Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-08862d97bdea7e152 (SEOSAP01),SEOSAP01,OnDemand,No,Application,Production,SAP B1 Server,Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-019331086a4d10fc3 (SINCNZSAP01),SINCNZSAP01,OnDemand,No,Application,Production,SAP B1 Server,Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0de89bb52186c3750 (SINRDP01),SINRDP01,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0f806b7de3d8f8083 (SINRDP02),SINRDP02,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0fedc5c1123a65f47 (SINRDP03),SINRDP03,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0e289b51d2fef40ee (SINRDP04),SINRDP04,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0e45d1bd7e25af0d1 (SINRDP05),SINRDP05,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0d145357e9fc655e7 (SINSAP01),SINSAP01,OnDemand,No,Application,Production,SAP B1 Server,Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-08b36c143c4145f29 (SYDSQL01),SYDSQL01,OnDemand,No,Application,Production,"SAP B1, SQL Server",Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0d45239e16c4b1da6 (SYDTS01),SYDTS01,OnDemand,No,Application,Production,Terminal Server,Email,SAP Jumpbox,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-0db96ba25797b90c6 (TAISAP01),TAISAP01,OnDemand,No,Application,Production,SAP B1 Server,Email,SAP Server,No,Chew Leong Toh | Andi Satyawangsa,Yes
+i-006e9f9b88a1aad50 (AWSI-PDECMAPP03),AWSI-PDECMAPP03,AlwaysOn,No,Application,Production,ECM Scheduler Server,Email,Application Server,Yes,Choon Leng Loh,Yes
+i-06fcee6c3406b5735 (AWSI-QAECMAPP01),AWSI-QAECMAPP01,OnDemand,No,Application,QA,Agilent OpenLab ECM Web/FT/APP Server,Email,Application Server,Yes,Choon Leng Loh,Yes
+i-0d66421205d04fb49 (AWSI-QAECMAPP02),AWSI-QAECMAPP02,OnDemand,No,Application,QA,"OpenLab OLSS server, Shared services",Email,Application Server,Yes,Choon Leng Loh,Yes
+i-09ed4a29b133d3ef8 (AWSI-QAECMAPP03),AWSI-QAECMAPP03,OnDemand,No,Application,QA,ECM Scheduler Server,Email,Application Server,Yes,Choon Leng Loh,Yes
+i-0abc18210aac3f280 (AWSI-QAECMDB01),AWSI-QAECMDB01,OnDemand,No,Database,QA,"SQL Server Collation, Database",Email,Database Server,Yes,Choon Leng Loh,Yes
+i-07864eaf9e9f111fd (AWSI-PDECMAPP01),AWSI-PDECMAPP01,AlwaysOn,No,Application,Production,Agilent OpenLab ECM Web/FT/APP Server,Email,Application Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-03e29069548e96fe5 (AWSI-PDECMAPP02),AWSI-PDECMAPP02,AlwaysOn,No,FileServer,Production,"OpenLab OLSS server, Shared services",Email,Application Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-06b0563b1cc081b5a (AWSI-PDECMDB01),AWSI-PDECMDB01,AlwaysOn,No,Database,Production,"ECM SQL Server Collation, Database",Email,Database Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-06b0563b1cc081b5a (AWSI-PDECMDB01),AWSI-PDECMDB01,AlwaysOn,No,Database,Production,"ECM SQL Server Collation, Database",Email,Database Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-0b19651aaac741bcd (AWSI-PDECMDB01),AWSI-PDECMDB01,AlwaysOn,No,Database,Production,"ECM SQL Server Collation, Database",Email,Database Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-0b19651aaac741bcd (AWSI-PDECMDB01),AWSI-PDECMDB01,AlwaysOn,No,Database,Production,"ECM SQL Server Collation, Database",Email,Database Server,Yes,Choon Leng Loh | Andi Satyawangsa,Yes
+i-0f2d793f03eee0cc5 (SYDAPP01),SYDAPP01,?,No,Application,Production,,Email,?,No,Eric Wang,Yes
+i-01920ef7aa04d1668 (AWSI-PDLFTAPP01),AWSI-PDLFTAPP01,OnDemand,No,Application,Production,Loftware,Email,This can be turn off,No,Terence Koh,Yes
+i-04ade73cfcfc308af (AWSI-PDSBMAPP01),AWSI-PDSBMAPP01,AlwaysOn,No,Application,Production,Smartbill Messaging System,Email,"Korea Invoice, when SG DMZ is setup the instance for AWSI-PDSBMAPP01 in Oregon will be moved back to SG.",No,Terence Koh,Yes
+i-073a2054f55d2faf7 (AWSI-PDSBMAPP01-Delete),AWSI-PDSBMAPP01-Delete,?,No,Application,Production,Smartbill Messaging System,Email,?,No,Terence Koh,No
+i-0deb17d2df7441ee1 (SINLBLLFT01),SINLBLLFT01,AlwaysOn,No,Application,Production,RLRP Server Loftware,Email,Final Labeling Loftware Print,Yes,Terence Koh,Yes
+i-023273b81088938fb (SINSQLPRD01),SINSQLPRD01,AlwaysOn,No,Database,Production,SQL Prod Server and Time Clock RFID,Email,DB server for SINTAS01,No,Terence Koh,Yes
+i-04950a6dbd889c65f (SINTAS01),SINTAS01,AlwaysOn,No,Application,Production,Time Attendance System Unit 4 Server,Email,Unit 4 Time Clock,No,Terence Koh,Yes
+i-050c4ef0692671cdb (SINTMS01),SINTMS01,OnDemand,No,Application,Production,Old Time Clock Server,Email,This can be turn off,No,Terence Koh,Yes
+i-0e54045e4f77fb428 (SINTRG01),SINTRG01,AlwaysOn,No,Application,Production,Manufacturing Dashboard,Email,SG Qlikview Dashboard,No,Terence Koh,Yes
+i-09dff11c4172d4355 (SINTRK01),SINTRK01,OnDemand,No,Application,Production,Gown Tracking,Email,This can be turn off,No,Terence Koh,Yes
+i-03ebf0a37b9ce0b40 (NP-PAN-A),NP-PAN-A,?,No,Appliance,Test,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-052ba3f0e7dae017e (NP-PAN-B),NP-PAN-B,?,No,Appliance,Test,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-09d604cafe6447baf (PD-PAN-A),PD-PAN-A,?,No,Appliance,Production,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-0e69baa8b9bc31c56 (PD-PAN-B),PD-PAN-B,?,No,Appliance,Production,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-0328c902996959766 (awsi-pdhcpdb01),awsi-pdhcpdb01,?,No,Database,Production,K-Sunshine Act,Email,?,No,Tommy Joo,Yes
+i-0e6ce8677f62bd527 (awsi-pdhcpweb01),awsi-pdhcpweb01,?,No,Web,Production,K-Sunshine Act,Email,?,No,Tommy Joo,Yes
+i-0e154c58b53b209a6 (awsi-tshcpdb01),awsi-tshcpdb01,?,No,Database,Test,K-Sunshine Act,Email,?,No,Tommy Joo,Yes
+i-09616938507783465 (awsi-tshcpweb01),awsi-tshcpweb01,?,No,Web,Test,K-Sunshine Act,Email,?,No,Tommy Joo,Yes
+i-0e5363d5b23b4e21b (SGSIINPLMAPP01),SGSIINPLMAPP01,?,No,Application,Test,Ignite PLM Server - Remote FSC,Email,Ignite PLM Server - Remote FSC,No,Vivek Ratnaswamy,Yes
+i-0ccee08bca5680abf (SGSIOQPLMAPP01),SGSIOQPLMAPP01,AlwaysOn,No,Application,Test,Ignite PLM Server - Remote FSC,Email,Ignite PLM Server - Remote FSC,No,Vivek Ratnaswamy,Yes
+i-0a5a6a59673ab2dac (SGSIOQPLMAPP01 delete),SGSIOQPLMAPP01 delete,AlwaysOn,No,Application,Test,Ignite PLM Server - Remote FSC,Email,Ignite PLM Server - Remote FSC,No,Vivek Ratnaswamy,Yes
+i-071c7c7c58b505532 (SINTCUENT01-TRN),SINTCUENT01-TRN,?,No,Application,Training,Ignite PLM Server - Remote FSC for Training,Email,Ignite PLM Server - Remote FSC for Training,No,Vivek Ratnaswamy,Yes
+i-014cf927f84c4df98 (SGSIPDPLMAPP01),SGSIPDPLMAPP01,AlwaysOn,No,Application,Production,PLM|Teamcenter|Ignite,Email,Remote File Server,Yes,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-09399c93083527d7a (Jumpbox),Jumpbox,?,No,Application,,,Email,Jumpbox,No,,Yes

@@ -1,0 +1,29 @@
+﻿InstanceId,Name,Schedule,FileBackup,ApplicationTier,Environment,Application,ContactPreference,Purpose,Validated,TechnicalOwner,CorpInfoMSP:TakeNightlySnapshot
+i-085c2ff8c97797c74 (AWFR-PDPDMWRK01),AWFR-PDPDMWRK01,?,No,Application,Production,PDM Works,Email,?,No,Amir Memaran,Yes
+i-0f1a55ed6541788e7 (AWFR-TSPDMWRK01),AWFR-TSPDMWRK01,?,No,Application,Test,PDM Works,Email,?,No,Amir Memaran,No
+i-04fc2450d2d6e7b1c (AWFR-PDHSFAPP01),AWFR-PDHSFAPP01,?,No,Application,Production,Hyperion,Email,?,No,Antoinette Hunter,Yes
+i-01df07f93f299a131 (ISYE-PDRDSJMP01),ISYE-PDRDSJMP01,?,No,NetworkInfrastructure,Production,Cardioband RDP jump box,Email,?,No,Aviad Meroz,Yes
+i-05302e705c6979098 (ISYE-PDSAPAPP01),ISYE-PDSAPAPP01,?,No,Application,Production,,Email,?,No,Aviad Meroz,Yes
+i-07a6ee88491b7cb3d (AWFR-PDPANUID01),AWFR-PDPANUID01,AlwaysOn,No,Application,Production,Palo Alto UserID Agent,Text,Security Event Collection,No,Ben Monrad,Yes
+i-0ddc750b0b75009b6 (AWFR-PDPAWEXT01),AWFR-PDPAWEXT01,AlwaysOn,No,NetworkInfrastructure,Production,Privileged Access Workstation (PAW),Phone,External domain,No,Don Winter,Yes
+i-06b486d87dfe2bd65 (AWFR-PDPAWRED01),AWFR-PDPAWRED01,AlwaysOn,No,NetworkInfrastructure,Production,Privileged Access Jump Server (PAW),Phone,Bastion domain,No,Don Winter,Yes
+i-0598ad4cb40ff5ce1 (AWFR-PDPAWRED02),AWFR-PDPAWRED02,AlwaysOn,No,NetworkInfrastructure,Production,Privileged Access Jump Server (PAW),Phone,Bastion domain,No,Don Winter,Yes
+i-040896bd310e06e24 (AWFR-PDREDDC01 delete after 9/30/18),AWFR-PDREDDC01 delete after 9/30/18,?,No,,Production,,Email,?,No,Don Winter,Yes
+i-06422a5d100f50ba2 (AWFR-PDREDDC30),AWFR-PDREDDC30,AlwaysOn,No,NetworkInfrastructure,Production,Domain Controller,Phone,Bastion domain,No,Don Winter,Yes
+i-0b582984f97730b6a (ISYE-PDCLNSRV02),ISYE-PDCLNSRV02,AlwaysOn,Yes,Application,Production,Cardioband production clinical server ,Email,Database server,No,Eyal Richert,Yes
+i-0fe5433228b0e6068 (CAEWINSRV01),CAEWINSRV01,AlwaysOn,No,Application,Production,Solidworks License Manger,Email,Solidworks License server,No,Gil Cohen,Yes
+i-092f7c49658a6aa74 (ISCAD00SAP),ISCAD00SAP,AlwaysOn,No,Application,Production,SAP,Email,Caesarea old SAP server for historical purposes,yes,Gil Cohen,Yes
+i-0b59233d9f2ffa1b9 (AWFR-PDAMDC01),AWFR-PDAMDC01,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-0775353a12197612b (AWFR-PDAMDC20),AWFR-PDAMDC20,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-06c66ef05149cd163 (AWFR-PDAPDC01),AWFR-PDAPDC01,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-0b6a542c65e67b956 (AWFR-PDEUDC01),AWFR-PDEUDC01,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-087f2541f9c845e8c (AWFR-PDEWDC01),AWFR-PDEWDC01,AlwaysOn,No,Application,Production,Active Directory,Phone,Domain Controller,No,Michael Lee,Yes
+i-0a8af633e53a3c9bf (AWFR-PDEXTDC01),AWFR-PDEXTDC01,AlwaysOn,No,NetworkInfrastructure,Production,Active Directory,Phone,External Domain Controller,No,Michael Lee,Yes
+i-0613f9dc4f3465b56 (AWFR-PDDHCP01),AWFR-PDDHCP01,?,No,Application,Production,DHCP,Email,?,No,Michal Barak,Yes
+i-05b9b2c7c1109c01d (AWFR-PDDHCP02),AWFR-PDDHCP02,?,No,Application,Production,DHCP,Email,?,No,Michal Barak,Yes
+i-04ea74dd2baa3d9e9 (AWFR-PDRDSJMP02),AWFR-PDRDSJMP02,?,No,Application,Production,RDS Jump Box,Email,?,No,Michal Misech,Yes
+i-0740fa28535ed3b41 (NYOBIOAPP01),NYOBIOAPP01,?,No,Application,Production,Biostats,Email,?,No,Michal Misech,Yes
+i-0839693a971fa1da0 (ISYE-PDFILSRV01),ISYE-PDFILSRV01,?,No,Application,Production,,Email,?,No,Mihai Cerescu,Yes
+i-0bbcadafb7da5cc17 (AWFR-PDLGLAPP01),AWFR-PDLGLAPP01,?,No,Application,Production,,Email,?,No,Sadiq Khanani,Yes
+i-05219ab08f582c67f (AWFR-PDFILSRV01),AWFR-PDFILSRV01,N/A,No,FileServer,Production,FIle Server,Email,N/A,No,Victor Fernandez,No
+i-0caf31d637e453ae0 (AWFR-PDSTOGTW01),AWFR-PDSTOGTW01,N/A,No,Appliance,Production,Storage Gateway,Email,N/A,No,Victor Fernandez,No

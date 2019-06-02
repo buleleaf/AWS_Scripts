@@ -1,0 +1,634 @@
+{
+    "Metrics": [
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "FreeStorageSpace"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "FreeStorageSpace"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "WriteThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "ReadLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "WriteLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "DiskQueueDepth"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "FreeStorageSpace"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "WriteLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "ReadIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "WriteLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "NetworkTransmitThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "ReadThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "ReadIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "NetworkTransmitThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "WriteIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "WriteIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "NetworkReceiveThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "NetworkReceiveThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "ReadThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "ReadLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "NetworkReceiveThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "DatabaseConnections"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "DatabaseConnections"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "NetworkReceiveThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "WriteThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "WriteLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "NetworkTransmitThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "ReadIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "ReadLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "NetworkTransmitThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "FreeableMemory"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "WriteThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "ReadThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "WriteIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "DiskQueueDepth"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "DatabaseConnections"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "ReadLatency"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "FreeStorageSpace"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "DiskQueueDepth"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "ReadIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "WriteIOPS"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "ReadThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "DiskQueueDepth"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "DatabaseConnections"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "WriteThroughput"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "SwapUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "CPUUtilization"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "BurstBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "BurstBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "BurstBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "BurstBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "CPUCreditBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "CPUCreditUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "CPUCreditUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "CPUCreditUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "CPUCreditBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "CPUCreditBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "CPUCreditUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "CPUCreditBalance"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "EngineName", 
+                    "Value": "mysql"
+                }
+            ], 
+            "MetricName": "BinLogDiskUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DBInstanceIdentifier", 
+                    "Value": "dmansfieldlab2"
+                }
+            ], 
+            "MetricName": "BinLogDiskUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [
+                {
+                    "Name": "DatabaseClass", 
+                    "Value": "db.t2.micro"
+                }
+            ], 
+            "MetricName": "BinLogDiskUsage"
+        }, 
+        {
+            "Namespace": "AWS/RDS", 
+            "Dimensions": [], 
+            "MetricName": "BinLogDiskUsage"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+﻿InstanceId,Name,Schedule,FileBackup,ApplicationTier,Environment,Application,ContactPreference,Purpose,Validated,TechnicalOwner,CorpInfoMSP:TakeNightlySnapshot
+i-0a37c6139b6703538 (AWVA-PDMTMUCV01-Helper-Instance),AWVA-PDMTMUCV01-Helper-Instance,?,No,Application,Production,Maximo,Email,?,No,Alexis Robles,Yes
+i-005bb1904e5f06784 (AWVA-PDMXOAPP01),AWVA-PDMXOAPP01,?,No,Application,Production,Maximo,Email,?,No,Alexis Robles,Yes
+i-0a59e3eaddc75c4b2 (ANAJDEPRN01),ANAJDEPRN01,?,No,Application,Production,JDE,Email,?,No,Alice Martinez,Yes
+i-0633c85ea491539d2 (AWVA-PDPANUID01),AWVA-PDPANUID01,AlwaysOn,No,Application,Production,Palo Alto UserID Agent,Text,Security Event Collection,No,Ben Monrad,Yes
+i-011d0b6253fc22111 (AWVA-PDRASAPP01),AWVA-PDRASAPP01,AlwaysOn,No,Application,Production,Sistema Regulatory Affairs Solution,Email,?,No,Diogo Dalla,Yes
+i-0c751c3e969d7fd0f (AWVA-PDKRNAPP01),AWVA-PDKRNAPP01,?,No,Application,Production,?,Email,?,No,Eddy Mateo,Yes
+i-01d7b47bafb05e3f2 (HAIEIKAPP01),HAIEIKAPP01,?,No,Application,Production,?,Email,?,No,Eddy Mateo,Yes
+i-06bd054f61c965395 (AWVA-PDMTMUCV01),AWVA-PDMTMUCV01,?,No,Application,Production,UCView,Email,?,No,Eduardo Reynoso,Yes
+i-0f1b8a35d050297af (CloudEndure Replication Server con16),CloudEndure Replication Server con16,?,No,Application,Production,,Email,?,No,Erick Tejada,Yes
+i-0f1b8a35d050297af (CloudEndure Replication Server con16),CloudEndure Replication Server con16,?,No,Application,Production,,Email,?,No,Erick Tejada,Yes
+i-07719b28dbacd0784 (AWVA-PDSHAPP01),AWVA-PDSHAPP01,AlwaysOn,No,Application,Production,ACCESS CONTROL SOLUTION,Email,?,No,Gregorio De La Cruz,Yes
+i-0b56aee6e21150898 (AWVA-PDSQLDB01),AWVA-PDSQLDB01,AlwaysOn,No,Database,Production,SQL,Email,Database server,No,Haihao Li,Yes
+i-07b4eeee31dfee017 (ANABMSADX01),ANABMSADX01,?,No,Application,Production,,Email,?,No,Juan Ramirez,Yes
+i-0863a48ebf3fdee2d (ANATSTCOT02),ANATSTCOT02,?,No,Application,Production,,Email,?,No,Juan Ramirez,No
+i-0a038a5b3b95a9fce (CloudEndure Replication Server con16),CloudEndure Replication Server con16,?,No,Application,Production,,Email,?,No,Luis Romero,Yes
+i-0a038a5b3b95a9fce (CloudEndure Replication Server con16),CloudEndure Replication Server con16,?,No,Application,Production,,Email,?,No,Luis Romero,Yes
+i-0102ac56aa7a88b04 (HAIAPPSRV01),HAIAPPSRV01,?,No,Application,Production,"Maximo, Eikon, Access Control APP",Email,?,No,Luis Romero,Yes
+i-0f8ba3aa662ebcb35 (HAIPRN01),HAIPRN01,?,No,NetworkInfrastructure,Production,PrintServer,Email,?,No,Luis Romero,Yes
+i-0933759c62d21e8be (DRAKMSLIC01),DRAKMSLIC01,AlwaysOn,No,Application,Production,KMS Licensing Server,Email,Microsoft licensing server,No,Mike Pettway,Yes
+i-0e7d1ca60f367148a (AWVA-PDDWCAPP01),AWVA-PDDWCAPP01,?,No,Application,Production,?,Email,?,No,Tanisha Barnett,Yes
+i-0b38e0f4b3de54e61 (CRCA-PDDHCP02),CRCA-PDDHCP02,?,No,Application,Production,DHCP,Email,?,No,Tanisha Barnett,Yes
+i-04df40de078f00287 (CRCA-PDPRTSRV01),CRCA-PDPRTSRV01,?,No,Application,Production,PrintServer,Email,?,No,Tanisha Barnett,Yes
+i-0d79d34b8df1ca43a (NVI-TRN-PAN-A1),NVI-TRN-PAN-A1,?,No,Appliance,Production,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-08ad8944821d9f727 (NVI-TRN-PAN-A2),NVI-TRN-PAN-A2,?,No,Appliance,Production,Palo Alto Network Firewall,Email,?,No,Tomas Caslavsky,No
+i-01cae26daf1ead052 (ANAPRINT01),ANAPRINT01,N/A,No,Application,Production,PrintServer,Email,N/A,No,Victor Fernandez,Yes
+i-011bfc359f808a1b5 (ANASQLSRV01),ANASQLSRV01,N/A,No,Database,Production,Database Server,Email,N/A,No,Victor Fernandez,No
+i-00ed261f384fc3d60 (AWVA-PDFILSRV01),AWVA-PDFILSRV01,N/A,No,FileServer,Production,FIle Server,Email,N/A,No,Victor Fernandez,Yes
+i-0195919c2c32a59d4 (CRCAPDPLMAPP01),CRCAPDPLMAPP01,AlwaysOn,No,Application,Production,PLM|Teamcenter|Ignite,Email,Remote File Server,Yes,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-0cb2445267528c6b6 (DOHAINPLMAPP01),DOHAINPLMAPP01,AlwaysOn,No,Application,Integration,PLM|Teamcenter|Ignite,Email,PLM|Teamcenter|Ignite,No,Vivek Ratnaswamy | Rajesh Pudota,No
+i-07c84ecf4549f703d (DOHAPDPLMAPP01),DOHAPDPLMAPP01,AlwaysOn,No,Application,Production,PLM|Teamcenter|Ignite,Email,Remote File Server,Yes,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-0881aa6c5bddd8cc6 (PRANINPLMAPP01),PRANINPLMAPP01,AlwaysOn,No,Application,Integration,PLM|Teamcenter|Ignite,Email,PLM|Teamcenter|Ignite,No,Vivek Ratnaswamy | Rajesh Pudota,No
+i-09813da2b6e1ffb18 (PRANPDPLMAPP01),PRANPDPLMAPP01,AlwaysOn,No,Application,Production,PLM|Teamcenter|Ignite,Email,Remote File Server,Yes,Vivek Ratnaswamy | Rajesh Pudota,Yes
+i-071e03f1a1eab361e (AWVA-PDTAEAPP01),AWVA-PDTAEAPP01,AlwaysOn,No,Application,Production,Time & Attendance,Email,Time & Attendance,No,Wilfredo Gonzalez,Yes
+i-031dfccb01b7e89dc (AWVA-TSMXOAPP01),AWVA-TSMXOAPP01,OnDemand,No,Application,Development,Maximo,Email,Maximo Test Environment,No,Wilfredo Gonzalez,Yes
