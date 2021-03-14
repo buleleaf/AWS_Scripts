@@ -1,0 +1,629 @@
+{
+    "InstanceInformationList": [
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764040.118, 
+            "ComputerName": "NYOQLKAPP02.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-085c4f088511e28f4", 
+            "IPAddress": "10.252.24.211", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764040.118, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.235.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834243.706
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "ComputerName": "CHNYPDPLMAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0f1cf0a3080138f8d", 
+            "IPAddress": "10.252.25.210", 
+            "AssociationStatus": "Failed", 
+            "LastAssociationExecutionDate": 1603764055.51, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.0.755.0", 
+            "PlatformVersion": "6.1.7601", 
+            "AssociationOverview": {
+                "DetailedStatus": "Failed", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Failed": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2008 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834285.292
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764058.263, 
+            "ComputerName": "AWFR-PDT1PAS01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0bc68d38154aa16fe", 
+            "IPAddress": "10.252.24.242", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764058.263, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.800.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834281.978
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764052.03, 
+            "ComputerName": "AWFR-PDAMDC20.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0775353a12197612b", 
+            "IPAddress": "10.252.8.121", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764052.03, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.93.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834435.955
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764061.373, 
+            "ComputerName": "ISYE-PDCLNSRV02.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0b582984f97730b6a", 
+            "IPAddress": "10.252.25.80", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764061.373, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.64.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834408.775
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764040.017, 
+            "ComputerName": "AWFR-PDTPMS01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0d0f713a63a06e445", 
+            "IPAddress": "10.252.25.229", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764040.017, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1319.0", 
+            "PlatformVersion": "10.0.17763", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2019 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834490.798
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764039.39, 
+            "ComputerName": "AWFR-PDFILSRV01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-05219ab08f582c67f", 
+            "IPAddress": "10.252.8.32", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764039.39, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.13.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834342.694
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764066.467, 
+            "ComputerName": "AWFR-PDPANUID01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-07a6ee88491b7cb3d", 
+            "IPAddress": "10.252.8.16", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764066.467, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.444.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834253.106
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764068.643, 
+            "ComputerName": "AWFR-PDAMDC21.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0a1ce2dfd4c09413a", 
+            "IPAddress": "10.252.9.254", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764068.643, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.800.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834475.713
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764053.328, 
+            "ComputerName": "AWFR-PDMYDATA01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0bf90412eded0ba68", 
+            "IPAddress": "10.252.24.186", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764053.328, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1319.0", 
+            "PlatformVersion": "10.0.17763", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2019 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834481.837
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764047.577, 
+            "ComputerName": "AWFR-PDT1PAS02.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-03d03aaf1b493521c", 
+            "IPAddress": "10.252.24.75", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764047.577, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1319.0", 
+            "PlatformVersion": "10.0.17763", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2019 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834225.129
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "ComputerName": "ISYE-PDSAPAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-05302e705c6979098", 
+            "IPAddress": "10.252.25.194", 
+            "AssociationStatus": "Failed", 
+            "LastAssociationExecutionDate": 1603764046.798, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.0.755.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Failed", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Failed": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834265.689
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764047.303, 
+            "ComputerName": "AWFR-PDT2PAS01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-07414b9a3974ea766", 
+            "IPAddress": "10.252.25.134", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764047.303, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.800.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834295.106
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "ComputerName": "AWFR-PDLGLAPP01.EU.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0bbcadafb7da5cc17", 
+            "IPAddress": "10.252.25.107", 
+            "AssociationStatus": "Failed", 
+            "LastAssociationExecutionDate": 1603764056.82, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.2.257.0", 
+            "PlatformVersion": "6.0.6002", 
+            "AssociationOverview": {
+                "DetailedStatus": "Failed", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Failed": 1
+                }
+            }, 
+            "PlatformName": "Microsoft� Windows Server� 2008 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834372.282
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "ComputerName": "AWFR-TSSWWGPDM01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0f6ad33798c8a2d72", 
+            "IPAddress": "10.252.9.180", 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.760.0", 
+            "PlatformVersion": "6.3.9600", 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834450.252
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764031.083, 
+            "ComputerName": "AWFR-PDBASAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0326eeb239e8e92b4", 
+            "IPAddress": "10.252.24.175", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764031.083, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.842.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834355.718
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764031.185, 
+            "ComputerName": "AWFR-PDBASDB01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-038e314974cb544fd", 
+            "IPAddress": "10.252.24.5", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764031.185, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.842.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834378.92
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764051.839, 
+            "ComputerName": "AWFR-PDCCRAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0b3c641be42f2884f", 
+            "IPAddress": "10.252.8.148", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764051.839, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.634.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834398.104
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764035.638, 
+            "ComputerName": "AWFR-PDARCAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0e795bf160bf2e701", 
+            "IPAddress": "10.252.24.193", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764035.638, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1319.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834430.418
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764063.733, 
+            "ComputerName": "ISCAD00SAP.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-092f7c49658a6aa74", 
+            "IPAddress": "10.252.24.135", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764063.733, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.13.0", 
+            "PlatformVersion": "6.1.7601", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2008 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834408.369
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764059.263, 
+            "ComputerName": "NYOAESSRV01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0c8d4f321aad06b73", 
+            "IPAddress": "10.252.25.36", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764059.263, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1644.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834480.454
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764032.821, 
+            "ComputerName": "AWFR-PDPRNAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0391d03d33ef5a461", 
+            "IPAddress": "10.252.24.102", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764032.821, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.687.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834478.342
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764046.429, 
+            "ComputerName": "AWFR-PDDHCP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0613f9dc4f3465b56", 
+            "IPAddress": "10.252.24.141", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764046.429, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.13.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834386.42
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764030.276, 
+            "ComputerName": "AWFR-PDCCRDB01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0023dd5d7c20e338a", 
+            "IPAddress": "10.252.24.62", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764030.276, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.722.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834430.468
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764033.01, 
+            "ComputerName": "ISYE-PDRDSJMP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-01df07f93f299a131", 
+            "IPAddress": "10.252.25.118", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764033.01, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.13.0", 
+            "PlatformVersion": "6.3.9600", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2012 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834452.844
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764063.398, 
+            "ComputerName": "awfr-pdjumphost01", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-05cbe5c4ef476302e", 
+            "IPAddress": "10.252.24.155", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764063.398, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.1644.0", 
+            "PlatformVersion": "7.9", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Red Hat Enterprise Linux Server", 
+            "PlatformType": "Linux", 
+            "LastPingDateTime": 1603834282.147
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "ComputerName": "EULBLLFT01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0661c362cef8f5ada", 
+            "IPAddress": "10.252.25.222", 
+            "AssociationStatus": "Failed", 
+            "LastAssociationExecutionDate": 1603764043.178, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.0.755.0", 
+            "PlatformVersion": "6.1.7601", 
+            "AssociationOverview": {
+                "DetailedStatus": "Failed", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Failed": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2008 R2 Standard", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834396.948
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764054.986, 
+            "ComputerName": "AWFR-PDFLEXLM01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-0575aa1bbe5cdeacc", 
+            "IPAddress": "10.252.8.35", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764054.986, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.444.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834327.733
+        }, 
+        {
+            "IsLatestVersion": false, 
+            "LastSuccessfulAssociationExecutionDate": 1603764039.489, 
+            "ComputerName": "AWFR-PDETLAPP01.am.edwards.lcl", 
+            "PingStatus": "Online", 
+            "InstanceId": "i-094db18c7d6cec406", 
+            "IPAddress": "10.252.8.165", 
+            "AssociationStatus": "Success", 
+            "LastAssociationExecutionDate": 1603764039.489, 
+            "ResourceType": "EC2Instance", 
+            "AgentVersion": "2.3.814.0", 
+            "PlatformVersion": "10.0.14393", 
+            "AssociationOverview": {
+                "DetailedStatus": "Success", 
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }, 
+            "PlatformName": "Microsoft Windows Server 2016 Datacenter", 
+            "PlatformType": "Windows", 
+            "LastPingDateTime": 1603834261.909
+        }
+    ]
+}

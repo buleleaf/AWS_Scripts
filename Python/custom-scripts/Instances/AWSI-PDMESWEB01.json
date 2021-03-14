@@ -1,0 +1,213 @@
+{
+    "ImageId": "ami-0cc1e13429ee204c4",
+    "InstanceType": "r5.xlarge",
+    "KeyName": "onica-singapore",
+    "IamInstanceProfile":{
+        "Arn": "arn:aws:iam::904039288638:instance-profile/AmazonEC2RoleforSSM"
+    },
+    "Monitoring": {
+        "Enabled": false
+    },
+    "Placement": {
+        "Tenancy": "default",
+        "GroupName": "",
+        "AvailabilityZone": "ap-southeast-1"
+    },
+    "SecurityGroupIds": [
+        "sg-0c254f6b",
+        "sg-3f244e58",
+        "sg-e6264c81",
+        "sg-072fb5eb6d59306fc"
+    ],
+    "SubnetId": "subnet-6af27a0e",
+    "UserData": "",
+    "InstanceInitiatedShutdownBehavior": "stop",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+                "DeleteOnTermination": true,
+                "VolumeSize": 80,
+                "VolumeType": "gp2",
+                "Encrypted": true,
+                "KmsKeyId": "arn:aws:kms:ap-southeast-1:904039288638:key/3dfd9573-5b44-48cd-bf16-5ec513cb5268"
+            }
+        }
+    ],
+    "TagSpecifications": [
+        {
+            "ResourceType": "instance",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value": "Camstar MES v6"
+                },
+                {
+                    "Key":"Purpose",
+                    "Value":"Application server for MES"
+                },
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"Tier1"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"No"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWSI-PDMESWEB01"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"No"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"RITM0085266"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"1001798953.60055608"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"APAC"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Craig Adams"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Michal_Misech"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionManualReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"Always ON"
+                },
+                {
+                    "Key":"Validated",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup", # Missing
+                    "Value":"No"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "12/4/2022"
+                }
+            ]
+        },
+        {
+            "ResourceType": "volume",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"ABACUS Print server"
+                },
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"No Tier"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWFR-PDPRNAPP01"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"RITM0039898"
+                },
+                {
+                    "Key":"OperationalHours",
+                    "Value":"24x7"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "8/31/2020"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"1001798952"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"Global"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Cris Lucherini"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Michal_Misech"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionAutoReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"Always ON"
+                }, 
+                {
+                    "Key":"Purpose",
+                    "Value":"N/A"
+                },                  
+                {
+                    "Key":"Validated",
+                    "Value":"N/A"
+                }
+            ]
+        }          
+    ]
+}  

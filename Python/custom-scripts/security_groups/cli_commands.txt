@@ -1,0 +1,6 @@
+aws ec2 delete-security-group --group-name file://sg.json --region us-west-2
+
+
+aws ec2 delete-security-group --cli-input-json delete-sg.json
+
+aws ec2 delete-security-group --group-id sg-03b1b18546e61d9a6,sg-010085169fbb6dfa6

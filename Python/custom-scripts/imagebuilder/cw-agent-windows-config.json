@@ -1,0 +1,58 @@
+{
+  "metrics": {
+    "namespace": "System/Windows",
+    "append_dimensions": {
+      "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+      "ImageId": "${aws:ImageId}",
+      "InstanceId": "${aws:InstanceId}",
+      "InstanceType": "${aws:InstanceType}"
+    },
+    "aggregation_dimensions": [
+      [
+        "InstanceId"
+      ],
+      [
+        "AutoScalingGroupName"
+      ],
+      [
+        "InstanceId",
+        "instance",
+        "objectname"
+      ],
+      [
+        "InstanceId",
+        "instance"
+      ]
+    ],
+    "metrics_collected": {
+      "LogicalDisk": {
+        "measurement": [
+          "% Free Space"
+        ],
+        "metrics_collection_interval": 60,
+        "resources": [
+          "*"
+        ]
+      },
+      "Memory": {
+        "measurement": [
+          {
+            "name": "% Committed Bytes In Use",
+            "rename": "MemoryUtilization",
+            "unit": "Percent"
+          }
+        ],
+        "metrics_collection_interval": 60
+      },
+      "Paging File": {
+        "measurement": [
+          "% Usage"
+        ],
+        "metrics_collection_interval": 60,
+        "resources": [
+          "*"
+        ]
+      }
+    }
+  }
+}

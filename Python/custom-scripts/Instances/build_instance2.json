@@ -1,0 +1,180 @@
+{
+    "ImageId": "ami-0ce21b51cb31a48b8",
+    "InstanceType": "t3.micro",
+    "KeyName": "aws-corpinfo-msp",
+    "IamInstanceProfile":{
+        "Arn": "arn:aws:iam::590992000271:instance-profile/EdwardsEC2RoleforSSMandCWAgent"
+    },
+    "Monitoring": {
+        "Enabled": false
+    },
+    "Placement": {
+        "Tenancy": "default",
+        "GroupName": "",
+        "AvailabilityZone": "us-west-2a"
+    },
+    "SecurityGroupIds": [
+        "sg-3ff1ec58"
+    ],
+    "SubnetId": "subnet-5a909b2d",
+    "UserData": "",
+    "InstanceInitiatedShutdownBehavior": "stop",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+                "DeleteOnTermination": true,
+                "VolumeSize": 80,
+                "VolumeType": "gp2"
+            }
+        }
+    ],
+    "TagSpecifications": [
+        {
+            "ResourceType": "instance",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"Patch-Testing"
+                },               
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Development"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "els-patch-test-non-prod"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "N/A"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"0000000000"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Onica"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Onica"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionAutoReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"AlwaysOn"
+                }, 
+                {
+                    "Key":"Purpose",
+                    "Value":"Integration"
+                },                  
+                {
+                    "Key":"Validated",
+                    "Value":"Yes"
+                }
+            ]
+        },
+        {
+            "ResourceType": "volume",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"Patch-Testing"
+                },               
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Development"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "els-patch-test-non-prod"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "N/A"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"0000000000"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Onica"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Onica"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionAutoReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"AlwaysOn"
+                },
+                {
+                    "Key":"Purpose",
+                    "Value":"Integration"
+                },
+                {
+                    "Key":"Validated",
+                    "Value":"Yes"
+                }
+            ]
+        }
+    ]
+}  

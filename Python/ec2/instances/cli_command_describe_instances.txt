@@ -1,0 +1,4 @@
+aws ec2 describe-instances --cli-input-json file://describe_windows_instances.json --region us-west-2
+
+
+aws ec2 

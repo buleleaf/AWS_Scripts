@@ -1,0 +1,223 @@
+{
+    "ImageId": "ami-094fe24bfcc17d3a6",
+    "InstanceType": "t3.medium",
+    "KeyName": "aws-corpinfo-msp",
+    "IamInstanceProfile":{
+        "Arn": "arn:aws:iam::590992000271:instance-profile/EdwardsEC2RoleforSSMandCWAgent"
+    },
+    "Monitoring": {
+        "Enabled": false
+    },
+    "Placement": {
+        "Tenancy": "default",
+        "GroupName": "",
+        "AvailabilityZone": "eu-central-1a"
+    },
+    "SecurityGroupIds": [
+        "sg-b65bf7dc"
+    ],
+    "SubnetId": "subnet-09d10e62",
+    "UserData": "",
+    "InstanceInitiatedShutdownBehavior": "stop",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+                "DeleteOnTermination": true,
+                "VolumeSize": 80,
+                "VolumeType": "gp2",
+                "Encrypted": true,
+                "KmsKeyId": "arn:aws:kms:eu-central-1:607180602984:key/ff5dac01-53ad-4885-81a6-fc337b1700cf"
+            }
+        },
+        {
+            "DeviceName": "/dev/xvdd",
+            "Ebs": {
+                "VolumeSize": 80,
+                "VolumeType": "gp2",
+                "Encrypted": true,
+                "KmsKeyId": "arn:aws:kms:eu-central-1:607180602984:key/ff5dac01-53ad-4885-81a6-fc337b1700cf"
+            }
+        }
+    ],
+    "TagSpecifications": [
+        {
+            "ResourceType": "instance",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"ABACUS Print server"
+                },               
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"No Tier"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWFR-PDPRNAPP01"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"RITM0039898"
+                },
+                {
+                    "Key":"OperationalHours",
+                    "Value":"24x7"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "8/31/2020"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"1001798952"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"Global"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Cris Lucherini"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Michal_Misech"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionAutoReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"Always ON"
+                }, 
+                {
+                    "Key":"Purpose",
+                    "Value":"N/A"
+                },                  
+                {
+                    "Key":"Validated",
+                    "Value":"N/A"
+                }
+            ]
+        },
+        {
+            "ResourceType": "volume",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"ABACUS Print server"
+                },               
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"No Tier"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWFR-PDPRNAPP01"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"RITM0039898"
+                },
+                {
+                    "Key":"OperationalHours",
+                    "Value":"24x7"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "8/31/2020"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"1001798952"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"Global"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"Cris Lucherini"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"Michal_Misech"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"ProductionAutoReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"Always ON"
+                }, 
+                {
+                    "Key":"Purpose",
+                    "Value":"N/A"
+                },                  
+                {
+                    "Key":"Validated",
+                    "Value":"N/A"
+                }
+            ]
+        }          
+    ]
+}  

@@ -1,0 +1,391 @@
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-length": "6645",
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:26:15 GMT",
+            "server": "AmazonEC2",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "30d3eefb-5c81-4055-8fe9-39c5be6ad1d1",
+        "RetryAttempts": 0
+    },
+    "Vpcs": [
+        {
+            "CidrBlock": "10.37.8.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-55a5f33f",
+                    "CidrBlock": "10.37.8.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedService_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-856c3dfd"
+        },
+        {
+            "CidrBlock": "10.37.60.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-91d64dfb",
+                    "CidrBlock": "10.37.60.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Test_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-c5c0a5bd"
+        },
+        {
+            "CidrBlock": "10.37.24.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-00ac136a",
+                    "CidrBlock": "10.37.24.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Production_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-6f843f17"
+        },
+        {
+            "CidrBlock": "10.37.64.0/22",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-9de758f7",
+                    "CidrBlock": "10.37.64.0/22",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Transit"
+                }
+            ],
+            "VpcId": "vpc-7eb90206"
+        },
+        {
+            "CidrBlock": "10.37.62.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-cfd64da5",
+                    "CidrBlock": "10.37.62.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Test_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-a1c6a3d9"
+        },
+        {
+            "CidrBlock": "10.37.10.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-5ba3f531",
+                    "CidrBlock": "10.37.10.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedService_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-2596c75d"
+        },
+        {
+            "CidrBlock": "10.37.26.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-15c8537f",
+                    "CidrBlock": "10.37.26.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-dd7a13a4",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Production_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-bacfaac2"
+        }
+    ]
+}
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:26:15 GMT",
+            "server": "AmazonEC2",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "b46a6142-3905-45bc-93cd-07697610479c",
+        "RetryAttempts": 0
+    },
+    "Subnets": [
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1b",
+            "AvailableIpAddressCount": 249,
+            "CidrBlock": "10.37.61.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-6f37eb40",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Test_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-c5c0a5bd"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.37.10.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-2c175148",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedServices_PROTECTED_A"
+                }
+            ],
+            "VpcId": "vpc-2596c75d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1b",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.37.11.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-42d9636d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedServices_PROTECTED_B"
+                }
+            ],
+            "VpcId": "vpc-2596c75d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 245,
+            "CidrBlock": "10.37.64.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-b9eb79dd",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Transit_A"
+                }
+            ],
+            "VpcId": "vpc-7eb90206"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1b",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.37.65.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-79599c56",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Transit_B"
+                }
+            ],
+            "VpcId": "vpc-7eb90206"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 220,
+            "CidrBlock": "10.37.24.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-608b1904",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Production_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-6f843f17"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.37.25.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-b22ef29d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Production_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-6f843f17"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 249,
+            "CidrBlock": "10.37.8.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-eb11578f",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedServices_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-856c3dfd"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.37.66.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-4f980a2b",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Transit_PERIMETER_A"
+                }
+            ],
+            "VpcId": "vpc-7eb90206"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.37.9.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-74da605b",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_SharedServices_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-856c3dfd"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "us-east-1a",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.37.60.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-47b9d423",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "NVI_Test_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-c5c0a5bd"
+        }
+    ]
+}

@@ -1,0 +1,363 @@
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-length": "4827",
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:24:08 GMT",
+            "server": "AmazonEC2",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "82efb2ab-0b74-4443-9c68-c9a8aced26f2",
+        "RetryAttempts": 0
+    },
+    "Vpcs": [
+        {
+            "CidrBlock": "10.149.26.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-dea346b6",
+                    "CidrBlock": "10.149.26.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-053e3061",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-0bd9336c"
+        },
+        {
+            "CidrBlock": "10.149.60.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-a9af4ac1",
+                    "CidrBlock": "10.149.60.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-053e3061",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-dad339bd"
+        },
+        {
+            "CidrBlock": "10.149.62.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-1ca24774",
+                    "CidrBlock": "10.149.62.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-053e3061",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-83de34e4"
+        },
+        {
+            "CidrBlock": "10.149.24.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-220c174b",
+                    "CidrBlock": "10.149.24.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-053e3061",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-df49a1b8"
+        },
+        {
+            "CidrBlock": "10.149.0.0/22",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-00d27b22b6086ec47",
+                    "CidrBlock": "10.149.0.0/22",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-af6a54cb",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Transit"
+                }
+            ],
+            "VpcId": "vpc-0cd5e872a76e0d9c9"
+        }
+    ]
+}
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:24:09 GMT",
+            "server": "AmazonEC2",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "6376d1f0-4ffb-4864-9401-8839a2c04e7f",
+        "RetryAttempts": 0
+    },
+    "Subnets": [
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 58,
+            "CidrBlock": "10.149.0.128/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-001985056161bf2b5",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Transit_PERIMETER_A"
+                }
+            ],
+            "VpcId": "vpc-0cd5e872a76e0d9c9"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.149.63.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-d9de1982",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PROTECTED_C"
+                }
+            ],
+            "VpcId": "vpc-83de34e4"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 234,
+            "CidrBlock": "10.149.24.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-4f5fd306",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-df49a1b8"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.149.26.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-1ef27c57",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PROTECTED_A"
+                }
+            ],
+            "VpcId": "vpc-0bd9336c"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.149.2.0/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0d39ce836d14af9c4",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_MGMT_A"
+                }
+            ],
+            "VpcId": "vpc-0cd5e872a76e0d9c9"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 58,
+            "CidrBlock": "10.149.0.192/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0ddf3395baf03ea6b",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Transit_PERIMETER_C"
+                }
+            ],
+            "VpcId": "vpc-0cd5e872a76e0d9c9"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.149.2.32/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0b130b637a2fa6779",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_MGMT_C"
+                }
+            ],
+            "VpcId": "vpc-0cd5e872a76e0d9c9"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.149.25.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-b13bfeea",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PRIVATE_C"
+                }
+            ],
+            "VpcId": "vpc-df49a1b8"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.149.27.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-b7cc0bec",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Production_PROTECTED_C"
+                }
+            ],
+            "VpcId": "vpc-0bd9336c"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1c",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.149.61.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-46c80f1d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PRIVATE_C"
+                }
+            ],
+            "VpcId": "vpc-dad339bd"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 248,
+            "CidrBlock": "10.149.60.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-3f8e0076",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-dad339bd"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-northeast-1a",
+            "AvailableIpAddressCount": 245,
+            "CidrBlock": "10.149.62.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-fc8a04b5",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "TYO_Test_PROTECTED_A"
+                }
+            ],
+            "VpcId": "vpc-83de34e4"
+        }
+    ]
+}

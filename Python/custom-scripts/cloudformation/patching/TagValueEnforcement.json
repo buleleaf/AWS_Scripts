@@ -1,0 +1,202 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ApplicationTierDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/ApplicationTier": [
+                        "Application",
+                        "Appliance",
+                        "Database",
+                        "FileServer",
+                        "NetworkInfrastructure",
+                        "VDI",
+                        "Web"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "EnvironmentDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/Environment": [
+                        "Development",
+                        "Integration",
+                        "OperationalQualification",
+                        "Production",
+                        "QA",
+                        "Training",
+                        "Test"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "SnapshotDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/CorpInfoMSP:TakeNightlySnapshot": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "ContactPreferenceDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/ContactPreference": [
+                        "Email",
+                        "Phone",
+                        "Text"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "ManagedDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/Managed": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "PatchGroupDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestTag/PatchGroup": [
+                        "PilotAutoReboot",
+                        "PilotManualReboot",
+                        "ProductionAutoReboot",
+                        "ProductionManualReboot"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "CreateTagsDenyInvalid",
+            "Effect": "Deny",
+            "Action": "ec2:CreateTags",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*",
+                "arn:aws:ec2:*::snapshot/*"
+            ],
+            "Condition": {
+                "ForAnyValue:StringNotEquals": {
+                    "aws:TagKeys": [
+                        "Application",
+                        "Name",
+                        "ServiceOwner",
+                        "TechnicalOwner",
+                        "CostCenter",
+                        "CreatedAt",
+                        "Creator",
+                        "RequestNumber",
+                        "ReviewDate",
+                        "DeleteOn",
+                        "PowerGroup",
+                        "Skip",
+                        "CorpinfoMSP:Snapshot Of EBS By ECG",
+                        "CorpinfoMSP:Snapshot Of EBS By Lambda",
+                        "PatchGroup",
+                        "Schedule",
+                        "Purpose",
+                        "Validated",
+                        "FileBackup",
+                        "PrincipalId",
+                        "Purpose",
+                        "BackupPlanOverride",
+                        "ServiceLocation",
+                        "status",
+                        "c7_unattached_policy",
+                        "c7_untagged",
+                        "c7_snap_policy",
+                        "ApplicationTierLevel",
+                        "MonitoredServices"
+                    ],
+                    "aws:RequestTag/ApplicationTier": [
+                        "Application",
+                        "Appliance",
+                        "Database",
+                        "FileServer",
+                        "NetworkInfrastructure",
+                        "VDI",
+                        "Web"
+                    ],
+                    "aws:RequestTag/Environment": [
+                        "Development",
+                        "Integration",
+                        "OperationalQualification",
+                        "Production",
+                        "QA",
+                        "Training",
+                        "Test"
+                    ],
+                    "aws:RequestTag/CorpInfoMSP:TakeNightlySnapshot": [
+                        "Yes",
+                        "No"
+                    ],
+                    "aws:RequestTag/ContactPreference": [
+                        "Email",
+                        "Phone",
+                        "Text"
+                    ],
+                    "aws:RequestTag/Managed": [
+                        "Yes",
+                        "No"
+                    ],
+                    "aws:RequestTag/PatchGroup": [
+                        "PilotAutoReboot",
+                        "PilotManualReboot",
+                        "ProductionAutoReboot",
+                        "ProductionManualReboot"
+                    ]
+                }
+            }
+        }
+    ]
+}

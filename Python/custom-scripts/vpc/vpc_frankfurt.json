@@ -1,0 +1,486 @@
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-length": "7606",
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:21:19 GMT",
+            "server": "AmazonEC2",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "c6cc6ad7-5eb9-49ca-af7f-0bbdd1a44e41",
+        "RetryAttempts": 0
+    },
+    "Vpcs": [
+        {
+            "CidrBlock": "192.168.10.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-09bc1122993923122",
+                    "CidrBlock": "192.168.10.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-62744b0b",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "VF_MIGRATION"
+                }
+            ],
+            "VpcId": "vpc-068a8d88ca6d87fe9"
+        },
+        {
+            "CidrBlock": "10.252.40.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-29afa640",
+                    "CidrBlock": "10.252.40.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Non-Production_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-ad7367c5"
+        },
+        {
+            "CidrBlock": "10.252.60.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-fc35d194",
+                    "CidrBlock": "10.252.60.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Test_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-f00ced9b"
+        },
+        {
+            "CidrBlock": "10.252.24.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-77dad71e",
+                    "CidrBlock": "10.252.24.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Production_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-156b637d"
+        },
+        {
+            "CidrBlock": "10.252.0.0/22",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0791aa89986d9c6f1",
+                    "CidrBlock": "10.252.0.0/22",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Transit"
+                }
+            ],
+            "VpcId": "vpc-0b9a9f4e924a56496"
+        },
+        {
+            "CidrBlock": "10.252.8.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-3b454e52",
+                    "CidrBlock": "10.252.8.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_SharedServices_PRIVATE"
+                }
+            ],
+            "VpcId": "vpc-3216015a"
+        },
+        {
+            "CidrBlock": "10.252.26.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-ae28ccc6",
+                    "CidrBlock": "10.252.26.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Production_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-e60aeb8d"
+        },
+        {
+            "CidrBlock": "10.252.62.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0c35d164",
+                    "CidrBlock": "10.252.62.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-c6264bad",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Test_PROTECTED"
+                }
+            ],
+            "VpcId": "vpc-260ced4d"
+        }
+    ]
+}
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:21:19 GMT",
+            "server": "AmazonEC2",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "fdf99966-c213-440a-9fbc-e5b5ddf93a2d",
+        "RetryAttempts": 0
+    },
+    "Subnets": [
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 122,
+            "CidrBlock": "192.168.10.0/25",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-067d395a7e257059e",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Public subnet"
+                }
+            ],
+            "VpcId": "vpc-068a8d88ca6d87fe9"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 56,
+            "CidrBlock": "10.252.0.128/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-049a920b6cca7ffcc",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Transit_PERIMETER_A"
+                }
+            ],
+            "VpcId": "vpc-0b9a9f4e924a56496"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.252.27.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-b1ba17cc",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_SharedServices_PROTECTED_B"
+                }
+            ],
+            "VpcId": "vpc-e60aeb8d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 202,
+            "CidrBlock": "10.252.24.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-09d10e62",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Production_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-156b637d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.252.2.0/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-05a4e7998a80c4fff",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_MGMT_A"
+                }
+            ],
+            "VpcId": "vpc-0b9a9f4e924a56496"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 58,
+            "CidrBlock": "10.252.0.192/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0d0296c26f0a36c9d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Transit_PERIMETER_B"
+                }
+            ],
+            "VpcId": "vpc-0b9a9f4e924a56496"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.252.40.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-a6eb30cd",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Non-Production_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-ad7367c5"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 249,
+            "CidrBlock": "10.252.9.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-79031b03",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_SharedServices_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-3216015a"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 249,
+            "CidrBlock": "10.252.60.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-98fdcff3",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Test_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-f00ced9b"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.252.41.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-63051c19",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Non-Production_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-ad7367c5"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 219,
+            "CidrBlock": "10.252.25.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-32bba548",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Production_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-156b637d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.252.2.32/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0cca2a58f9e9e02ce",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_MGMT_B"
+                }
+            ],
+            "VpcId": "vpc-0b9a9f4e924a56496"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.252.61.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-ca751db7",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_Test_PRIVATE_B"
+                }
+            ],
+            "VpcId": "vpc-f00ced9b"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 248,
+            "CidrBlock": "10.252.26.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-c75a2fac",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_SharedServices_PROTECTED_A"
+                }
+            ],
+            "VpcId": "vpc-e60aeb8d"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "eu-central-1a",
+            "AvailableIpAddressCount": 243,
+            "CidrBlock": "10.252.8.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-aa1ac0c1",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "FRA_SharedServices_PRIVATE_A"
+                }
+            ],
+            "VpcId": "vpc-3216015a"
+        }
+    ]
+}

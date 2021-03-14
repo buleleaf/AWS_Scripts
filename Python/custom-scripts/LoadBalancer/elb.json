@@ -1,0 +1,70 @@
+{
+    "LoadBalancerName": "MESProd-alb-prod",
+    "Listeners": [
+        {
+            "Protocol": "HTTP",
+            "LoadBalancerPort": 80,
+            "InstanceProtocol": "HTTP",
+            "InstancePort": 80
+        }
+    ],
+    "AvailabilityZones": [
+        "us-west-2a",
+        "us-west-2b"
+    ],
+    "Subnets": [
+        "subnet-7eaca709",
+        "subnet-e6945982"
+    ],
+    "SecurityGroups": [
+        "sg-4f256629",
+        "sg-23db6444"
+    ],
+    "Scheme": "internal",
+    "Tags": [
+        {
+            "Key": "ApplicationName",
+            "Value": "MESProd"
+        },
+        {
+            "Key": "Environment",
+            "Value": "Prod"
+        },
+        {
+            "Key": "ApplicationTier",
+            "Value": "Application"
+        },
+        {
+            "Key": "Creator",
+            "Value": "Onica MSP"
+        },
+        {
+            "Key": "Name",
+            "Value": "MESProd-alb-prod"
+        },
+        {
+            "Key": "CostCenter",
+            "Value": "TBD"
+        },
+        {
+            "Key": "OperationalHours",
+            "Value": "24x7"
+        },
+        {
+            "Key": "TechnicalOwner",
+            "Value": "edwards-incidents@corpinfo.com"
+        },
+        {
+            "Key": "ContactPreference",
+            "Value": "Email"
+        },
+        {
+            "Key": "Application",
+            "Value": "MESProd"
+        },
+        {
+            "Key": "ServiceOwner",
+            "Value": "edwards-incidents@corpinfo.com"
+        }
+    ]
+}

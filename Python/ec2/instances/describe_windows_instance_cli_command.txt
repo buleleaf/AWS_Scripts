@@ -1,0 +1,1 @@
+aws ec2 describe-instances --filters "Name=plaform,Values=Windows" --instance-ids file://instances_without_ssm.csv

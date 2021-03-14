@@ -1,0 +1,1 @@
+aws ec2 run-instances --cli-input-json file://rca_server.json --region us-west-2

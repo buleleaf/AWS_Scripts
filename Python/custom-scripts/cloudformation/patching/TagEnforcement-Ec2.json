@@ -1,0 +1,225 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ApplicationDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/Name": "true"
+                }
+            }
+        },
+        {
+            "Sid": "NameDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/Name": "true"
+                }
+            }
+        },
+        {
+            "Sid": "ServiceOwnerDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/ServiceOwner": "true"
+                }
+            }
+        },
+        {
+            "Sid": "TechnicalOwnerDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/TechnicalOwner": "true"
+                }
+            }
+        },
+        {
+            "Sid": "CostCenterDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/CostCenter": "true"
+                }
+            }
+        },
+        {
+            "Sid": "RequestNumberDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/RequestNumber": "true"
+                }
+            }
+        },
+        {
+            "Sid": "ReviewDateDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/ReviewDate": "true"
+                }
+            }
+        },
+        {
+            "Sid": "PatchGroupDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/PatchGroup": "true"
+                }
+            }
+        },
+        {
+            "Sid": "ScheduleDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/Schedule": "true"
+                }
+            }
+        },
+        {
+            "Sid": "PurposeDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/Purpose": "true"
+                }
+            }
+        },
+        {
+            "Sid": "ValidatedDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/Validated": "true"
+                }
+            }
+        },
+        {
+            "Sid": "FileBackupDenyMissing",
+            "Effect": "Deny",
+            "Action": "ec2:RunInstances",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/FileBackup": "true"
+                }
+            }
+        },
+        {
+            "Sid": "DeleteTagDenyRequired",
+            "Effect": "Deny",
+            "Action": "ec2:DeleteTags",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*",
+                "arn:aws:ec2:*::snapshot/*"
+            ],
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:TagKeys": [
+                        "Application",
+                        "ApplicationTier",
+                        "Environment",
+                        "Name",
+                        "CorpInfoMSP:TakeNightlySnapshot",
+                        "ServiceOwner",
+                        "TechnicalOwner",
+                        "CostCenter",
+                        "RequestNumber",
+                        "ReviewDate",
+                        "ContactPreference",
+                        "Managed"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "DeleteTagDenyAutomated",
+            "Effect": "Deny",
+            "Action": "ec2:DeleteTags",
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*",
+                "arn:aws:ec2:*:*:volume/*",
+                "arn:aws:ec2:*::snapshot/*"
+            ],
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:TagKeys": [
+                        "CreatedAt",
+                        "Creator",
+                        "CorpInfoMSP_BackedupOn",
+                        "CorpInfoMSP_LastSnapshot",
+                        "LastAttachedAs",
+                        "LastAttachedTo",
+                        "DeleteOn",
+                        "SourceVolume"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Name": "AwOr-TsRssApp-ALB", 
+    "Subnets": [
+        "subnet-5a158611",
+        "subnet-5569182c"
+    ], 
+    "SubnetMappings": [
+        {
+            "SubnetId": "", 
+            "AllocationId": ""
+        }
+    ], 
+    "SecurityGroups": [
+        ""
+    ], 
+    "Scheme": "internet-facing", 
+    "Tags": [
+        {
+            "Key": "", 
+            "Value": ""
+        }
+    ], 
+    "Type": "network", 
+    "IpAddressType": "dualstack"
+}

@@ -1,0 +1,146 @@
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this
+# software and associated documentation files (the "Software"), to deal in the Software
+# without restriction, including without limitation the rights to use, copy, modify,
+# merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+# INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+name: PowerShell Core 6.2.3
+description: Performs a default installation of PowerShell Core 6.2.3 from the https://github.com/PowerShell/PowerShell repository.
+schemaVersion: 1.0
+phases:
+  - name: build
+    steps:
+      - name: RemoteInstallerUri
+        action: ExecutePowerShell
+        onFailure: Abort
+        timeoutSeconds: 30
+        inputs:
+          commands:
+            - |
+              $releases = 'https://github.com/PowerShell/PowerShell/releases'
+              $version = '6.2.3'
+              $arch = 'x64'
+              "$releases/download/v$version/PowerShell-$version-win-$arch.msi"
+
+      - name: LocalInstallerFilePath
+        action: ExecutePowerShell
+        onFailure: Abort
+        timeoutSeconds: 30
+        inputs:
+          commands:
+            - |
+              $fileName = '{{build.RemoteInstallerUri.outputs[0].stdout}}'.Split('/')[-1]
+              Join-Path -Path $env:TEMP -ChildPath $fileName
+
+      - name: Download
+        action: ExecutePowerShell
+        onFailure: Continue
+        timeoutSeconds: 600
+        inputs:
+          commands:
+            - |
+              $ErrorActionPreference = 'Stop'
+              $ProgressPreference = 'SilentlyContinue'
+              [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+              Write-Host 'Downloading MSI installer...'
+              $timer = [System.Diagnostics.Stopwatch]::StartNew()
+              $invokeWebRequest = @{
+                  UseBasicParsing = $true
+                  Uri             = '{{build.RemoteInstallerUri.outputs[0].stdout}}'
+                  OutFile         = '{{build.LocalInstallerFilePath.outputs[0].stdout}}'
+              }
+              Invoke-WebRequest @invokeWebRequest
+              $timer.Stop()
+
+              Write-Host ('Download completed in {0} seconds.' -f $timer.Elapsed.TotalSeconds)
+
+      - name: Install
+        action: ExecutePowerShell
+        onFailure: Continue
+        timeoutSeconds: 600
+        inputs:
+          commands:
+            - |
+              $REBOOTCODE = 3010
+
+              Write-Host 'Installing PowerShell Core...'
+              $startProcess = @{
+                  FilePath     = "$env:SystemRoot\System32\msiexec.exe"
+                  Wait         = $true
+                  PassThru     = $true
+                  ArgumentList = @(
+                      '/i'
+                      '{{build.LocalInstallerFilePath.outputs[0].stdout}}'
+                      '/qb-'
+                  )
+              }
+              $process = Start-Process @startProcess
+
+              if ($process.ExitCode -eq $REBOOTCODE) {
+                  Write-Host 'PowerShell Core has been installed. Reboot required.'
+              }
+              elseif ($process.ExitCode -ne 0) {
+                  Write-Host 'Error occured during PowerShell Core installation. Failing.'
+              }
+              else {
+                  Write-Host 'PowerShell Core has been installed.'
+              }
+              exit $process.ExitCode
+
+      - name: Cleanup
+        action: ExecutePowerShell
+        onFailure: Abort
+        timeoutSeconds: 30
+        inputs:
+          commands:
+            - |
+              $getItem = @{
+                  Path        = '{{build.LocalInstallerFilePath.outputs.stdout}}'
+                  ErrorAction = 'SilentlyContinue'
+              }
+              Get-Item @getItem | Remove-Item -Force
+
+  - name: validate
+    steps:
+      - name: ValidateInstallation
+        action: ExecutePowerShell
+        onFailure: Abort
+        timeoutSeconds: 60
+        inputs:
+          commands:
+            - |
+              Write-Host 'Validating the PowerShell Core installation...'
+              $installPath = 'C:\Program Files\PowerShell\6'
+              $binary = 'pwsh.exe'
+              $binaryPath = Join-Path -Path $installPath -ChildPath $binary
+
+              # Validating from registry as $env:PATH is not updated without launching a new process.
+              $getItemProperty = @{
+                  Path = 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment'
+              }
+              if ((Get-ItemProperty @getItemProperty).Path -like "*$installPath*") {
+                  Write-Host 'The PowerShell Core installation directory is in the PATH environment variable.'
+              }
+              else {
+                  Write-Host 'The PowerShell Core installation directory is not in the PATH environment variable. Failing.'
+                  exit 1
+              }
+
+              try {
+                  $version = & $binaryPath -Version
+                  Write-Host ('PowerShell Core [{0}] is installed' -f $version)
+              }
+              catch {
+                  Write-Host 'PowerShell Core is not installed. Failing.'
+                  exit 1
+              }

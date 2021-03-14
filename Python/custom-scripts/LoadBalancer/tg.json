@@ -1,0 +1,14 @@
+{
+    "Name": "AwOr-TsRssApp-TG1",
+    "Protocol": "HTTPS",
+    "Port": 4080,
+    "VpcId": "vpc-e3e20e87",
+    "HealthCheckProtocol": "HTTP",
+    "HealthCheckPort": "80",
+    "HealthCheckPath": "/",
+    "HealthCheckIntervalSeconds": 30,
+    "HealthCheckTimeoutSeconds": 5,
+    "HealthyThresholdCount": 2,
+    "UnhealthyThresholdCount": 2,
+    "TargetType": "instance"
+}

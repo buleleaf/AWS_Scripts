@@ -1,0 +1,1052 @@
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-length": "6709",
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:23:19 GMT",
+            "server": "AmazonEC2",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "979748a4-5314-4ecb-ba10-bac41ed36752",
+        "RetryAttempts": 0
+    },
+    "Vpcs": [
+        {
+            "CidrBlock": "10.67.16.0/20",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-bf38b5d6",
+                    "CidrBlock": "10.67.16.0/20",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-308d7254",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "vpc-nonproduction"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "VPC"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "CidrBlock": "10.67.32.0/22",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0853fee5fda983b09",
+                    "CidrBlock": "10.67.32.0/22",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-44071b21",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_Transit"
+                }
+            ],
+            "VpcId": "vpc-0affe71b2f2d9b2e0"
+        },
+        {
+            "CidrBlock": "172.31.0.0/16",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-90d054f9",
+                    "CidrBlock": "172.31.0.0/16",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-44071b21",
+            "InstanceTenancy": "default",
+            "IsDefault": true,
+            "State": "available",
+            "VpcId": "vpc-06995162"
+        },
+        {
+            "CidrBlock": "10.10.0.0/20",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-d0168eb9",
+                    "CidrBlock": "10.10.0.0/20",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-44071b21",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Bubble"
+                }
+            ],
+            "VpcId": "vpc-3ff75b5b"
+        },
+        {
+            "CidrBlock": "10.67.0.0/20",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-a9d254c0",
+                    "CidrBlock": "10.67.0.0/20",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-308d7254",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "vpc-production"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "VPC"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "CidrBlock": "10.67.36.0/23",
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-05e16551adf53b88b",
+                    "CidrBlock": "10.67.36.0/23",
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "DhcpOptionsId": "dopt-308d7254",
+            "InstanceTenancy": "default",
+            "IsDefault": false,
+            "State": "available",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_DMZ"
+                }
+            ],
+            "VpcId": "vpc-03c24e3219768efe3"
+        }
+    ]
+}
+{
+    "ResponseMetadata": {
+        "HTTPHeaders": {
+            "content-type": "text/xml;charset=UTF-8",
+            "date": "Thu, 25 Apr 2019 18:23:19 GMT",
+            "server": "AmazonEC2",
+            "transfer-encoding": "chunked",
+            "vary": "accept-encoding"
+        },
+        "HTTPStatusCode": 200,
+        "RequestId": "b78236b7-9324-44aa-b1dd-8a23b0b87c0a",
+        "RetryAttempts": 0
+    },
+    "Subnets": [
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.67.5.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-74f27a10",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-private-b"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PrivateSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 247,
+            "CidrBlock": "10.67.22.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5a59df2c",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ProtectedSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-protected-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.10.2.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-027eec74",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Public"
+                }
+            ],
+            "VpcId": "vpc-3ff75b5b"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.27.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-f259cf96",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ManagementSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-management-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 58,
+            "CidrBlock": "10.67.32.192/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0390b6dca27212ab2",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_TRANSIT_PERIMETER_B"
+                }
+            ],
+            "VpcId": "vpc-0affe71b2f2d9b2e0"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.9.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-76f27a12",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-itservices-b"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ITServicesSubnet2"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.23.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-fd59cf99",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ProtectedSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-protected-b"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 242,
+            "CidrBlock": "10.67.6.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e457ef92",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ProtectedSubnet1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-protected-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 242,
+            "CidrBlock": "10.67.20.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5c59df2a",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PrivateSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-private-a"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.24.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5d59df2b",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ITServicesSubnet1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-itservices-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.8.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e257ef94",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ITServicesSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-itservices-a"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.67.0.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e757ef91",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-perimeter-a"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PerimeterSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.67.1.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-69f27a0d",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-perimeter-b"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PerimeterSubnet2"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 57,
+            "CidrBlock": "10.67.32.128/26",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0a6d931afc79c1d2d",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_Transit_PERIMETER_A"
+                }
+            ],
+            "VpcId": "vpc-0affe71b2f2d9b2e0"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.25.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-f159cf95",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-itservices-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ITServicesSubnet2"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.18.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5859df2e",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DMZSubnet1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.67.37.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-00b159addf17a05ea",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-b"
+                }
+            ],
+            "VpcId": "vpc-03c24e3219768efe3"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 210,
+            "CidrBlock": "10.67.4.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e557ef93",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-private-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PrivateSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.67.34.0/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-08b663b8b9c87a13c",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_MGMT_A"
+                }
+            ],
+            "VpcId": "vpc-0affe71b2f2d9b2e0"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.3.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-6bf27a0f",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DMZSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-b"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.67.17.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-fc59cf98",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-perimeter-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PerimeterSubnet2"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.11.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-75f27a11",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-management-b"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ManagementSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.2.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e357ef95",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DMZSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.26.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5b59df2d",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ManagementSubnet1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-management-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.21.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-f359cf97",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-private-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PrivateSubnet2"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 26,
+            "CidrBlock": "10.67.34.32/27",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0e751b5c727620089",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "SGP_MGMT_B"
+                }
+            ],
+            "VpcId": "vpc-0affe71b2f2d9b2e0"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.36.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-03b995b676a5117c1",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-a"
+                }
+            ],
+            "VpcId": "vpc-03c24e3219768efe3"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 246,
+            "CidrBlock": "10.67.16.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-5959df2f",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-perimeter-a"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PerimeterSubnet1"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.10.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-e657ef90",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-management-a"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ManagementSubnet1"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1a",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.10.1.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-1a7eec6c",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "Private"
+                }
+            ],
+            "VpcId": "vpc-3ff75b5b"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.19.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-fe59cf9a",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "DMZSubnet2"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-dmz-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "cf-apac-singapore-vpc-nonprod"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/cf-apac-singapore-vpc-nonprod/b305c260-a573-11e6-9daf-500c336f38ba"
+                }
+            ],
+            "VpcId": "vpc-5b63b23f"
+        },
+        {
+            "AssignIpv6AddressOnCreation": false,
+            "AvailabilityZone": "ap-southeast-1b",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.67.7.0/24",
+            "DefaultForAz": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-6af27a0e",
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "apac-singapore-prod-stack-oct2016"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "ProtectedSubnet2"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "subnet-protected-b"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:ap-southeast-1:904039288638:stack/apac-singapore-prod-stack-oct2016/59b43ca0-9ad3-11e6-9f28-503a138c12fe"
+                }
+            ],
+            "VpcId": "vpc-4d9b5129"
+        }
+    ]
+}

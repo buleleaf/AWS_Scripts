@@ -1,0 +1,109 @@
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: MIT-0
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this
+# software and associated documentation files (the "Software"), to deal in the Software
+# without restriction, including without limitation the rights to use, copy, modify,
+# merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+# INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+# PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+name: PuTTY
+description: Performs a default installation of PuTTY.
+schemaVersion: 1.0
+phases:
+  - name: build
+    steps:
+      - name: InstallPuTTY
+        action: ExecutePowerShell
+        inputs:
+          commands:
+            - |
+              $ErrorActionPreference = 'Stop'
+              $ProgressPreference = 'SilentlyContinue'
+
+              $puttyVersion = '0.73'
+              Write-Host "Installing PuTTY version $puttyVersion"
+
+              $source = "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-$puttyVersion-installer.msi"
+
+              $fileName = $source.split('/')[-1]
+              $temporaryFile = Join-Path -Path $env:TEMP -ChildPath $fileName
+
+              Write-Host 'Downloading PuTTY MSI installer...'
+              Write-Host '  - Source:     ' $source
+              Write-Host '  - Destination:' $temporaryFile
+
+              $invokeWebRequest = @{
+                  UseBasicParsing = $true
+                  Uri             = $source
+                  OutFile         = $temporaryFile
+              }
+              Invoke-WebRequest @invokeWebRequest
+
+              Write-Host 'Installing PuTTY...'
+              $startProcess = @{
+                  FilePath     = "$env:SystemRoot\System32\msiexec.exe"
+                  ArgumentList = @('/i', $temporaryFile, '/qb-')
+                  Wait         = $true
+                  PassThru     = $true
+              }
+              $process = Start-Process @startProcess
+
+              if ($process.ExitCode -eq 0) {
+                  Write-Host 'Installed with success.'
+              }
+              elseif ($process.ExitCode -eq 3010) {
+                  Write-Host 'Installed. Reboot Required'
+              }
+              else {
+                  Write-Host 'Installed with unknown ExitCode:' $process.ExitCode
+              }
+
+              Write-Host 'Cleaning up temporary files.'
+              try {
+                  Get-Item -Path $temporaryFile | Remove-Item
+              }
+              catch {
+                  Write-Host 'Unable to clean up files. Exception:' $_.Exception.Message
+              }
+
+              exit $process.ExitCode
+
+  - name: validate
+    steps:
+      - name: ValidatePuTTY
+        action: ExecutePowerShell
+        inputs:
+          commands:
+            - |
+              $ErrorActionPreference = 'Stop'
+
+              $puttyVersion = '0.73'
+              $guid = '44F7642C-AB7E-4468-B028-E8D08A0CBB0E'
+
+              $displayName = "PuTTY release $puttyVersion (64-bit)"
+              $registryRoot = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{$guid}"
+
+              try {
+                  $registry = Get-ItemProperty -Path $registryRoot
+              }
+              catch {
+                  Write-Host 'The Registry Uninstall key for PuTTY does not exist. MSI installation of PuTTY was not successful.'
+                  exit 1
+              }
+
+              if ($registry.DisplayName -eq $displayName) {
+                  Write-Host 'The Registry DisplayName for PuTTY is correct.'
+              }
+              else {
+                  Write-Host 'The Registry DisplayName for PuTTY is not correct.'
+                  Write-Host '  - Expected:' $displayName
+                  Write-Host '  - Found:   ' $registry.DisplayName
+                  exit 1
+              }

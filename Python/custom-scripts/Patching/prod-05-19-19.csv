@@ -1,0 +1,39 @@
+InstanceName,InstanceId,Region,SourceInstanceName,SourceInstanceId,Date,Authentication,IpAdress
+AWOR-PDATAAPP01,i-0ac2f28e3e025496c,us-west-2,AWOR-TSATAAPP01,i-024c36882b851917b,2019-05-15,aws-corpinfo-msp.pem,10.57.6.182
+AWOR-PDATAAPP02,i-03991d1fa3db8e7d4,us-west-2,AWOR-TSATAAPP02,i-07136efa423c226c9,2019-05-15,aws-corpinfo-msp.pem,10.57.2.131
+AWOR-PDDWHAPP01,i-0cacbcbd463b1694f,us-west-2,AWOR-DVDWHAPP01,i-85234611,2019-05-15,aws-corpinfo-msp.pem,10.57.5.235
+AWOR-PDDWHDB01,i-0402f85a16db49fa8,us-west-2,AWOR-DVDWHDB01,i-692346fd,2019-05-15,aws-corpinfo-msp.pem,10.57.134.162
+AWOR-PDDWHDB02,i-0236f0b7bbdc972cd,us-west-2,AWOR-DVDWHDB01,i-692346fd,2019-05-15,aws-corpinfo-msp.pem,10.57.135.75
+AWOR-PDORAAPX01,i-0781ab28c094092a9,us-west-2,AWOR-DVORAAPX01,i-06505f62bad177a87,2019-05-15,aws-corpinfo-msp.pem,10.57.26.184
+AWOR-PDORADB01,i-091b007a4321557d2,us-west-2,AWOR-TSORADB01,i-0226243dd80e85374,2019-05-15,aws-corpinfo-msp.pem,10.57.134.133
+AWOR-PDPDMAPP01,i-078e3e03aa3251943,us-west-2,,,,aws-corpinfo-msp.pem,10.57.134.130
+AWOR-PDPDMDB01,i-0cacc854c279c938d,us-west-2,,,,aws-corpinfo-msp.pem,10.57.134.58
+AWOR-PDPDMLDB01,i-0e79195bc55229960,us-west-2,AWOR-DVPDMLDB01,i-09718f3916c319adb,2019-05-15,aws-corpinfo-msp.pem,10.57.134.223
+AwOr-PdTibAdm01,i-0c0843d4,us-west-2,AwOr-TsTibAdm01,i-61c8a4b9,2019-05-15,tibco.pem,10.57.0.137
+AwOr-PdTibEms01,i-fdf4bc25,us-west-2,AwOr-TsTibEms01,i-7ec8a4a6,2019-05-15,tibco.pem,10.57.5.230
+AwOr-PdTibEms02,i-ffb08b38,us-west-2,AwOr-TsTibEms01,i-7ec8a4a6,2019-05-15,tibco.pem,10.57.12.202
+AwOr-PdTibFil02,i-3c19c193,us-west-2,AwOr-OqTibFil02,i-1dc8d7da,2019-05-15,tibco.pem,10.57.9.195
+AwOr-PdTibFil03,i-06384ed3d6409895a,us-west-2,AwOr-OqTibFil03,i-077d10e139e57e9a1,2019-05-15,tibco.pem,10.57.9.246
+irvcmsora01-pd,i-2aa36875,us-west-2,irvcmsora01,i-4850c6dc,2019-05-15,msp_admin + password,10.57.134.237
+irvcmsora02-pd,i-ab5617b3,us-west-2,irvcmsora02,i-379d4c2f,2019-05-15,aws-corpinfo-msp.pem,10.57.135.80
+IRVORACLN16,i-39f41222,us-west-2,IRVORACLN13,i-723f366a,2019-05-15,msp_admin + password,10.57.26.227
+IRVINE500-DR,i-0a99a7c63e58b7f97,us-west-2,,,,msp_admin + password,10.57.134.76
+IRVINE501-DR,i-0df750d1d4c2c5be5,us-west-2,,,,msp_admin + password,10.57.134.110
+IrvLGLDB01,i-04cc954d4f7804c7d,us-west-2,,,,msp_admin + password,10.57.135.130
+IrvLMSDB01,i-02a2a0b1b4d755e88,us-west-2,,,,aws-corpinfo-msp.pem,10.57.135.235
+AWOR-PDWEPAPP01,i-0d6e5e635bf1b21c3,us-west-2,,,,aws-corpinfo-msp,10.57.5.98
+AWOR-DVCYBPSMP01,i-0e0c21d7f6826a539,us-west-2,,,,aws-corpinfo-msp,10.57.70.213
+AWOR-PDCYBPSMP01,i-0de7f69cab2e90279,us-west-2,,,,aws-corpinfo-msp,10.57.5.30
+AWOR-PDSECCTR01,i-05479b9db88811c44,us-west-2,,,,aws-corpinfo-msp,10.57.128.124
+AWOR-TSDEVOP01,i-050476cb8699f9caf,us-west-2,,,,MING-edwards2,10.57.97.217
+AWOR-DVGITAPP01,i-0fb4a0898d9eed455,us-west-2,,,,MING-edwards2,10.57.130.108
+irvnxthnkapp01,i-f72d28ef,us-west-2,,,,-,10.57.1.37
+irvnxthnkapp02,i-fc68eae4,us-west-2,,,,-,10.57.8.85
+asadmin-fe-proxy-common,i-08965792429319f23,us-west-2,,,,aws-corpinfo-msp,10.57.97.72
+asadmin-fe-proxy-common,i-096b2f7934a824cb8,us-west-2,,,,aws-corpinfo-msp,10.57.111.172
+edwards-qlik-fe-proxy-prod,i-034648f43b07f13d5,us-west-2,,,,aws-corpinfo-msp,10.57.10.74
+edwards-qlik-fe-proxy-prod,i-05deb9461945857a2,us-west-2,,,,aws-corpinfo-msp,10.57.7.122
+jde-haproxy,i-24d763b0,us-west-2,,,,aws-netsecurity,10.57.129.199
+jde-haproxy-AZB,i-1b439d8e,us-west-2,,,,aws-netsecurity,10.57.130.148
+qlikview-haproxy,i-3ec23d61,us-west-2,,,,aws-corpinfo-msp,10.57.4.71
+treadstone-haproxy,i-b40bc7eb,us-west-2,,,,aws-netsecurity,10.57.4.27

@@ -1,0 +1,108 @@
+{
+    "InstanceStatuses": [
+        {
+            "InstanceId": "i-d159a38e", 
+            "InstanceState": {
+                "Code": 16, 
+                "Name": "running"
+            }, 
+            "AvailabilityZone": "us-west-2a", 
+            "SystemStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }, 
+            "InstanceStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }
+        }, 
+        {
+            "InstanceId": "i-04e27a1da6b73418a", 
+            "InstanceState": {
+                "Code": 16, 
+                "Name": "running"
+            }, 
+            "AvailabilityZone": "us-west-2b", 
+            "SystemStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }, 
+            "InstanceStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }
+        }, 
+        {
+            "InstanceId": "i-037a98e67fc2fba01", 
+            "InstanceState": {
+                "Code": 16, 
+                "Name": "running"
+            }, 
+            "AvailabilityZone": "us-west-2a", 
+            "SystemStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }, 
+            "InstanceStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }
+        }, 
+        {
+            "InstanceId": "i-0194f1e826f91426e", 
+            "InstanceState": {
+                "Code": 16, 
+                "Name": "running"
+            }, 
+            "AvailabilityZone": "us-west-2a", 
+            "SystemStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }, 
+            "InstanceStatus": {
+                "Status": "ok", 
+                "Details": [
+                    {
+                        "Status": "passed", 
+                        "Name": "reachability"
+                    }
+                ]
+            }
+        }
+    ]
+}

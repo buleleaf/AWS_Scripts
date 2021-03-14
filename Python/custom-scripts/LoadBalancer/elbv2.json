@@ -1,0 +1,69 @@
+{
+    "Name": "AwOr-TsRssApp-ALB",
+    "Subnets": [
+        "subnet-5a158611",
+        "subnet-5569182c"
+    ],
+
+    "SecurityGroups": [
+      "sg-0873bcdf8be51ed26"
+    ],
+    "Scheme": "internal",
+    "Tags": [
+        {
+            "Key": "Application",
+            "Value": "RSSBus Connect"
+        },        
+      {
+          "Key": "ApplicationTier",
+          "Value": "Test"
+      },
+      {
+        "Key": "ApplicationTierLevel",
+        "Value": "Tier 1"
+    },      
+      {
+          "Key": "Environment",
+          "Value": "Test"
+      },
+      {
+        "Key": "Managed",
+        "Value": "No"
+      },
+      {
+        "Key": "Name",
+        "Value": "MESProd-alb-prod"
+      },      
+      {
+          "Key": "RequestNumber",
+          "Value": "N/A"
+      },
+      {
+          "Key": "ReviewDate",
+          "Value": "N/A"
+      },
+
+      {
+          "Key": "CostCenter",
+          "Value": "8933"
+      },
+      {
+          "Key": "ServiceLocation",
+          "Value": "Irvine"
+      },
+      {
+        "Key": "ServiceOwner",
+        "Value": "Alek Slavuk"
+      },      
+      {
+          "Key": "TechnicalOwner",
+          "Value": "Deepak Karir"
+      },
+      {
+          "Key": "ContactPreference",
+          "Value": "Phone 9494399594"
+      }
+    ],
+    "Type": "application",
+    "IpAddressType": "ipv4"
+}

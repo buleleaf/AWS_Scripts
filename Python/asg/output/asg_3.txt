@@ -1,0 +1,9 @@
+awor-tswplapp01-asg
+edwards-prod-ibcm-fe-proxy-asg-ProxyServerASG-5JTOPR2O9CYS
+edwards-prod-qlik-fe-proxy-asg-ProxyServerASG-K9NW3CEF93GH
+edwards-test-exch-fe-proxy-asg-ProxyServerASG-OSAN5QUPF3BY
+irvjdemex02-asg
+irvjdepit07-asg
+irvlabapp01-asg
+irvlblspc01-oq-asg
+AWOR-DVMESWRK01-ASG

@@ -1,0 +1,211 @@
+{
+    "ImageId": "ami-0898885648e61c67b",
+    "InstanceType": "t2.xlarge",
+    "KeyName": "aws-corpinfo-msp",
+    "Monitoring": {
+        "Enabled": false
+    },
+    "Placement": {
+        "Tenancy": "default",
+        "GroupName": "",
+        "AvailabilityZone": "us-west-2a"
+    },
+    "SecurityGroupIds": [
+        "sg-a4d540dc"
+    ],
+    "SubnetId": "subnet-7b64db32",
+    "UserData": "",
+    "InstanceInitiatedShutdownBehavior": "stop",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+                "DeleteOnTermination": true,
+                "VolumeSize": 500,
+                "VolumeType": "gp2",
+                "Encrypted": true,
+                "KmsKeyId": "arn:aws:kms:us-west-2:590992000271:key/47320058-d325-4218-91d9-becb317aaa90"
+            }
+        }
+    ],
+    "TagSpecifications": [
+        {
+            "ResourceType": "instance",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"RCA"
+                },
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"No Tier"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Test"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWOR-PDSASAPP01-RCA_temp"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"No"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"No"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"OperationalHours",
+                    "Value":"24x7"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "N/A"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"AWS"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"PilotManualReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"Purpose",
+                    "Value":"RCA Analysis"
+                },
+                {
+                    "Key":"Validated",
+                    "Value":"No"
+                }
+            ]
+        },
+        {
+            "ResourceType": "volume",
+            "Tags": [
+                {
+                    "Key":"Application",
+                    "Value":"RCA"
+                },
+                {
+                    "Key":"ApplicationTier",
+                    "Value":"Application"
+                },
+                {
+                    "Key":"ApplicationTierLevel",
+                    "Value":"No Tier"
+                },
+                {
+                    "Key":"Managed",
+                    "Value":"Yes"
+                },
+                {
+                    "Key":"Environment",
+                    "Value":"Test"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "AWOR-PDSASAPP01-RCA"
+                },
+                {
+                    "Key":"CorpInfoMSP:TakeNightlySnapshot",
+                    "Value":"No"
+                },
+                {
+                    "Key":"FileBackup",
+                    "Value":"No"
+                },
+                {
+                    "Key":"MonitoredServices",
+                    "Value":"No"
+                },
+                {
+                    "Key":"RequestNumber",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"OperationalHours",
+                    "Value":"24x7"
+                },
+                {
+                    "Key":"ReviewDate",
+                    "Value": "N/A"
+                },
+                {
+                    "Key":"CostCenter",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ServiceLocation",
+                    "Value":"AWS"
+                },
+                {
+                    "Key":"ServiceOwner",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"TechnicalOwner",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"ContactPreference",
+                    "Value":"Email"
+                },
+                {
+                    "Key":"PatchGroup",
+                    "Value":"PilotManualReboot"
+                },
+                {
+                    "Key":"Schedule",
+                    "Value":"N/A"
+                },
+                {
+                    "Key":"Purpose",
+                    "Value":"RCA Analysis"
+                },
+                {
+                    "Key":"Validated",
+                    "Value":"No"
+                }
+            ]
+        }
+    ]
+}

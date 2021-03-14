@@ -1,0 +1,88 @@
+{
+    "AvailabilityZone": "us-west-2a",
+    "SnapshotId": "snap-08d9ab2e80b8c049f",
+    "VolumeType": "gp2",
+    "TagSpecifications": [
+        {
+            "ResourceType": "volume",
+            "Tags": [
+                {
+                "Key": "Application",
+                "Value": "Windchill"
+                },
+                {
+                "Key": "ApplicationTier",
+                "Value": "Application"
+                },
+                {
+                "Key": "ApplicationTierLevel",
+                "Value": "No Tier"
+                },
+                {
+                "Key": "ContactPreference",
+                "Value": "Email"
+                },
+                {
+                "Key": "CorpInfoMSP:TakeNightlySnapshot",
+                "Value": "Yes"
+                },
+                {
+                "Key": "CostCenter",
+                "Value": "1001596013"
+                },
+                {
+                "Key": "Environment",
+                "Value": "Test"
+                },
+                {
+                "Key": "Managed",
+                "Value": "Yes"
+                },
+                {
+                "Key": "MonitoredServices",
+                "Value": "No"
+                },
+                {
+                "Key": "Name",
+                "Value": "AWOR-TSWCLAPP01"
+                },
+                {
+                "Key": "PatchGroup",
+                "Value": "ProductionManualReboot"
+                },
+                {
+                "Key": "Purpose",
+                "Value": "CAD PLM"
+                },
+                {
+                "Key":"RequestNumber",
+                "Value":"RITM0122480"
+                },
+                {
+                "Key": "ReviewDate",
+                "Value": "8/1/2021"
+                },
+                {
+                "Key": "Schedule",
+                "Value": "AlwaysOn"
+                },
+                {
+                "Key": "ServiceLocation",
+                "Value": "Irvine"
+                },
+                {
+                "Key": "ServiceOwner",
+                "Value": "Amir Memaran"
+                },
+                {
+                "Key": "TechnicalOwner",
+                "Value": "Mike Lockwood"
+                },
+                {
+                "Key": "Validated",
+                "Value": "No"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,241 @@
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "PublicDnsName": "", 
+                    "Platform": "windows", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": true, 
+                    "LaunchTime": "2018-06-16T09:18:06.000Z", 
+                    "PrivateIpAddress": "10.57.44.119", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-e3e20e87", 
+                    "CpuOptions": {
+                        "CoreCount": 1, 
+                        "ThreadsPerCore": 2
+                    }, 
+                    "StateTransitionReason": "User initiated (2019-01-16 07:29:36 GMT)", 
+                    "InstanceId": "i-0691feb856a2b6096", 
+                    "ImageId": "ami-c27934ba", 
+                    "PrivateDnsName": "ip-10-57-44-119.us-west-2.compute.internal", 
+                    "KeyName": "aws-corpinfo-msp", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "SG-SS-MGMT-RDPSSH-IN ", 
+                            "GroupId": "sg-6c4cac10"
+                        }, 
+                        {
+                            "GroupName": "SG-SS-MGMT-CORESERVICES", 
+                            "GroupId": "sg-3747a74b"
+                        }, 
+                        {
+                            "GroupName": "SG-SS-MGMT-ALLTRAFFIC-OUT", 
+                            "GroupId": "sg-fd51b181"
+                        }
+                    ], 
+                    "ClientToken": "", 
+                    "SubnetId": "subnet-3ae3c263", 
+                    "InstanceType": "m4.large", 
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    }, 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "MacAddress": "0a:f7:da:5f:46:aa", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-e3e20e87", 
+                            "Description": "Primary network interface", 
+                            "NetworkInterfaceId": "eni-e36f64fb", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-10-57-44-119.us-west-2.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "10.57.44.119"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-10-57-44-119.us-west-2.compute.internal", 
+                            "InterfaceType": "interface", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-c28a9d38", 
+                                "AttachTime": "2018-06-16T09:05:59.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "SG-SS-MGMT-RDPSSH-IN ", 
+                                    "GroupId": "sg-6c4cac10"
+                                }, 
+                                {
+                                    "GroupName": "SG-SS-MGMT-CORESERVICES", 
+                                    "GroupId": "sg-3747a74b"
+                                }, 
+                                {
+                                    "GroupName": "SG-SS-MGMT-ALLTRAFFIC-OUT", 
+                                    "GroupId": "sg-fd51b181"
+                                }
+                            ], 
+                            "Ipv6Addresses": [], 
+                            "OwnerId": "590992000271", 
+                            "SubnetId": "subnet-3ae3c263", 
+                            "PrivateIpAddress": "10.57.44.119"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "dedicated", 
+                        "GroupName": "", 
+                        "AvailabilityZone": "us-west-2c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0caa15ae46c501702", 
+                                "AttachTime": "2018-06-16T09:06:00.000Z"
+                            }
+                        }, 
+                        {
+                            "DeviceName": "/dev/sdb", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-0c63a7ae82e7c6210", 
+                                "AttachTime": "2018-06-16T09:06:00.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "IamInstanceProfile": {
+                        "Id": "AIPAJCSFNTM7IIK5K6SKM", 
+                        "Arn": "arn:aws:iam::590992000271:instance-profile/AmazonEC2RoleforSSM"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "No", 
+                            "Key": "CorpInfoMSP:TakeNightlySnapshot"
+                        }, 
+                        {
+                            "Value": "No", 
+                            "Key": "FileBackup"
+                        }, 
+                        {
+                            "Value": "SQL - Disaster Recovery", 
+                            "Key": "Application"
+                        }, 
+                        {
+                            "Value": "AlwaysOn", 
+                            "Key": "Schedule"
+                        }, 
+                        {
+                            "Value": "ProductionAutoReboot", 
+                            "Key": "PatchGroup"
+                        }, 
+                        {
+                            "Value": "Haihao Li", 
+                            "Key": "TechnicalOwner"
+                        }, 
+                        {
+                            "Value": "24x5", 
+                            "Key": "OperationalHours"
+                        }, 
+                        {
+                            "Value": "Irvine167-dr", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Alek Slavuk", 
+                            "Key": "ServiceOwner"
+                        }, 
+                        {
+                            "Value": "Tier1", 
+                            "Key": "ApplicationTierLevel"
+                        }, 
+                        {
+                            "Value": "AROAIV3WMZHF63A5UDGTW:Vivek_Kale_ON@edwards.com", 
+                            "Key": "PrincipalId"
+                        }, 
+                        {
+                            "Value": "Database server", 
+                            "Key": "Purpose"
+                        }, 
+                        {
+                            "Value": "12/1/18", 
+                            "Key": "ReviewDate"
+                        }, 
+                        {
+                            "Value": "Vivek_Kale_ON@edwards.com", 
+                            "Key": "Creator"
+                        }, 
+                        {
+                            "Value": "Yes", 
+                            "Key": "Managed"
+                        }, 
+                        {
+                            "Value": "2018-06-16T09:05:59Z", 
+                            "Key": "CreatedAt"
+                        }, 
+                        {
+                            "Value": "Irvine", 
+                            "Key": "ServiceLocation"
+                        }, 
+                        {
+                            "Value": "3417742", 
+                            "Key": "RequestNumber"
+                        }, 
+                        {
+                            "Value": "1001798932", 
+                            "Key": "CostCenter"
+                        }, 
+                        {
+                            "Value": "Email", 
+                            "Key": "ContactPreference"
+                        }, 
+                        {
+                            "Value": "No", 
+                            "Key": "MonitoredServices"
+                        }, 
+                        {
+                            "Value": "Database", 
+                            "Key": "ApplicationTier"
+                        }, 
+                        {
+                            "Value": "Production-DR", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "No", 
+                            "Key": "Validated"
+                        }
+                    ], 
+                    "HibernationOptions": {
+                        "Configured": false
+                    }, 
+                    "AmiLaunchIndex": 0
+                }
+            ], 
+            "ReservationId": "r-08f545ff3f434e021", 
+            "Groups": [], 
+            "OwnerId": "590992000271"
+        }
+    ]
+}

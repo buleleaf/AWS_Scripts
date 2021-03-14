@@ -1,0 +1,92 @@
+name: CWAgent
+description: Performs an installation of CWAgent.
+schemaVersion: 1.0
+phases:
+  - name: build
+    steps:
+      - name: InstallCWAgent
+        action: ExecutePowerShell
+        inputs:
+          commands:
+            - |
+              $ErrorActionPreference = 'Stop'
+              $ProgressPreference = 'SilentlyContinue'
+
+              Write-Host "Installing Latest version of CW Agent"
+
+              $source = "https://s3.us-west-2.amazonaws.com/amazoncloudwatch-agent-us-west-2/windows/amd64/latest/amazon-cloudwatch-agent.msi"
+
+              $fileName = $source.split('/')[-1]
+              $temporaryFile = Join-Path -Path $env:TEMP -ChildPath $fileName
+
+              Write-Host 'Downloading CW Agent MSI installer...'
+              Write-Host '  - Source:     ' $source
+              Write-Host '  - Destination:' $temporaryFile
+
+              $invokeWebRequest = @{
+                  UseBasicParsing = $true
+                  Uri             = $source
+                  OutFile         = $temporaryFile
+              }
+              Invoke-WebRequest @invokeWebRequest
+
+              Write-Host 'Installing CW Agent...'
+              $startProcess = @{
+                  FilePath     = "$env:SystemRoot\System32\msiexec.exe"
+                  ArgumentList = @('/i', $temporaryFile, '/qb-')
+                  Wait         = $true
+                  PassThru     = $true
+              }
+              $process = Start-Process @startProcess
+
+              if ($process.ExitCode -eq 0) {
+                  Write-Host 'Installed with success.'
+              }
+              elseif ($process.ExitCode -eq 3010) {
+                  Write-Host 'Installed. Reboot Required'
+              }
+              else {
+                  Write-Host 'Installed with unknown ExitCode:' $process.ExitCode
+              }
+
+              Write-Host 'Cleaning up temporary files.'
+              try {
+                  Get-Item -Path $temporaryFile | Remove-Item
+              }
+              catch {
+                  Write-Host 'Unable to clean up files. Exception:' $_.Exception.Message
+              }
+
+              exit $process.ExitCode
+
+  # - name: validate
+  #   steps:
+  #     - name: ValidateCWAgent
+  #       action: ExecutePowerShell
+  #       inputs:
+  #         commands:
+  #           - |
+  #             $ErrorActionPreference = 'Stop'
+
+  #             $guid = '44F7642C-AB7E-4468-B028-E8D08A0CBB0E'
+
+  #             $displayName = "CW Agent"
+  #             $registryRoot = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{$guid}"
+
+  #             try {
+  #                 $registry = Get-ItemProperty -Path $registryRoot
+  #             }
+  #             catch {
+  #                 Write-Host 'The Registry Uninstall key for PuTTY does not exist. MSI installation of PuTTY was not successful.'
+  #                 exit 1
+  #             }
+
+  #             if ($registry.DisplayName -eq $displayName) {
+  #                 Write-Host 'The Registry DisplayName for PuTTY is correct.'
+  #             }
+  #             else {
+  #                 Write-Host 'The Registry DisplayName for PuTTY is not correct.'
+  #                 Write-Host '  - Expected:' $displayName
+  #                 Write-Host '  - Found:   ' $registry.DisplayName
+  #                 exit 1
+  #             }

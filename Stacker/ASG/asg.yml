@@ -1,0 +1,197 @@
+namespace: ${namespace}-${environment}
+stacker_bucket: ${stacker_bucket_name}
+sys_path: ../modules/
+
+common_tags: &common_tags
+  Application: ${application}
+  Environment: ${environment}
+  Role: "web"
+  Company: ${company}
+  Creator: ${creator}
+  Backup: "False"
+  TechOwnerEmail: ${tech_owner_email}
+
+asg_variables: &asg_variables
+  AppAMI: ${ami}
+  AppInstanceType: ${instance_type}
+  AppPolicies: arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM,arn:aws:iam::aws:policy/CloudWatchAgentAdminPolicy
+  AppSecurityGroups: ${output securitygroup::ServerSecurityGroup},${xref ${company}-${environment}-rds-MSSQL::RdsClientSecurityGroup},${xref ${company}-${network_namespace}-core-securitygroups::AllSecurityGroup}
+  AppSubnets:  "${xref ${company}-${network_namespace}-core-vpc::PriSubnet1},${xref ${company}-${network_namespace}-core-vpc::PriSubnet2},${xref ${company}-${network_namespace}-core-vpc::PriSubnet3}"
+  Application: ${application}
+  Environment: ${environment}
+  ASGAutoDeploy: true
+  ASGMinValue: ${asg_min}
+  ASGMaxValue: ${asg_max}
+  Company: ${company}
+  HealthCheckGracePeriod: 300
+  HealthCheckType: EC2
+  KeyName: ${ec2_key}
+  MetricsCollection: true
+  MinInstancesInService: 0
+  TechOwnerEmail: ${tech_owner_email}
+
+alb_variables: &alb_variables
+  CustomerName: ${company}
+  EnvironmentName: ${environment}
+  HTTPSSSLCertificateArn: ${CertificateArn}
+  LoadBalancerScheme: internal
+  LoadBalancerSecurityGroups: ${output securitygroup::ClientSecurityGroup}
+  LoadBalancerSubnets: "${xref ${company}-${network_namespace}-core-vpc::PriSubnet1},${xref ${company}-${network_namespace}-core-vpc::PriSubnet2},${xref ${company}-${network_namespace}-core-vpc::PriSubnet3}"
+  VpcId: ${xref ${company}-${network_namespace}-core-vpc::VPC}
+
+stacks:
+  securitygroup:
+    class_path: sg.sg.ClientServerSecurityGroups
+    enabled: true
+    tags:
+      <<: *common_tags
+    variables:
+      ApplicationName: ${application}
+      CustomerName: ${company}
+      EnvironmentName: ${environment}
+      SecurityGroupServerFromClientIngressPorts: [15260,15261,15262,15263,15264,15265,15266,15267,15268]  # no rules created when you specify ports :(
+      VpcId: ${xref ${company}-${network_namespace}-core-vpc::VPC}
+  ecs-cluster-ingress:
+    class_path: sg.security_groups_ingress.SecurityGroupsIngress
+    enabled: true
+    tags:
+      <<: *common_tags
+    variables:
+      FromPort: -1
+      ToPort: -1
+      IpProtocol: -1
+      SourceSecurityGroupId: ${output securitygroup::ClientSecurityGroup}
+      GroupId: ${xref ${company}-${network_namespace}-ecs-cluster::AppSecurityGroup}
+  alb-frontend:
+    class_path: elbv2.alb.ApplicationLoadBalancer
+    tags:
+      <<: *common_tags
+    variables:
+      <<: *alb_variables
+      ApplicationName: ${application}-fe-api
+  alb-backend:
+    class_path: elbv2.alb.ApplicationLoadBalancer
+    enabled: true
+    tags:
+      <<: *common_tags
+    variables:
+      <<: *alb_variables
+      ApplicationName: ${application}-backend
+
+  frontend-tg:
+    class_path: elbv2.target_group.TargetGroups
+    tags:
+      <<: *common_tags
+    variables:
+      ApplicationName: ${application}-fe-api
+      CustomerName: ${company}
+      EnvironmentName: ${environment}
+      VpcId: ${xref ${company}-${network_namespace}-core-vpc::VPC}
+      HTTPSListener: ${output alb-frontend::HTTPSListener}
+      LoadBalancerDNSName: ${output alb-frontend::LoadBalancerDNSName}
+      LoadBalancerCanonicalHostedZoneID: ${output alb-frontend::LoadBalancerCanonicalHostedZoneID}
+      TargetGroupListenerConfig:
+        - port: 15260
+          name: admin
+          host: admin.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15261
+          name: connectapi
+          host: connectapi.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15262
+          name: setup
+          host: setup.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15263
+          name: portal
+          host: portal.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15264
+          name: clientwebsites
+          host: clientwebsites.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15265
+          name: cwt
+          host: cwt.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15266
+          name: minisites
+          host: minisites.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15267
+          name: connect
+          host: connect.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 15268
+          name: api
+          host: api.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+        - port: 8080
+          name: nodejs
+          host: nodejs.${environment}.doctorgenius.com
+          protocol: HTTP
+          health_check_path: /
+  backend-tg:
+    class_path: elbv2.target_group.TargetGroups
+    enabled: false
+    tags:
+      <<: *common_tags
+    variables:
+      ApplicationName: ${application}-fe-api
+      CustomerName: ${company}
+      EnvironmentName: ${environment}
+      VpcId: ${xref ${company}-${network_namespace}-core-vpc::VPC}
+      HTTPSListener: ${output alb-backend::HTTPListener}
+      LoadBalancerDNSName: ${output alb-backend::LoadBalancerDNSName}
+      LoadBalancerCanonicalHostedZoneID: ${output alb-backend::LoadBalancerCanonicalHostedZoneID}
+      TargetGroupListenerConfig:
+        - ''
+        # - port: 15260
+        #   name: admin
+        #   host: admin.${environment}.doctorgenius.com
+        #   protocol: HTTP
+        #   health_check_path: /
+
+  asg-frontend:
+    class_path: asg.asg.Asg
+    enabled: true
+    tags:
+      Application: ${application}
+      Environment: ${environment}
+      Company: ${company}
+      Creator: ${creator}
+      Backup: "False"
+      TechOwnerEmail: ${tech_owner_email}
+      Role: "web"
+    variables:
+      <<: *asg_variables
+      Role: "frontend"
+      TargetGroupARNs: ${output frontend-tg::TG15260admin${environment}ARN},${output frontend-tg::TG15261connectapi${environment}ARN},${output frontend-tg::TG15262setup${environment}ARN},${output frontend-tg::TG15263portal${environment}ARN},${output frontend-tg::TG15264clientwebsite${environment}ARN},${output frontend-tg::TG15265cwt${environment}ARN},${output frontend-tg::TG15266minisites${environment}ARN},${output frontend-tg::TG15267connect${environment}ARN},${output frontend-tg::TG15268api${environment}ARN}
+      UserData: ${file parameterized-b64:userdata.txt}
+      MSBuildConfiguration: ${msbuild_configuration}
+  asg-backend:
+    class_path: asg.asg.Asg
+    enabled: true
+    tags:
+      Application: ${application}
+      Environment: ${environment}
+      Company: ${company}
+      Creator: ${creator}
+      Backup: "False"
+      TechOwnerEmail: ${tech_owner_email}
+      Role: "backend"
+      MSBuildConfiguration: ${msbuild_configuration}
+    variables:
+      <<: *asg_variables
+      Role: "backend"
+      TargetGroupARNs: ''

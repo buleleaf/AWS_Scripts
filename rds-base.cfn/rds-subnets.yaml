@@ -1,0 +1,15 @@
+sys_path: ./
+namespace: ${namespace}
+stacker_bucket: ${stacker_bucket_name}
+
+package_sources:
+  git:
+    - uri: git@bitbucket.org:nbdev/sturdy-stacker-rds.git
+      tag: v2.6.0
+
+stacks:
+  rds-subnet:
+    class_path: blueprints.rds_subnet.RdsSubnet
+    variables:
+      EnvironmentName: ${environment}
+      PriSubnets: ${rxref core-vpc::PriSubnet1},${rxref core-vpc::PriSubnet2}

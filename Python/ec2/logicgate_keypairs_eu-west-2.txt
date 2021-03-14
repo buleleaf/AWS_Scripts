@@ -1,0 +1,13 @@
+api-prod-eu-west-2-logicgate-com is unused
+aruk-prod-eu-west-2-logicgate-com is used
+auth-prod-eu-west-2-release-prod-eu-west-2-logicgate-com is unused
+eu-west-2-nat is used
+haproxy-prod-eu-west-2-logicgate-com is unused
+lendinvest-prod-eu-west-2-logicgate-com is used
+metrics-prod-eu-west-2-logicgate-com is unused
+neo4j-prod-eu-west-2-logicgate-com is unused
+nucleusfinancial-prod-eu-west-2-logicgate-com is used
+onica-logicgate-eu-west-2 is unused
+peekvision-prod-eu-west-2-logicgate-com is used
+release-prod-eu-west-2-prod-eu-west-2-logicgate-com is used
+worker-prod-eu-west-2-logicgate-com is unused

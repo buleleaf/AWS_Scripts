@@ -1,0 +1,1 @@
+aws --region us-east-1 lambda invoke --function-name onica-labs-aws-backup-maintenance-AwsBackupLambda-YGWHSSKLC3BP /dev/null

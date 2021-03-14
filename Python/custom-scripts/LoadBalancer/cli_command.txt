@@ -1,0 +1,15 @@
+aws elbv2 create-load-balancer --cli-input-json file://elbv2.json --region us-west-2
+
+aws elbv2 create-load-balancer --generate-cli-skeleton > elbv2-skeleton.json
+
+
+aws elbv2 create-target-group --cli-input-json file://tg.json --region us-west-2
+
+aws elbv2 create-target-group --generate-cli-skeleton > tg-skeleton.json
+
+
+
+aws elbv2 create-listener --load-balancer-arn arn:aws:elasticloadbalancing:us-west-2:590992000271:loadbalancer/app/AwOr-TsRssApp-ALB/0e87aa6dc2338d94 \
+--protocol HTTPS --port 8040  \
+--certificates CertificateArn=arn:aws:acm:us-west-2:590992000271:certificate/7d9dcde7-0bc1-4f0e-b0ad-196c576ff928 \
+--default-actions Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:590992000271:targetgroup/AwOr-TsRssApp-4080-TG1/f382961de2983599

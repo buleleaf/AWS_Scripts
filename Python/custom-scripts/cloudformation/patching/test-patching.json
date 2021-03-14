@@ -1,0 +1,219 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Launch 2 instances set up as a non-prod prod pair.",
+    "Resources": {
+        "EC2InstanceNonProd": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": "t3.micro",
+                "SecurityGroupIds": [
+                    "sg-0996cc3c9ec337b74"
+                ],
+                "KeyName": "oregon",
+                "BlockDeviceMappings" : [
+                    {
+                        "DeviceName" : "/dev/sda1",
+                        "Ebs" : {
+                            "VolumeType" : "gp2",
+                            "DeleteOnTermination" : "false",
+                            "VolumeSize" : "20"
+                        }
+                    }
+                ],
+                "ImageId": "ami-0ce21b51cb31a48b8",
+                "SubnetId": "subnet-615b0918",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "els-patch-test-non-prod"
+                    },
+                    {
+                        "Key": "Schedule",
+                        "Value": "AlwaysOn"
+                    },
+                    {
+                        "Key": "ApplicationTier",
+                        "Value": "Application"
+                    },
+                    {
+                        "Key": "ContactPreference",
+                        "Value": "Email"
+                    },
+                    {
+                        "Key": "FileBackup",
+                        "Value": "No"
+                    },
+                    {
+                        "Key": "ServiceLocation",
+                        "Value": "Global"
+                    },
+                    {
+                        "Key": "CorpInfoMSP:TakeNightlySnapshot",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "Environment",
+                        "Value": "Development"
+                    },
+                    {
+                        "Key": "CostCenter",
+                        "Value": "0000000000"
+                    },
+                    {
+                        "Key": "Validated",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "ServiceOwner",
+                        "Value": "Onica"
+                    },
+                    {
+                        "Key": "Purpose",
+                        "Value": "Integration"
+                    },
+                    {
+                        "Key": "Managed",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "PatchGroup",
+                        "Value": "Linux-RHEL-NonProd"
+                    },
+                    {
+                        "Key": "TechnicalOwner",
+                        "Value": "Onica"
+                    },
+                    {
+                        "Key": "status",
+                        "Value": "complete"
+                    },
+                    {
+                        "Key": "Application",
+                        "Value": "Patch-Testing"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Init": {
+                    "config": {
+                        "commands": {
+                            "update": {
+                                "command": "yum update -y"
+                            },
+                            "install-ssm": {
+                                "command": "yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "EC2InstanceProd": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": "t3.micro",
+                "SecurityGroupIds": [
+                    "sg-0996cc3c9ec337b74"
+                ],
+                "KeyName": "oregon",
+                "ImageId": "ami-0ce21b51cb31a48b8",
+                "SubnetId": "subnet-615b0918",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "els-patch-test-prod"
+                    },
+                    {
+                        "Key": "Schedule",
+                        "Value": "AlwaysOn"
+                    },
+                    {
+                        "Key": "ApplicationTier",
+                        "Value": "Application"
+                    },
+                    {
+                        "Key": "ContactPreference",
+                        "Value": "Email"
+                    },
+                    {
+                        "Key": "FileBackup",
+                        "Value": "No"
+                    },
+                    {
+                        "Key": "ServiceLocation",
+                        "Value": "Global"
+                    },
+                    {
+                        "Key": "CorpInfoMSP:TakeNightlySnapshot",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "Environment",
+                        "Value": "Production"
+                    },
+                    {
+                        "Key": "CostCenter",
+                        "Value": "0000000000"
+                    },
+                    {
+                        "Key": "Validated",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "ServiceOwner",
+                        "Value": "Onica"
+                    },
+                    {
+                        "Key": "Purpose",
+                        "Value": "Integration"
+                    },
+                    {
+                        "Key": "Managed",
+                        "Value": "Yes"
+                    },
+                    {
+                        "Key": "PatchGroup",
+                        "Value": "PilotAutoReboot"
+                    },
+                    {
+                        "Key": "TechnicalOwner",
+                        "Value": "Onica"
+                    },
+                    {
+                        "Key": "status",
+                        "Value": "complete"
+                    },
+                    {
+                        "Key": "Application",
+                        "Value": "Patch-Testing"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Init": {
+                    "config": {
+                        "commands": {
+                            "install-ssm": {
+                                "command": "yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Outputs": {
+        "InstanceNonProd": {
+            "Value": {
+                "Ref": "EC2InstanceNonProd"
+            },
+            "Description": "DNS Name of the newly created EC2 instance"
+        },
+        "InstanceProd": {
+            "Value": {
+                "Ref": "EC2InstanceProd"
+            },
+            "Description": "DNS Name of the newly created EC2 instance"
+        }
+    }
+}

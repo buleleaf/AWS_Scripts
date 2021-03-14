@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+"""Manage Patching Schedule for Edwards."""
+import argparse
+import datetime
+import time
+import json
+import boto3
+import menu3  # pip install menu3
+from tabulate import tabulate  # pip install tabulate
+
+AVAILABLE_MODES = ['dev', 'prod']
+
+
+def parse_opts():
+    """Parse CLI options."""
+    parser = argparse.ArgumentParser(
+        description='Manage Patching schedule for Edwards.')
+    parser.add_argument('-r', '--region', action='store', help='AWS Region',
+                        default='us-west-2')
+    parser.add_argument('-s', '--ssm-param', action='store', help='SSM Param',
+                        default='/config/patching/schedule')
+    return parser.parse_args()
+
+
+def parse_time(timestamp):
+    """Parse time from ISO Format."""
+    try:
+        return datetime.datetime.strptime(timestamp, '%Y-%m-%dT%H:%M:%S')
+    except ValueError:
+        print('Invalid Timestamp.')
+        return None
+
+
+class Scheduler():
+    """Manage Patching Schedule for Edwards."""
+
+    def __init__(self, ssm_param, ssm_client):
+        """Init."""
+        self.ssm_param = ssm_param
+        resp = ssm_client.get_parameter(Name=ssm_param, WithDecryption=True)
+        if not ('Parameter' in resp and 'Value' in resp['Parameter']):
+            print('Missing Parameter. Please check it exists.')
+            quit(1)
+        self._ssm_type = resp['Parameter']['Type']
+        schedules = json.loads(resp['Parameter']['Value'])
+        self.schedules = []
+        for schedule in schedules:
+            schedule['run_time'] = datetime.datetime.fromtimestamp(schedule['run_time'])
+            schedule['run_time'] = schedule['run_time'].replace(microsecond=0)
+            schedule['run_time'] = schedule['run_time'].isoformat()
+            self.schedules.append(schedule)
+        self.client = ssm_client
+        self.menu = menu3.Menu(False)
+
+    def add_schedule(self):
+        """Add a schedule to schedule."""
+        today = datetime.datetime.today()
+        today = today.replace(microsecond=0)
+        tomorrow = today + datetime.timedelta(days=1)
+
+        r_time_key = "Run Time({} local time)".format(tomorrow.isoformat())
+        default_date = tomorrow.strftime('%Y-%m-%d')
+        self.menu.info('Run time will always be in your local time and '
+                       'translated to UTC epoch.')
+        opts = {
+            'Patch Name': 'ELS Patching - Dev - {}'.format(default_date),
+            "S3 Bucket": "edwards-asadmin-patching-bucket-us-west-2",
+            'S3 Key': 'patching/patching-{}.csv'.format(default_date),
+            r_time_key: tomorrow.isoformat(),
+            'Mode': 'dev',
+        }
+        opts = self.menu.config_menu("Enter new schedule", opts)
+        while (not parse_time(opts[r_time_key]) or
+               opts['Mode'] not in AVAILABLE_MODES):
+            opts = self.menu.config_menu("Enter new schedule", opts)
+
+        schedule = {
+            'mode': opts['Mode'],
+            'patch_name': opts['Patch Name'],
+            'run_time': int(time.mktime(parse_time(opts[r_time_key]).timetuple())),
+            'patch_list': '{S3 Bucket}:{S3 Key}'.format(**opts)
+        }
+        self.schedules.append(schedule)
+        self.menu.success('Added schedule.')
+
+    def remove_schedule(self):
+        """Remove a schedule."""
+        if self.schedules:
+            index = self.menu.menu('What schedule do you want to remove?',
+                                   [str(s) for s in self.schedules])
+            del self.schedules[index - 1]
+            self.menu.info('Removed schedule.')
+        else:
+            self.menu.warn('No schedules found.')
+            return
+
+    def set_schedule(self):
+        """Push schedules to SSM."""
+        schedules = []
+        for schedule in self.schedules:
+            schedule['run_time'] = datetime.datetime.fromisoformat(schedule['run_time']).total_seconds()
+            schedules.append(schedule)
+
+        print(json.dumps(schedules, indent=4))
+        self.client.put_parameter(
+            Name=self.ssm_param,
+            Value=json.dumps(schedules),
+            Type=self._ssm_type,
+            Overwrite=True)
+        self.menu.success('Successfully update SSM. Exiting.')
+        quit()
+
+    def print_schedule(self):
+        """Print current schedule."""
+        if self.schedules:
+            print(tabulate(self.schedules, tablefmt="psql", headers="keys",
+                           showindex="always"))
+        else:
+            print('No schedules found.')
+
+    def run(self):
+        """Start menu UI."""
+        opts = {
+            'Add a schedule.': self.add_schedule,
+            'Remove a schedule.': self.remove_schedule,
+            'Print current schedule.': self.print_schedule,
+            'Set schedule in SSM and quit.': self.set_schedule
+        }
+        while True:
+            self.print_schedule()
+            resp = list(opts.keys())[self.menu.menu('Please select an action',
+                                                    opts.keys()) - 1]
+            self.menu.success("You selected: {}".format(resp))
+            opts[resp]()
+
+
+def main():
+    """Main."""
+    args = parse_opts()
+    client = boto3.client('ssm', region_name=args.region)
+    scheduler = Scheduler(args.ssm_param, client)
+    scheduler.run()
+
+
+if __name__ == '__main__':
+    main()

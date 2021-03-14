@@ -1,0 +1,8 @@
+AddToLoadBalancer
+AZRebalance
+AlarmNotification
+Terminate
+HealthCheck
+ScheduledActions
+Launch
+ReplaceUnhealthy

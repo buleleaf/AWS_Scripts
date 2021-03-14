@@ -1,0 +1,63 @@
+namespace: ${customer}-${environment}
+stacker_bucket: ${stacker_bucket_name}
+
+sys_path: ./
+
+common_parameters: &common_parameters
+  CustomerName: ${customer}
+  EnvironmentName: ${environment}
+
+package_sources:
+  git:
+    - uri: git@bitbucket.org:nbdev/sturdy-stacker-rds.git
+      tag: v2.6.0
+
+  
+
+
+pre_build:
+  rds_password:
+    path: hooks.ssm.set_parameter
+    args:
+      random: true
+      parameter: /${customer}/${environment}/rds/db_password
+      type: SecureString
+
+stacks:
+  rds-mysql:
+    class_path: blueprints.rds_instance.RdsInstance
+    variables:
+      ApplicationName: ${customer}
+      EnvironmentName: ${environment}
+      RdsInstanceIdentifier: ${customer}-${environment}
+      VpcId: ${xref ${common_namespace}-core-vpc::VPC}
+      MultiAZ: ${default MYSQL_MULTI_AZ::false}
+      Encrypted: false
+      RdsAllocatedStorage: ${default MYSQL_ALLOCATED_STORAGE::100}
+      RdsEngineType: mysql
+      RdsInstanceClass: ${default MYSQL_INSTANCE_TYPE::db.t2.medium}
+      DBPassword: ${ssmstore ${default region::us-east-1}@/${default customer::dm-lab}/${default environment::common}/rds/db_password}
+      DBSubnetGroupName: ${xref ${default common_namespace::dm-lab-common}-rds-subnet::DBSubnetGroup}
+      VPNSecurityGroup: ${xref ${default common_namespace::dm-lab-common}-core-securitygroups::VPNSecurityGroup}
+  rds-ingress:
+    class_path: local_rds.rds_sg.SecurityGroupsIngress
+    variables:
+      FromPort: '3306'
+      ToPort: '3306'
+      IpProtocol: tcp
+
+      
+post_build:
+  db_host:
+    path: hooks.ssm.set_parameter
+    args:
+      parameter: /${customer}/${environment}/rds/db_host
+      type: SecureString
+      value_output: rds-mysql::RdsDatabaseInstance
+      overwrite: true
+  db_user:
+    path: hooks.ssm.set_parameter
+    args:
+      parameter: /${customer}/${environment}/rds/db_user
+      type: SecureString
+      value_output: rds-mysql::RdsMasterUsername

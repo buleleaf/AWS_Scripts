@@ -1,0 +1,19 @@
+{
+    "Filters": [
+        {
+            "Name": "instance-state-name", 
+            "Values": [
+                "running"
+            ]
+        }
+    ], 
+    "InstanceIds": [
+        "i-0c1a59bdcc4da596d",
+        "i-0568301413cc21146",
+        "i-0194f1e826f91426e",
+        "i-037a98e67fc2fba01",
+        "i-d159a38e",
+        "i-04e27a1da6b73418a"
+    ], 
+    "DryRun": false
+}

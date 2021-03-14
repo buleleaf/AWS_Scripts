@@ -1,0 +1,4 @@
+aws ec2 run-instances --cli-input-json file://build_instance.json --region us-west-2
+
+
+aws ec2 run-instances --region eu-central-1 --cli-input-json file://AWFR-PDPRNAPP01.json

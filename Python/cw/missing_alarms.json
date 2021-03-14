@@ -1,0 +1,2863 @@
+{
+    "i-e5486a22": [
+        "i-e5486a22-AwOr-OqTibEms02-MemoryUtilization"
+    ],
+    "i-bb86b67c": [
+        "i-bb86b67c-AWOR-DVMESDB02-StatusCheckFailed",
+        "i-bb86b67c-AWOR-DVMESDB02-CPUUtilization",
+        "i-bb86b67c-AWOR-DVMESDB02-MemoryUtilization"
+    ],
+    "i-ffb08b38": [
+        "i-ffb08b38-AwOr-PdTibEms02-MemoryUtilization"
+    ],
+    "i-397e44fe": [
+        "i-397e44fe-AWOR-TSMESWEB02-StatusCheckFailed",
+        "i-397e44fe-AWOR-TSMESWEB02-CPUUtilization",
+        "i-397e44fe-AWOR-TSMESWEB02-MemoryUtilization"
+    ],
+    "i-c9c0cf0e": [
+        "i-c9c0cf0e-AWOR-PDMESDB02-MemoryUtilization"
+    ],
+    "i-1dc8d7da": [
+        "i-1dc8d7da-AwOr-OqTibFil02-MemoryUtilization"
+    ],
+    "i-4528cbea": [
+        "i-4528cbea-AWOR-PDMESWEB02-MemoryUtilization"
+    ],
+    "i-bf4aa910": [
+        "i-bf4aa910-AWOR-PDTAPWEB02-MemoryUtilization"
+    ],
+    "i-a416f80b": [
+        "i-a416f80b-AWOR-PDPKIAE02-MemoryUtilization"
+    ],
+    "i-3ad72695": [
+        "i-3ad72695-AWOR-OQMESDB02-StatusCheckFailed",
+        "i-3ad72695-AWOR-OQMESDB02-CPUUtilization"
+    ],
+    "i-6429d0cb": [
+        "i-6429d0cb-AWOR-OQMESWEB02-StatusCheckFailed",
+        "i-6429d0cb-AWOR-OQMESWEB02-CPUUtilization"
+    ],
+    "i-2c8d4a83": [
+        "i-2c8d4a83-AWORINPLMAPP04-StatusCheckFailed",
+        "i-2c8d4a83-AWORINPLMAPP04-CPUUtilization",
+        "i-2c8d4a83-AWORINPLMAPP04-MemoryUtilization"
+    ],
+    "i-ca894e65": [
+        "i-ca894e65-AWORINPLMAPP06-MemoryUtilization"
+    ],
+    "i-199750b6": [
+        "i-199750b6-AWORINPLMWEB02-MemoryUtilization"
+    ],
+    "i-109e59bf": [
+        "i-109e59bf-AWORINPLMTRA02-StatusCheckFailed",
+        "i-109e59bf-AWORINPLMTRA02-CPUUtilization"
+    ],
+    "i-3c19c193": [
+        "i-3c19c193-AwOr-PdTibFil02-MemoryUtilization"
+    ],
+    "i-1a68c8b5": [
+        "i-1a68c8b5-AWOR-TSTAPWEB02-MemoryUtilization"
+    ],
+    "i-1352f2bc": [
+        "i-1352f2bc-AWOR-PDQLKWEB02-StatusCheckFailed",
+        "i-1352f2bc-AWOR-PDQLKWEB02-CPUUtilization",
+        "i-1352f2bc-AWOR-PDQLKWEB02-MemoryUtilization"
+    ],
+    "i-df452970": [
+        "i-df452970-AWPJDEWL08-MemoryUtilization"
+    ],
+    "i-5f462af0": [
+        "i-5f462af0-AWPJDEWL13-MemoryUtilization"
+    ],
+    "i-57ee3ac2": [
+        "i-57ee3ac2-AWORTSPLMAPP02-MemoryUtilization"
+    ],
+    "i-cdeb3f58": [
+        "i-cdeb3f58-AWORTSPLMWEB02-StatusCheckFailed",
+        "i-cdeb3f58-AWORTSPLMWEB02-CPUUtilization",
+        "i-cdeb3f58-AWORTSPLMWEB02-MemoryUtilization"
+    ],
+    "i-c612c653": [
+        "i-c612c653-AWORTRPLMAPP02-StatusCheckFailed",
+        "i-c612c653-AWORTRPLMAPP02-CPUUtilization",
+        "i-c612c653-AWORTRPLMAPP02-MemoryUtilization"
+    ],
+    "i-521ecac7": [
+        "i-521ecac7-AWORTRPLMWEB02-StatusCheckFailed",
+        "i-521ecac7-AWORTRPLMWEB02-CPUUtilization",
+        "i-521ecac7-AWORTRPLMWEB02-MemoryUtilization"
+    ],
+    "i-9f7fa80a": [
+        "i-9f7fa80a-AWOR-PTMESWEB02-MemoryUtilization"
+    ],
+    "i-1b439d8e": [
+        "i-1b439d8e-jde-haproxy-AZB-MemoryUtilization"
+    ],
+    "i-4a2d8cdf": [
+        "i-4a2d8cdf-IRVBIZDEV02-StatusCheckFailed",
+        "i-4a2d8cdf-IRVBIZDEV02-CPUUtilization",
+        "i-4a2d8cdf-IRVBIZDEV02-MemoryUtilization"
+    ],
+    "i-f3349566": [
+        "i-f3349566-IRVBIZDEV04-MemoryUtilization"
+    ],
+    "i-b332e2ab": [
+        "i-b332e2ab-irveaiweb02-oq-StatusCheckFailed",
+        "i-b332e2ab-irveaiweb02-oq-CPUUtilization",
+        "i-b332e2ab-irveaiweb02-oq-MemoryUtilization"
+    ],
+    "i-9004d988": [
+        "i-9004d988-AWOROQPLMAPP02-StatusCheckFailed",
+        "i-9004d988-AWOROQPLMAPP02-CPUUtilization",
+        "i-9004d988-AWOROQPLMAPP02-MemoryUtilization"
+    ],
+    "i-0737ea1f": [
+        "i-0737ea1f-AWOROQPLMTRA02-MemoryUtilization"
+    ],
+    "i-bb33eea3": [
+        "i-bb33eea3-AWOROQPLMWEB04-MemoryUtilization"
+    ],
+    "i-bc33eea4": [
+        "i-bc33eea4-AWOROQPLMWEB02-MemoryUtilization"
+    ],
+    "i-e3a61ffb": [
+        "i-e3a61ffb-AWOR-PDQLKAPP02-MemoryUtilization"
+    ],
+    "i-8cd26a94": [
+        "i-8cd26a94-IrvBpcApp02-Pd-MemoryUtilization"
+    ],
+    "i-7798206f": [
+        "i-7798206f-IRVTMTWEB02-MemoryUtilization"
+    ],
+    "i-c88b33d0": [
+        "i-c88b33d0-IrvBpcTs01-Pd-MemoryUtilization"
+    ],
+    "i-d77ec6cf": [
+        "i-d77ec6cf-IrvSQLDB01-MemoryUtilization"
+    ],
+    "i-5e5be346": [
+        "i-5e5be346-USIR-PDARCPRT01-MemoryUtilization"
+    ],
+    "i-3cbc3924": [
+        "i-3cbc3924-IRVJDEUPK02-MemoryUtilization"
+    ],
+    "i-eff374f7": [
+        "i-eff374f7-AWORTCULIC02-MemoryUtilization"
+    ],
+    "i-22a0273a": [
+        "i-22a0273a-IRVMETCAL01-MemoryUtilization"
+    ],
+    "i-e5ab2afd": [
+        "i-e5ab2afd-IRVPS01-MemoryUtilization"
+    ],
+    "i-fc68eae4": [
+        "i-fc68eae4-irvnxthnkapp02-MemoryUtilization"
+    ],
+    "i-729f126a": [
+        "i-729f126a-IRVPLMIPL02-PD-MemoryUtilization"
+    ],
+    "i-ec9f12f4": [
+        "i-ec9f12f4-irveaiweb02-pd-MemoryUtilization"
+    ],
+    "i-8c43d694": [
+        "i-8c43d694-USIR-PDARCPRT02-MemoryUtilization"
+    ],
+    "i-e2c5a6fa": [
+        "i-e2c5a6fa-IRVADFSPOL2-PRD-MemoryUtilization"
+    ],
+    "i-41c5a659": [
+        "i-41c5a659-IRVMFA02-StatusCheckFailed",
+        "i-41c5a659-IRVMFA02-CPUUtilization",
+        "i-41c5a659-IRVMFA02-MemoryUtilization"
+    ],
+    "i-08533810": [
+        "i-08533810-awor-tsvgsapp01-MemoryUtilization"
+    ],
+    "i-aa5338b2": [
+        "i-aa5338b2-awor-tsqmsapp02-StatusCheckFailed",
+        "i-aa5338b2-awor-tsqmsapp02-CPUUtilization",
+        "i-aa5338b2-awor-tsqmsapp02-MemoryUtilization"
+    ],
+    "i-099eed11": [
+        "i-099eed11-awor-tsqmsweb01-MemoryUtilization"
+    ],
+    "i-529eed4a": [
+        "i-529eed4a-awor-tsqmsapp01-MemoryUtilization"
+    ],
+    "i-c19eedd9": [
+        "i-c19eedd9-awor-tsiprapp01-StatusCheckFailed",
+        "i-c19eedd9-awor-tsiprapp01-CPUUtilization",
+        "i-c19eedd9-awor-tsiprapp01-MemoryUtilization"
+    ],
+    "i-ab5617b3": [
+        "i-ab5617b3-irvcmsora02-pd-MemoryUtilization"
+    ],
+    "i-b730ab22": [
+        "i-b730ab22-AWOR-TSSECVUL01-StatusCheckFailed",
+        "i-b730ab22-AWOR-TSSECVUL01-CPUUtilization"
+    ],
+    "i-46f8949e": [
+        "i-46f8949e-AwOr-TsTibApi01-MemoryUtilization"
+    ],
+    "i-7ec8a4a6": [
+        "i-7ec8a4a6-AwOr-TsTibEms01-MemoryUtilization"
+    ],
+    "i-61c8a4b9": [
+        "i-61c8a4b9-AwOr-TsTibAdm01-MemoryUtilization"
+    ],
+    "i-9c3c5344": [
+        "i-9c3c5344-AwOr-DvTibEms01-MemoryUtilization"
+    ],
+    "i-9d3c5345": [
+        "i-9d3c5345-AwOr-DvTibAdm01-MemoryUtilization"
+    ],
+    "i-022958da": [
+        "i-022958da-AwOr-OqTibEms01-MemoryUtilization"
+    ],
+    "i-bfa5e367": [
+        "i-bfa5e367-AWOR-TSMESDB01-StatusCheckFailed",
+        "i-bfa5e367-AWOR-TSMESDB01-CPUUtilization",
+        "i-bfa5e367-AWOR-TSMESDB01-MemoryUtilization"
+    ],
+    "i-b5a0e66d": [
+        "i-b5a0e66d-AWOR-DVMESDB01-StatusCheckFailed",
+        "i-b5a0e66d-AWOR-DVMESDB01-CPUUtilization"
+    ],
+    "i-e6eba53e": [
+        "i-e6eba53e-AWOR-TSMESBO01-StatusCheckFailed",
+        "i-e6eba53e-AWOR-TSMESBO01-CPUUtilization",
+        "i-e6eba53e-AWOR-TSMESBO01-MemoryUtilization"
+    ],
+    "i-a8e5ab70": [
+        "i-a8e5ab70-AWOR-TSMESCIO01-MemoryUtilization"
+    ],
+    "i-fdf4bc25": [
+        "i-fdf4bc25-AwOr-PdTibEms01-MemoryUtilization"
+    ],
+    "i-0c0843d4": [
+        "i-0c0843d4-AwOr-PdTibAdm01-MemoryUtilization"
+    ],
+    "i-9223684a": [
+        "i-9223684a-AWOR-TSMESWEB01-MemoryUtilization"
+    ],
+    "i-05256edd": [
+        "i-05256edd-AWOR-DVMESBO01-StatusCheckFailed",
+        "i-05256edd-AWOR-DVMESBO01-CPUUtilization",
+        "i-05256edd-AWOR-DVMESBO01-MemoryUtilization"
+    ],
+    "i-ff3a7127": [
+        "i-ff3a7127-AWOR-DVMESCIO01-StatusCheckFailed",
+        "i-ff3a7127-AWOR-DVMESCIO01-CPUUtilization",
+        "i-ff3a7127-AWOR-DVMESCIO01-MemoryUtilization"
+    ],
+    "i-c33e751b": [
+        "i-c33e751b-AWOR-DVMESWEB01-StatusCheckFailed",
+        "i-c33e751b-AWOR-DVMESWEB01-CPUUtilization",
+        "i-c33e751b-AWOR-DVMESWEB01-MemoryUtilization"
+    ],
+    "i-7c1c48a4": [
+        "i-7c1c48a4-AWOR-DVPLMDB01-StatusCheckFailed",
+        "i-7c1c48a4-AWOR-DVPLMDB01-CPUUtilization",
+        "i-7c1c48a4-AWOR-DVPLMDB01-MemoryUtilization"
+    ],
+    "i-e465663c": [
+        "i-e465663c-AWTJDE047-StatusCheckFailed",
+        "i-e465663c-AWTJDE047-CPUUtilization",
+        "i-e465663c-AWTJDE047-MemoryUtilization"
+    ],
+    "i-4e707396": [
+        "i-4e707396-AWTJDE057-CPUUtilization",
+        "i-4e707396-AWTJDE057-MemoryUtilization"
+    ],
+    "i-2f7b78f7": [
+        "i-2f7b78f7-AWTJDE058-CPUUtilization",
+        "i-2f7b78f7-AWTJDE058-MemoryUtilization"
+    ],
+    "i-10787bc8": [
+        "i-10787bc8-AWTJDE059-MemoryUtilization"
+    ],
+    "i-11787bc9": [
+        "i-11787bc9-AWTJDE060-MemoryUtilization"
+    ],
+    "i-15787bcd": [
+        "i-15787bcd-AWTJDE064-MemoryUtilization"
+    ],
+    "i-16787bce": [
+        "i-16787bce-AWTJDE066-MemoryUtilization"
+    ],
+    "i-17787bcf": [
+        "i-17787bcf-AWTJDE067-MemoryUtilization"
+    ],
+    "i-0e787bd6": [
+        "i-0e787bd6-AWTJDE068-MemoryUtilization"
+    ],
+    "i-0f787bd7": [
+        "i-0f787bd7-AWTJDE069-MemoryUtilization"
+    ],
+    "i-404f4098": [
+        "i-404f4098-AwOr-DvTibDpr02-MemoryUtilization"
+    ],
+    "i-424f409a": [
+        "i-424f409a-AwOr-DvTibDpr03-MemoryUtilization"
+    ],
+    "i-434f409b": [
+        "i-434f409b-AwOr-DvTibDpr01-MemoryUtilization"
+    ],
+    "i-5b1a0883": [
+        "i-5b1a0883-AWPJDEDBW1-MemoryUtilization"
+    ],
+    "i-d6f2e80e": [
+        "i-d6f2e80e-AwOr-DvTibSvn01-StatusCheckFailed",
+        "i-d6f2e80e-AwOr-DvTibSvn01-CPUUtilization",
+        "i-d6f2e80e-AwOr-DvTibSvn01-MemoryUtilization"
+    ],
+    "i-ad7d9976": [
+        "i-ad7d9976-AwOr-PdTibFil11-MemoryUtilization"
+    ],
+    "i-3e6593e5": [
+        "i-3e6593e5-AWOR-TSPLMDB01-StatusCheckFailed",
+        "i-3e6593e5-AWOR-TSPLMDB01-CPUUtilization",
+        "i-3e6593e5-AWOR-TSPLMDB01-MemoryUtilization"
+    ],
+    "i-a1f5077a": [
+        "i-a1f5077a-AWOR-DVSHGAPP01-MemoryUtilization"
+    ],
+    "i-028c41d9": [
+        "i-028c41d9-AWOR-PDMESBO01-MemoryUtilization"
+    ],
+    "i-88975a53": [
+        "i-88975a53-AWOR-PDMESWEB01-StatusCheckFailed",
+        "i-88975a53-AWOR-PDMESWEB01-CPUUtilization",
+        "i-88975a53-AWOR-PDMESWEB01-MemoryUtilization"
+    ],
+    "i-4fed2094": [
+        "i-4fed2094-AWOR-PDMESWEB04-MemoryUtilization"
+    ],
+    "i-0ae12cd1": [
+        "i-0ae12cd1-AWOR-PDTAPWEB01-MemoryUtilization"
+    ],
+    "i-f11bd22a": [
+        "i-f11bd22a-AWOR-PDCMSDB01-MemoryUtilization"
+    ],
+    "i-8536ff5e": [
+        "i-8536ff5e-AWOR-PDPKIGP01-MemoryUtilization"
+    ],
+    "i-d34d8408": [
+        "i-d34d8408-AWOR-PDPKIAE01-MemoryUtilization"
+    ],
+    "i-ef448d34": [
+        "i-ef448d34-AWOR-PDCMSADM01-StatusCheckFailed",
+        "i-ef448d34-AWOR-PDCMSADM01-CPUUtilization",
+        "i-ef448d34-AWOR-PDCMSADM01-MemoryUtilization"
+    ],
+    "i-1e5990c5": [
+        "i-1e5990c5-AWOR-PDCMSWEB01-StatusCheckFailed",
+        "i-1e5990c5-AWOR-PDCMSWEB01-CPUUtilization",
+        "i-1e5990c5-AWOR-PDCMSWEB01-MemoryUtilization"
+    ],
+    "i-71725de4": [
+        "i-71725de4-AWTJDE065-StatusCheckFailed",
+        "i-71725de4-AWTJDE065-CPUUtilization",
+        "i-71725de4-AWTJDE065-MemoryUtilization"
+    ],
+    "i-c0ad8255": [
+        "i-c0ad8255-AWOR-OQMESDB01-StatusCheckFailed",
+        "i-c0ad8255-AWOR-OQMESDB01-CPUUtilization",
+        "i-c0ad8255-AWOR-OQMESDB01-MemoryUtilization"
+    ],
+    "i-a5e4d430": [
+        "i-a5e4d430-AWOR-OQMESWEB01-StatusCheckFailed",
+        "i-a5e4d430-AWOR-OQMESWEB01-CPUUtilization",
+        "i-a5e4d430-AWOR-OQMESWEB01-MemoryUtilization"
+    ],
+    "i-8fe9d91a": [
+        "i-8fe9d91a-AWOR-OQMESBO01-StatusCheckFailed",
+        "i-8fe9d91a-AWOR-OQMESBO01-CPUUtilization",
+        "i-8fe9d91a-AWOR-OQMESBO01-MemoryUtilization"
+    ],
+    "i-9fecdc0a": [
+        "i-9fecdc0a-AWOR-OQMESCIO01-StatusCheckFailed",
+        "i-9fecdc0a-AWOR-OQMESCIO01-CPUUtilization",
+        "i-9fecdc0a-AWOR-OQMESCIO01-MemoryUtilization"
+    ],
+    "i-4692add3": [
+        "i-4692add3-AWORINPLMAPP01-StatusCheckFailed",
+        "i-4692add3-AWORINPLMAPP01-CPUUtilization",
+        "i-4692add3-AWORINPLMAPP01-MemoryUtilization"
+    ],
+    "i-2191aeb4": [
+        "i-2191aeb4-AWORINPLMAPP03-StatusCheckFailed",
+        "i-2191aeb4-AWORINPLMAPP03-CPUUtilization",
+        "i-2191aeb4-AWORINPLMAPP03-MemoryUtilization"
+    ],
+    "i-1a8fb08f": [
+        "i-1a8fb08f-AWORINPLMAPP05-StatusCheckFailed",
+        "i-1a8fb08f-AWORINPLMAPP05-CPUUtilization",
+        "i-1a8fb08f-AWORINPLMAPP05-MemoryUtilization"
+    ],
+    "i-948bb401": [
+        "i-948bb401-AWORINPLMWEB01-StatusCheckFailed",
+        "i-948bb401-AWORINPLMWEB01-CPUUtilization",
+        "i-948bb401-AWORINPLMWEB01-MemoryUtilization"
+    ],
+    "i-f788b762": [
+        "i-f788b762-AWORINPLMWEB03-MemoryUtilization"
+    ],
+    "i-e685ba73": [
+        "i-e685ba73-AWORINPLMWEB05-StatusCheckFailed",
+        "i-e685ba73-AWORINPLMWEB05-CPUUtilization",
+        "i-e685ba73-AWORINPLMWEB05-MemoryUtilization"
+    ],
+    "i-5a81becf": [
+        "i-5a81becf-AWORINPLMTRA01-StatusCheckFailed",
+        "i-5a81becf-AWORINPLMTRA01-CPUUtilization",
+        "i-5a81becf-AWORINPLMTRA01-MemoryUtilization"
+    ],
+    "i-c07c4255": [
+        "i-c07c4255-AWORINPLMTRA03-StatusCheckFailed",
+        "i-c07c4255-AWORINPLMTRA03-CPUUtilization",
+        "i-c07c4255-AWORINPLMTRA03-MemoryUtilization"
+    ],
+    "i-91ccf404": [
+        "i-91ccf404-AWORTSPLMFIL01-MemoryUtilization"
+    ],
+    "i-b835312d": [
+        "i-b835312d-AWORDVPLMAPP10-StatusCheckFailed",
+        "i-b835312d-AWORDVPLMAPP10-CPUUtilization",
+        "i-b835312d-AWORDVPLMAPP10-MemoryUtilization"
+    ],
+    "i-197f6c8c": [
+        "i-197f6c8c-AWOR-PDMESCTT01-MemoryUtilization"
+    ],
+    "i-4d0d16d8": [
+        "i-4d0d16d8-AWOR-TSTAPWEB01-MemoryUtilization"
+    ],
+    "i-c6dac153": [
+        "i-c6dac153-AWOR-PDQLKWEB01-MemoryUtilization"
+    ],
+    "i-b7e62623": [
+        "i-b7e62623-IRVEAIWEB02-PY-StatusCheckFailed",
+        "i-b7e62623-IRVEAIWEB02-PY-CPUUtilization",
+        "i-b7e62623-IRVEAIWEB02-PY-MemoryUtilization"
+    ],
+    "i-c0e52554": [
+        "i-c0e52554-IRVEAIWEB01-PY-MemoryUtilization"
+    ],
+    "i-be18d82a": [
+        "i-be18d82a-IRVBPCAPP02-TST-StatusCheckFailed",
+        "i-be18d82a-IRVBPCAPP02-TST-CPUUtilization",
+        "i-be18d82a-IRVBPCAPP02-TST-MemoryUtilization"
+    ],
+    "i-5114d4c5": [
+        "i-5114d4c5-IRVBPCAPP01-TST-StatusCheckFailed",
+        "i-5114d4c5-IRVBPCAPP01-TST-CPUUtilization",
+        "i-5114d4c5-IRVBPCAPP01-TST-MemoryUtilization"
+    ],
+    "i-1eb86e8a": [
+        "i-1eb86e8a-IRVDIGWEB30-StatusCheckFailed",
+        "i-1eb86e8a-IRVDIGWEB30-CPUUtilization",
+        "i-1eb86e8a-IRVDIGWEB30-MemoryUtilization"
+    ],
+    "i-e306d077": [
+        "i-e306d077-IRVDIGWEB11-StatusCheckFailed",
+        "i-e306d077-IRVDIGWEB11-CPUUtilization",
+        "i-e306d077-IRVDIGWEB11-MemoryUtilization"
+    ],
+    "i-9e06d00a": [
+        "i-9e06d00a-IRVDIGPLM01-DEV-StatusCheckFailed",
+        "i-9e06d00a-IRVDIGPLM01-DEV-CPUUtilization",
+        "i-9e06d00a-IRVDIGPLM01-DEV-MemoryUtilization"
+    ],
+    "i-c70cda53": [
+        "i-c70cda53-IRVDIGWEB22-MemoryUtilization"
+    ],
+    "i-fb71a16f": [
+        "i-fb71a16f-IRVLSDWEB02-StatusCheckFailed",
+        "i-fb71a16f-IRVLSDWEB02-CPUUtilization",
+        "i-fb71a16f-IRVLSDWEB02-MemoryUtilization"
+    ],
+    "i-d7ae7d43": [
+        "i-d7ae7d43-AwOr-SsTibOps01-MemoryUtilization"
+    ],
+    "i-eeda7a7a": [
+        "i-eeda7a7a-AWPJDEWL02-MemoryUtilization"
+    ],
+    "i-f8cd6f6c": [
+        "i-f8cd6f6c-AWPJDEFS01-MemoryUtilization"
+    ],
+    "i-6c65c7f8": [
+        "i-6c65c7f8-IrvineNT60-MemoryUtilization"
+    ],
+    "i-3365c7a7": [
+        "i-3365c7a7-AWTJDE71-StatusCheckFailed",
+        "i-3365c7a7-AWTJDE71-CPUUtilization",
+        "i-3365c7a7-AWTJDE71-MemoryUtilization"
+    ],
+    "i-626ac8f6": [
+        "i-626ac8f6-AWTJDE70-StatusCheckFailed",
+        "i-626ac8f6-AWTJDE70-CPUUtilization",
+        "i-626ac8f6-AWTJDE70-MemoryUtilization"
+    ],
+    "i-d968ca4d": [
+        "i-d968ca4d-AWPJDEOVR1-MemoryUtilization"
+    ],
+    "i-88e04d1c": [
+        "i-88e04d1c-AWORTSPLMAPP01-MemoryUtilization"
+    ],
+    "i-c7f05d53": [
+        "i-c7f05d53-AWORTRPLMWEB01-StatusCheckFailed",
+        "i-c7f05d53-AWORTRPLMWEB01-CPUUtilization",
+        "i-c7f05d53-AWORTRPLMWEB01-MemoryUtilization"
+    ],
+    "i-9fd4780b": [
+        "i-9fd4780b-AWOR-PTMESBO01-StatusCheckFailed",
+        "i-9fd4780b-AWOR-PTMESBO01-CPUUtilization",
+        "i-9fd4780b-AWOR-PTMESBO01-MemoryUtilization"
+    ],
+    "i-b3b91527": [
+        "i-b3b91527-AWOR-PTMESCIO01-StatusCheckFailed",
+        "i-b3b91527-AWOR-PTMESCIO01-CPUUtilization",
+        "i-b3b91527-AWOR-PTMESCIO01-MemoryUtilization"
+    ],
+    "i-a8913d3c": [
+        "i-a8913d3c-AWOR-PTMESWEB01-MemoryUtilization"
+    ],
+    "i-5f5af6cb": [
+        "i-5f5af6cb-AWOR-PTMESDB01-StatusCheckFailed",
+        "i-5f5af6cb-AWOR-PTMESDB01-CPUUtilization",
+        "i-5f5af6cb-AWOR-PTMESDB01-MemoryUtilization"
+    ],
+    "i-16973982": [
+        "i-16973982-AWOR-PDAPDC01-MemoryUtilization"
+    ],
+    "i-17973983": [
+        "i-17973983-AWOR-PDAMDC01-MemoryUtilization"
+    ],
+    "i-24d763b0": [
+        "i-24d763b0-jde-haproxy-MemoryUtilization"
+    ],
+    "i-49cd7ddd": [
+        "i-49cd7ddd-AWOR-DVQLKAPP01-MemoryUtilization"
+    ],
+    "i-f5b00061": [
+        "i-f5b00061-AWOR-OQQLKAPP01-StatusCheckFailed",
+        "i-f5b00061-AWOR-OQQLKAPP01-CPUUtilization",
+        "i-f5b00061-AWOR-OQQLKAPP01-MemoryUtilization"
+    ],
+    "i-eea2127a": [
+        "i-eea2127a-AWPJDEDP01-MemoryUtilization"
+    ],
+    "i-b27efa26": [
+        "i-b27efa26-IRVQMSDEV03-StatusCheckFailed",
+        "i-b27efa26-IRVQMSDEV03-CPUUtilization",
+        "i-b27efa26-IRVQMSDEV03-MemoryUtilization"
+    ],
+    "i-677cf8f3": [
+        "i-677cf8f3-IRVHFMREP02-DEV-StatusCheckFailed",
+        "i-677cf8f3-IRVHFMREP02-DEV-CPUUtilization",
+        "i-677cf8f3-IRVHFMREP02-DEV-MemoryUtilization"
+    ],
+    "i-667cf8f2": [
+        "i-667cf8f2-IRVHFMWEB03-DEV-StatusCheckFailed",
+        "i-667cf8f2-IRVHFMWEB03-DEV-CPUUtilization",
+        "i-667cf8f2-IRVHFMWEB03-DEV-MemoryUtilization"
+    ],
+    "i-ca1c985e": [
+        "i-ca1c985e-IRVHFMFND02-DEV-StatusCheckFailed",
+        "i-ca1c985e-IRVHFMFND02-DEV-CPUUtilization",
+        "i-ca1c985e-IRVHFMFND02-DEV-MemoryUtilization"
+    ],
+    "i-4950c6dd": [
+        "i-4950c6dd-IRVLBLSPC02-oq-StatusCheckFailed",
+        "i-4950c6dd-IRVLBLSPC02-oq-CPUUtilization"
+    ],
+    "i-8751c713": [
+        "i-8751c713-IRVLBLFIL02-StatusCheckFailed",
+        "i-8751c713-IRVLBLFIL02-CPUUtilization",
+        "i-8751c713-IRVLBLFIL02-MemoryUtilization"
+    ],
+    "i-1550c681": [
+        "i-1550c681-IRVLBLCMS02-oq-MemoryUtilization"
+    ],
+    "i-ad50c639": [
+        "i-ad50c639-IrvSDLAPP01-StatusCheckFailed",
+        "i-ad50c639-IrvSDLAPP01-CPUUtilization",
+        "i-ad50c639-IrvSDLAPP01-MemoryUtilization"
+    ],
+    "i-c66129de": [
+        "i-c66129de-IRVEAIWEB01-OQ-MemoryUtilization"
+    ],
+    "i-ef165cf7": [
+        "i-ef165cf7-AwOr-SsTibJbW01-MemoryUtilization"
+    ],
+    "i-af5f15b7": [
+        "i-af5f15b7-IrvbizPY03-StatusCheckFailed",
+        "i-af5f15b7-IrvbizPY03-CPUUtilization",
+        "i-af5f15b7-IrvbizPY03-MemoryUtilization"
+    ],
+    "i-d92075c1": [
+        "i-d92075c1-AWOROQPLMAPP01-MemoryUtilization"
+    ],
+    "i-9c2f7a84": [
+        "i-9c2f7a84-AWOROQPLMAPP03-StatusCheckFailed",
+        "i-9c2f7a84-AWOROQPLMAPP03-CPUUtilization",
+        "i-9c2f7a84-AWOROQPLMAPP03-MemoryUtilization"
+    ],
+    "i-db5306c3": [
+        "i-db5306c3-AWOROQPLMTRA01-StatusCheckFailed",
+        "i-db5306c3-AWOROQPLMTRA01-CPUUtilization",
+        "i-db5306c3-AWOROQPLMTRA01-MemoryUtilization"
+    ],
+    "i-a6590cbe": [
+        "i-a6590cbe-AWOROQPLMWEB03-StatusCheckFailed",
+        "i-a6590cbe-AWOROQPLMWEB03-CPUUtilization",
+        "i-a6590cbe-AWOROQPLMWEB03-MemoryUtilization"
+    ],
+    "i-e8590cf0": [
+        "i-e8590cf0-AWOROQPLMWEB01-StatusCheckFailed",
+        "i-e8590cf0-AWOROQPLMWEB01-CPUUtilization",
+        "i-e8590cf0-AWOROQPLMWEB01-MemoryUtilization"
+    ],
+    "i-70356a68": [
+        "i-70356a68-AWORPDPLMWEB03-MemoryUtilization"
+    ],
+    "i-71356a69": [
+        "i-71356a69-AWORPDPLMWEB04-MemoryUtilization"
+    ],
+    "i-72356a6a": [
+        "i-72356a6a-AWORPDPLMWEB05-MemoryUtilization"
+    ],
+    "i-6c356a74": [
+        "i-6c356a74-AWORPDPLMWEB01-MemoryUtilization"
+    ],
+    "i-6d356a75": [
+        "i-6d356a75-AWORPDPLMWEB02-MemoryUtilization"
+    ],
+    "i-88530c90": [
+        "i-88530c90-AWORPDPLMTRA01-StatusCheckFailed",
+        "i-88530c90-AWORPDPLMTRA01-CPUUtilization",
+        "i-88530c90-AWORPDPLMTRA01-MemoryUtilization"
+    ],
+    "i-89530c91": [
+        "i-89530c91-AWORPDPLMTRA02-StatusCheckFailed",
+        "i-89530c91-AWORPDPLMTRA02-CPUUtilization",
+        "i-89530c91-AWORPDPLMTRA02-MemoryUtilization"
+    ],
+    "i-8e530c96": [
+        "i-8e530c96-AWORPDPLMTRA03-StatusCheckFailed",
+        "i-8e530c96-AWORPDPLMTRA03-CPUUtilization",
+        "i-8e530c96-AWORPDPLMTRA03-MemoryUtilization"
+    ],
+    "i-41732c59": [
+        "i-41732c59-AWORPDPLMAPP02-MemoryUtilization"
+    ],
+    "i-44732c5c": [
+        "i-44732c5c-AWORPDPLMAPP03-MemoryUtilization"
+    ],
+    "i-45732c5d": [
+        "i-45732c5d-AWORPDPLMAPP04-MemoryUtilization"
+    ],
+    "i-46732c5e": [
+        "i-46732c5e-AWORPDPLMAPP05-MemoryUtilization"
+    ],
+    "i-6d540c75": [
+        "i-6d540c75-IRVJDEVTX02-MemoryUtilization"
+    ],
+    "i-9322028b": [
+        "i-9322028b-IRVJDEREP01-MemoryUtilization"
+    ],
+    "i-2a94b932": [
+        "i-2a94b932-AWORDVARAAPP01-MemoryUtilization"
+    ],
+    "i-4be0cc53": [
+        "i-4be0cc53-AWOR-PDEMBAPP01-MemoryUtilization"
+    ],
+    "i-20477638": [
+        "i-20477638-AWOR-PDSPCFIL01-MemoryUtilization"
+    ],
+    "i-a60233be": [
+        "i-a60233be-AWOR-PDQLKAPP01-StatusCheckFailed",
+        "i-a60233be-AWOR-PDQLKAPP01-CPUUtilization",
+        "i-a60233be-AWOR-PDQLKAPP01-MemoryUtilization"
+    ],
+    "i-4448785c": [
+        "i-4448785c-IrvBpcApp01-Pd-MemoryUtilization"
+    ],
+    "i-2b043433": [
+        "i-2b043433-IRVDIGWEB12-StatusCheckFailed",
+        "i-2b043433-IRVDIGWEB12-CPUUtilization",
+        "i-2b043433-IRVDIGWEB12-MemoryUtilization"
+    ],
+    "i-71033369": [
+        "i-71033369-IrvLSDAPP01-MemoryUtilization"
+    ],
+    "i-7e033366": [
+        "i-7e033366-IRVDIGWEB32-MemoryUtilization"
+    ],
+    "i-81043499": [
+        "i-81043499-IrvLSDWEB01-StatusCheckFailed",
+        "i-81043499-IrvLSDWEB01-CPUUtilization",
+        "i-81043499-IrvLSDWEB01-MemoryUtilization"
+    ],
+    "i-9d043485": [
+        "i-9d043485-USIR-PDARCAPP01-MemoryUtilization"
+    ],
+    "i-6d93a075": [
+        "i-6d93a075-Irvine834-MemoryUtilization"
+    ],
+    "i-239ba63b": [
+        "i-239ba63b-IRVJDEUPK01-StatusCheckFailed",
+        "i-239ba63b-IRVJDEUPK01-CPUUtilization",
+        "i-239ba63b-IRVJDEUPK01-MemoryUtilization"
+    ],
+    "i-dfedd2c7": [
+        "i-dfedd2c7-AWORTCULIC01-MemoryUtilization"
+    ],
+    "i-d96d53c1": [
+        "i-d96d53c1-AWOROQPLMFIL01-MemoryUtilization"
+    ],
+    "i-9e6d5386": [
+        "i-9e6d5386-AWORINPLMFIL01-MemoryUtilization"
+    ],
+    "i-66d9e07e": [
+        "i-66d9e07e-AWORWEB01-DEV-StatusCheckFailed",
+        "i-66d9e07e-AWORWEB01-DEV-CPUUtilization",
+        "i-66d9e07e-AWORWEB01-DEV-MemoryUtilization"
+    ],
+    "i-87d8e19f": [
+        "i-87d8e19f-AWORWEB01-PD-MemoryUtilization"
+    ],
+    "i-f72d28ef": [
+        "i-f72d28ef-irvnxthnkapp01-MemoryUtilization"
+    ],
+    "i-f82d28e0": [
+        "i-f82d28e0-IrvGFRPTL01-MemoryUtilization"
+    ],
+    "i-0a2d2812": [
+        "i-0a2d2812-IRVGFRAPP01-MemoryUtilization"
+    ],
+    "i-092d2811": [
+        "i-092d2811-IRVGFRWEB01-MemoryUtilization"
+    ],
+    "i-045b5f1c": [
+        "i-045b5f1c-IRVPLMIPL01-PD-MemoryUtilization"
+    ],
+    "i-7d646065": [
+        "i-7d646065-IRVEAIWEB01-PD-MemoryUtilization"
+    ],
+    "i-12101c0a": [
+        "i-12101c0a-IRVDIGWEB10-MemoryUtilization"
+    ],
+    "i-903c3588": [
+        "i-903c3588-IRVIMANINT01-MemoryUtilization"
+    ],
+    "i-713f3669": [
+        "i-713f3669-IrvDIGWEB01-MemoryUtilization"
+    ],
+    "i-303f3628": [
+        "i-303f3628-IRVCHAAUD01-MemoryUtilization"
+    ],
+    "i-3d3f3625": [
+        "i-3d3f3625-IRVDIGWEB20-MemoryUtilization"
+    ],
+    "i-3c3f3624": [
+        "i-3c3f3624-IrvDIGWEB02-MemoryUtilization"
+    ],
+    "i-323f362a": [
+        "i-323f362a-IrvAMSDBX01-StatusCheckFailed",
+        "i-323f362a-IrvAMSDBX01-CPUUtilization",
+        "i-323f362a-IrvAMSDBX01-MemoryUtilization"
+    ],
+    "i-3b3f3623": [
+        "i-3b3f3623-IRVADSDBX01-StatusCheckFailed",
+        "i-3b3f3623-IRVADSDBX01-CPUUtilization",
+        "i-3b3f3623-IRVADSDBX01-MemoryUtilization"
+    ],
+    "i-611c0c79": [
+        "i-611c0c79-AWOR-PDPLMDB01-MemoryUtilization"
+    ],
+    "i-c99b88d1": [
+        "i-c99b88d1-AWORPDPLMFIL01-MemoryUtilization"
+    ],
+    "i-b40e11ac": [
+        "i-b40e11ac-IRVJDEMEX01-StatusCheckFailed",
+        "i-b40e11ac-IRVJDEMEX01-CPUUtilization"
+    ],
+    "i-0fd03514": [
+        "i-0fd03514-AWOR-PDQMSDB01-MemoryUtilization"
+    ],
+    "i-a6f412bd": [
+        "i-a6f412bd-IRVTALTCC01-MemoryUtilization"
+    ],
+    "i-84f7119f": [
+        "i-84f7119f-IrvDIGDMZ01-MemoryUtilization"
+    ],
+    "i-def412c5": [
+        "i-def412c5-IRVDIGDMZ11-MemoryUtilization"
+    ],
+    "i-69f41272": [
+        "i-69f41272-IrvDIGDMZ10-MemoryUtilization"
+    ],
+    "i-bd33d5a6": [
+        "i-bd33d5a6-IRVMFA01-StatusCheckFailed",
+        "i-bd33d5a6-IRVMFA01-CPUUtilization",
+        "i-bd33d5a6-IRVMFA01-MemoryUtilization"
+    ],
+    "i-b433d5af": [
+        "i-b433d5af-IRVADFSPOL1-PRD-MemoryUtilization"
+    ],
+    "i-ad6193f2": [
+        "i-ad6193f2-AWORDVPLMAPP07-MemoryUtilization"
+    ],
+    "i-956193ca": [
+        "i-956193ca-AWORDVPLMAPP08-StatusCheckFailed",
+        "i-956193ca-AWORDVPLMAPP08-CPUUtilization",
+        "i-956193ca-AWORDVPLMAPP08-MemoryUtilization"
+    ],
+    "i-31c9306e": [
+        "i-31c9306e-AWOR-DVEWDC01-MemoryUtilization"
+    ],
+    "i-1cca3343": [
+        "i-1cca3343-AWOR-DVAMDC01-MemoryUtilization"
+    ],
+    "i-bb5ba1e4": [
+        "i-bb5ba1e4-IrvMKSTMP01-StatusCheckFailed",
+        "i-bb5ba1e4-IrvMKSTMP01-CPUUtilization",
+        "i-bb5ba1e4-IrvMKSTMP01-MemoryUtilization"
+    ],
+    "i-d159a38e": [
+        "i-d159a38e-IrvMKS01-Dev-StatusCheckFailed",
+        "i-d159a38e-IrvMKS01-Dev-CPUUtilization",
+        "i-d159a38e-IrvMKS01-Dev-MemoryUtilization"
+    ],
+    "i-b40bc7eb": [
+        "i-b40bc7eb-treadstone-haproxy-MemoryUtilization"
+    ],
+    "i-43a3681c": [
+        "i-43a3681c-IRVJDECTI04-MemoryUtilization"
+    ],
+    "i-56a36809": [
+        "i-56a36809-IRVBIZPD03-MemoryUtilization"
+    ],
+    "i-2ca36873": [
+        "i-2ca36873-IRVLBLFIL01-MemoryUtilization"
+    ],
+    "i-91ac67ce": [
+        "i-91ac67ce-IRVDIGWEB25-StatusCheckFailed",
+        "i-91ac67ce-IRVDIGWEB25-CPUUtilization",
+        "i-91ac67ce-IRVDIGWEB25-MemoryUtilization"
+    ],
+    "i-bfac67e0": [
+        "i-bfac67e0-IrvBIZFIL01-MemoryUtilization"
+    ],
+    "i-bcac67e3": [
+        "i-bcac67e3-IrvDSP01-MemoryUtilization"
+    ],
+    "i-cdac6792": [
+        "i-cdac6792-IRVLBLCMS02-MemoryUtilization"
+    ],
+    "i-caac6795": [
+        "i-caac6795-IRVDIGWEB24-MemoryUtilization"
+    ],
+    "i-8cad66d3": [
+        "i-8cad66d3-IRVLBLARC01-MemoryUtilization"
+    ],
+    "i-67b17a38": [
+        "i-67b17a38-IRVENGLIC01-MemoryUtilization"
+    ],
+    "i-5e63b701": [
+        "i-5e63b701-IrvTRXFIL07-MemoryUtilization"
+    ],
+    "i-2162b27e": [
+        "i-2162b27e-AWORDVPLMAPP05-StatusCheckFailed",
+        "i-2162b27e-AWORDVPLMAPP05-CPUUtilization",
+        "i-2162b27e-AWORDVPLMAPP05-MemoryUtilization"
+    ],
+    "i-7563b32a": [
+        "i-7563b32a-AWORDVPLMAPP06-StatusCheckFailed",
+        "i-7563b32a-AWORDVPLMAPP06-CPUUtilization"
+    ],
+    "i-5a944905": [
+        "i-5a944905-AWORDVPLMAPP04-StatusCheckFailed",
+        "i-5a944905-AWORDVPLMAPP04-CPUUtilization",
+        "i-5a944905-AWORDVPLMAPP04-MemoryUtilization"
+    ],
+    "i-46f72a19": [
+        "i-46f72a19-IRVQMSDEV06-StatusCheckFailed",
+        "i-46f72a19-IRVQMSDEV06-CPUUtilization",
+        "i-46f72a19-IRVQMSDEV06-MemoryUtilization"
+    ],
+    "i-dff52880": [
+        "i-dff52880-IRVIPRDEV01-StatusCheckFailed",
+        "i-dff52880-IRVIPRDEV01-CPUUtilization"
+    ],
+    "i-bbf429e4": [
+        "i-bbf429e4-IRVQMSDEV02-StatusCheckFailed",
+        "i-bbf429e4-IRVQMSDEV02-CPUUtilization",
+        "i-bbf429e4-IRVQMSDEV02-MemoryUtilization"
+    ],
+    "i-bcf429e3": [
+        "i-bcf429e3-IrvQMSDEV05-StatusCheckFailed",
+        "i-bcf429e3-IrvQMSDEV05-CPUUtilization",
+        "i-bcf429e3-IrvQMSDEV05-MemoryUtilization"
+    ],
+    "i-d8f42987": [
+        "i-d8f42987-IrvSECMOV05-MemoryUtilization"
+    ],
+    "i-6f2db0fb": [
+        "i-6f2db0fb-AWOR-DVCYBWEB01-StatusCheckFailed",
+        "i-6f2db0fb-AWOR-DVCYBWEB01-CPUUtilization",
+        "i-6f2db0fb-AWOR-DVCYBWEB01-MemoryUtilization"
+    ],
+    "i-5ade42ce": [
+        "i-5ade42ce-AWOR-DVCYBCPM01-StatusCheckFailed",
+        "i-5ade42ce-AWOR-DVCYBCPM01-CPUUtilization"
+    ],
+    "i-c18c1055": [
+        "i-c18c1055-IRVLBLFIL03-MemoryUtilization"
+    ],
+    "i-dd43df49": [
+        "i-dd43df49-AWOR-PDIPDAPP01-MemoryUtilization"
+    ],
+    "i-51ec76c5": [
+        "i-51ec76c5-AWORTSARADB01-StatusCheckFailed",
+        "i-51ec76c5-AWORTSARADB01-CPUUtilization"
+    ],
+    "i-02e17b96": [
+        "i-02e17b96-AWORTSARAAPP01-StatusCheckFailed",
+        "i-02e17b96-AWORTSARAAPP01-CPUUtilization",
+        "i-02e17b96-AWORTSARAAPP01-MemoryUtilization"
+    ],
+    "i-85234611": [
+        "i-85234611-AWOR-DVDWHAPP01-MemoryUtilization"
+    ],
+    "i-692346fd": [
+        "i-692346fd-AWOR-DVDWHDB01-MemoryUtilization"
+    ],
+    "i-32a4c1a6": [
+        "i-32a4c1a6-awor-pdjdewrr01-MemoryUtilization"
+    ],
+    "i-e0cba974": [
+        "i-e0cba974-AWOR-PDSPOAPP01-MemoryUtilization"
+    ],
+    "i-7cccaee8": [
+        "i-7cccaee8-AWOR-PDSPOAPP02-MemoryUtilization"
+    ],
+    "i-491f72dd": [
+        "i-491f72dd-AWOR-TSEUDC01-MemoryUtilization"
+    ],
+    "i-ee1e737a": [
+        "i-ee1e737a-AWOR-TSAPDC01-StatusCheckFailed",
+        "i-ee1e737a-AWOR-TSAPDC01-CPUUtilization",
+        "i-ee1e737a-AWOR-TSAPDC01-MemoryUtilization"
+    ],
+    "i-261875b2": [
+        "i-261875b2-AWOR-TSEWDC01-StatusCheckFailed",
+        "i-261875b2-AWOR-TSEWDC01-CPUUtilization",
+        "i-261875b2-AWOR-TSEWDC01-MemoryUtilization"
+    ],
+    "i-321b76a6": [
+        "i-321b76a6-AWOR-TSAMDC01-StatusCheckFailed",
+        "i-321b76a6-AWOR-TSAMDC01-CPUUtilization",
+        "i-321b76a6-AWOR-TSAMDC01-MemoryUtilization"
+    ],
+    "i-080afe1b9a664eafa": [
+        "i-080afe1b9a664eafa-IRVPLMIPL02-OQ-MemoryUtilization"
+    ],
+    "i-09993bb988e094a17": [
+        "i-09993bb988e094a17-AWOR-PDMESWEB03-MemoryUtilization"
+    ],
+    "i-06384ed3d6409895a": [
+        "i-06384ed3d6409895a-AwOr-PdTibFil03-MemoryUtilization"
+    ],
+    "i-0b8eb1add5396f582": [
+        "i-0b8eb1add5396f582-AWORPDARAAPP02-MemoryUtilization"
+    ],
+    "i-077d10e139e57e9a1": [
+        "i-077d10e139e57e9a1-AwOr-OqTibFil03-StatusCheckFailed",
+        "i-077d10e139e57e9a1-AwOr-OqTibFil03-CPUUtilization",
+        "i-077d10e139e57e9a1-AwOr-OqTibFil03-MemoryUtilization"
+    ],
+    "i-0236f0b7bbdc972cd": [
+        "i-0236f0b7bbdc972cd-AWOR-PDDWHDB02-MemoryUtilization"
+    ],
+    "i-06fe88e569772cf43": [
+        "i-06fe88e569772cf43-IrvBpcSql01-Pd-MemoryUtilization"
+    ],
+    "i-034180c28f4fc9045": [
+        "i-034180c28f4fc9045-IrvLGLECN02-MemoryUtilization"
+    ],
+    "i-0ba7d9e39e7b47d83": [
+        "i-0ba7d9e39e7b47d83-IrvSECUID01-MemoryUtilization"
+    ],
+    "i-057d0ddf2156fd3a0": [
+        "i-057d0ddf2156fd3a0-IRVLGLECN01-MemoryUtilization"
+    ],
+    "i-0c4fccdfcfc9d4d8e": [
+        "i-0c4fccdfcfc9d4d8e-IrvHVTR01-CHG0035344 Decomm delete on 27Nov-StatusCheckFailed",
+        "i-0c4fccdfcfc9d4d8e-IrvHVTR01-CHG0035344 Decomm delete on 27Nov-CPUUtilization",
+        "i-0c4fccdfcfc9d4d8e-IrvHVTR01-CHG0035344 Decomm delete on 27Nov-MemoryUtilization"
+    ],
+    "i-0b6ba64e6ce8b9bc7": [
+        "i-0b6ba64e6ce8b9bc7-IrvTABAPP01-MemoryUtilization"
+    ],
+    "i-087c59f6869cbb363": [
+        "i-087c59f6869cbb363-IrvSECSRV01-MemoryUtilization"
+    ],
+    "i-09da7c118d76c3896": [
+        "i-09da7c118d76c3896-AWOR-PDRFXAPP01-StatusCheckFailed",
+        "i-09da7c118d76c3896-AWOR-PDRFXAPP01-CPUUtilization",
+        "i-09da7c118d76c3896-AWOR-PDRFXAPP01-MemoryUtilization"
+    ],
+    "i-070866cb18fa18932": [
+        "i-070866cb18fa18932-irvcoggwt01-StatusCheckFailed",
+        "i-070866cb18fa18932-irvcoggwt01-CPUUtilization"
+    ],
+    "i-0a88999785421bc41": [
+        "i-0a88999785421bc41-IRVSQL15-MemoryUtilization"
+    ],
+    "i-0162bcabf057fe8f7": [
+        "i-0162bcabf057fe8f7-IRVOLBSQL01-PRD-MemoryUtilization"
+    ],
+    "i-0ffdb1541df22c496": [
+        "i-0ffdb1541df22c496-IRVSQLQA01-StatusCheckFailed",
+        "i-0ffdb1541df22c496-IRVSQLQA01-CPUUtilization"
+    ],
+    "i-0dea4205d54402769": [
+        "i-0dea4205d54402769-AWOR-PDMIM02-MemoryUtilization"
+    ],
+    "i-0313ccf105a259505": [
+        "i-0313ccf105a259505-AWOR-PDMIMDB02-MemoryUtilization"
+    ],
+    "i-0dba3cdd1c001f48f": [
+        "i-0dba3cdd1c001f48f-IRVSQLDEV03-MemoryUtilization"
+    ],
+    "i-0edcdab9892d2d6e2": [
+        "i-0edcdab9892d2d6e2-AWOR-PTMESDB02-StatusCheckFailed",
+        "i-0edcdab9892d2d6e2-AWOR-PTMESDB02-CPUUtilization",
+        "i-0edcdab9892d2d6e2-AWOR-PTMESDB02-MemoryUtilization"
+    ],
+    "i-0d95640f296070b35": [
+        "i-0d95640f296070b35-AWOR-TSMIMAPP01-StatusCheckFailed",
+        "i-0d95640f296070b35-AWOR-TSMIMAPP01-CPUUtilization"
+    ],
+    "i-0e29b5d615905ce60": [
+        "i-0e29b5d615905ce60-AWOR-TSMFGDC01-StatusCheckFailed",
+        "i-0e29b5d615905ce60-AWOR-TSMFGDC01-CPUUtilization"
+    ],
+    "i-018c332db410dd785": [
+        "i-018c332db410dd785-IrvSECMOV06-StatusCheckFailed",
+        "i-018c332db410dd785-IrvSECMOV06-CPUUtilization",
+        "i-018c332db410dd785-IrvSECMOV06-MemoryUtilization"
+    ],
+    "i-0173f6cd455a14bcb": [
+        "i-0173f6cd455a14bcb-AWOR-PDCWMAPP01-MemoryUtilization"
+    ],
+    "i-0a5def50234c6f82d": [
+        "i-0a5def50234c6f82d-IRVJDECTI03-MemoryUtilization"
+    ],
+    "i-0c662ceb60e9974cb": [
+        "i-0c662ceb60e9974cb-IRVTRXFIL09-MemoryUtilization"
+    ],
+    "i-09c72e2da6232d4b2": [
+        "i-09c72e2da6232d4b2-IRVJDETRX08-MemoryUtilization"
+    ],
+    "i-016304e54652a8e34": [
+        "i-016304e54652a8e34-IRVJDETRX09 pre conversion-StatusCheckFailed",
+        "i-016304e54652a8e34-IRVJDETRX09 pre conversion-CPUUtilization",
+        "i-016304e54652a8e34-IRVJDETRX09 pre conversion-MemoryUtilization"
+    ],
+    "i-03339fd86e93d93d3": [
+        "i-03339fd86e93d93d3-IRVPLMISE01-OQ-MemoryUtilization"
+    ],
+    "i-0ae83fd1c0ac18277": [
+        "i-0ae83fd1c0ac18277-IRVPLMIPL01-OQ-StatusCheckFailed",
+        "i-0ae83fd1c0ac18277-IRVPLMIPL01-OQ-CPUUtilization",
+        "i-0ae83fd1c0ac18277-IRVPLMIPL01-OQ-MemoryUtilization"
+    ],
+    "i-0eaba025e972500b6": [
+        "i-0eaba025e972500b6-AWOR-TSMESFIL01-StatusCheckFailed",
+        "i-0eaba025e972500b6-AWOR-TSMESFIL01-CPUUtilization",
+        "i-0eaba025e972500b6-AWOR-TSMESFIL01-MemoryUtilization"
+    ],
+    "i-0cacbcbd463b1694f": [
+        "i-0cacbcbd463b1694f-AWOR-PDDWHAPP01 - Snowblower - 2019-10-20-MemoryUtilization"
+    ],
+    "i-0b693f203acc359d1": [
+        "i-0b693f203acc359d1-AWOR-PDFILSRV01-MemoryUtilization"
+    ],
+    "i-0c3b55e4ce850ed3b": [
+        "i-0c3b55e4ce850ed3b-AWOR-TSFILSRV01 Delete after 12/31/19 (contact Ming)-StatusCheckFailed",
+        "i-0c3b55e4ce850ed3b-AWOR-TSFILSRV01 Delete after 12/31/19 (contact Ming)-CPUUtilization",
+        "i-0c3b55e4ce850ed3b-AWOR-TSFILSRV01 Delete after 12/31/19 (contact Ming)-MemoryUtilization"
+    ],
+    "i-0402f85a16db49fa8": [
+        "i-0402f85a16db49fa8-AWOR-PDDWHDB01-MemoryUtilization"
+    ],
+    "i-09ae8ec7fbb4a1fdf": [
+        "i-09ae8ec7fbb4a1fdf-AWOR-PDSQLDB02-MemoryUtilization"
+    ],
+    "i-0adae9cd649eba580": [
+        "i-0adae9cd649eba580-AWORPDARAAPP01-MemoryUtilization"
+    ],
+    "i-012fe1f8badba5b39": [
+        "i-012fe1f8badba5b39-AWORPDARAFIL01-MemoryUtilization"
+    ],
+    "i-0410e0194f328e5e2": [
+        "i-0410e0194f328e5e2-AWOR-PDSECSEM01-MemoryUtilization"
+    ],
+    "i-058d274000d25899c": [
+        "i-058d274000d25899c-IRVLATVWI01-StatusCheckFailed",
+        "i-058d274000d25899c-IRVLATVWI01-CPUUtilization",
+        "i-058d274000d25899c-IRVLATVWI01-MemoryUtilization"
+    ],
+    "i-0618fee734047583f": [
+        "i-0618fee734047583f-Irvine843-StatusCheckFailed",
+        "i-0618fee734047583f-Irvine843-CPUUtilization"
+    ],
+    "i-03372a3a2eb2abf5d": [
+        "i-03372a3a2eb2abf5d-AWOR-TSLABSCH01-MemoryUtilization"
+    ],
+    "i-07e1cc79306425020": [
+        "i-07e1cc79306425020-AWOR-TSLABAPP01-StatusCheckFailed",
+        "i-07e1cc79306425020-AWOR-TSLABAPP01-CPUUtilization",
+        "i-07e1cc79306425020-AWOR-TSLABAPP01-MemoryUtilization"
+    ],
+    "i-05479b9db88811c44": [
+        "i-05479b9db88811c44-AWOR-PDSECCTR01-MemoryUtilization"
+    ],
+    "i-05a1867f2e9b0b92c": [
+        "i-05a1867f2e9b0b92c-IRVITRSPT05-StatusCheckFailed",
+        "i-05a1867f2e9b0b92c-IRVITRSPT05-CPUUtilization"
+    ],
+    "i-0f1ba4ff3b167199a": [
+        "i-0f1ba4ff3b167199a-IrvLMSRPT01-MemoryUtilization"
+    ],
+    "i-059166be7931a3f46": [
+        "i-059166be7931a3f46-IRVLBLWIP01-StatusCheckFailed",
+        "i-059166be7931a3f46-IRVLBLWIP01-CPUUtilization",
+        "i-059166be7931a3f46-IRVLBLWIP01-MemoryUtilization"
+    ],
+    "i-06c39a2a1fe30d992": [
+        "i-06c39a2a1fe30d992-IRVKMSLIC01-MemoryUtilization"
+    ],
+    "i-0226243dd80e85374": [
+        "i-0226243dd80e85374-AWOR-TSORADB01-StatusCheckFailed",
+        "i-0226243dd80e85374-AWOR-TSORADB01-CPUUtilization"
+    ],
+    "i-022f1626eb5ed8364": [
+        "i-022f1626eb5ed8364-AWOR-DVLABAPP01-MemoryUtilization"
+    ],
+    "i-0f60cec814daf2984": [
+        "i-0f60cec814daf2984-IRVRDSLIC01-MemoryUtilization"
+    ],
+    "i-09068c4ab3363f2bc": [
+        "i-09068c4ab3363f2bc-IrvBAM01-MemoryUtilization"
+    ],
+    "i-0b720193395c3f2bd": [
+        "i-0b720193395c3f2bd-IrvRNDFIL01-MemoryUtilization"
+    ],
+    "i-0f21b95a5c688d045": [
+        "i-0f21b95a5c688d045-IrvTCUENT01-ilc-MemoryUtilization"
+    ],
+    "i-0703c2451c3862b6c": [
+        "i-0703c2451c3862b6c-IrvTCUFIL01-ilc-MemoryUtilization"
+    ],
+    "i-018db6d6d34833c15": [
+        "i-018db6d6d34833c15-IrvTCUTRA01-ilc-MemoryUtilization"
+    ],
+    "i-05011815b7fecda81": [
+        "i-05011815b7fecda81-bubble-jumpbox-StatusCheckFailed",
+        "i-05011815b7fecda81-bubble-jumpbox-CPUUtilization"
+    ],
+    "i-078e3e03aa3251943": [
+        "i-078e3e03aa3251943-AWOR-PDPDMAPP01-MemoryUtilization"
+    ],
+    "i-0a38fa3423db72b6b": [
+        "i-0a38fa3423db72b6b-IRVSCOMSRV01-MemoryUtilization"
+    ],
+    "i-029be44eadbba1ea3": [
+        "i-029be44eadbba1ea3-IRVPRN01-MemoryUtilization"
+    ],
+    "i-008189e3cd0662949": [
+        "i-008189e3cd0662949-IRVSQLDEV04-StatusCheckFailed",
+        "i-008189e3cd0662949-IRVSQLDEV04-CPUUtilization",
+        "i-008189e3cd0662949-IRVSQLDEV04-MemoryUtilization"
+    ],
+    "i-0c8d18df240c07507": [
+        "i-0c8d18df240c07507-IRVHVTOPS01-MemoryUtilization"
+    ],
+    "i-0cf118561ed334660": [
+        "i-0cf118561ed334660-irvcoggwd01-StatusCheckFailed",
+        "i-0cf118561ed334660-irvcoggwd01-CPUUtilization",
+        "i-0cf118561ed334660-irvcoggwd01-MemoryUtilization"
+    ],
+    "i-0cacc854c279c938d": [
+        "i-0cacc854c279c938d-AWOR-PDPDMDB01-MemoryUtilization"
+    ],
+    "i-01042968aa26bd510": [
+        "i-01042968aa26bd510-AWOR-PDNETFTP01-StatusCheckFailed",
+        "i-01042968aa26bd510-AWOR-PDNETFTP01-CPUUtilization",
+        "i-01042968aa26bd510-AWOR-PDNETFTP01-MemoryUtilization"
+    ],
+    "i-0c165d1db5deec380": [
+        "i-0c165d1db5deec380-IRVOLBSQL01-QA-MemoryUtilization"
+    ],
+    "i-06505f62bad177a87": [
+        "i-06505f62bad177a87-AWOR-DVORAAPX01-MemoryUtilization"
+    ],
+    "i-0fd471150f74704c8": [
+        "i-0fd471150f74704c8-IRVFTP01-MemoryUtilization"
+    ],
+    "i-097b1aac1ad655a26": [
+        "i-097b1aac1ad655a26-awtjdepcc04-MemoryUtilization"
+    ],
+    "i-07b174574f402b435": [
+        "i-07b174574f402b435-awpjdepcc03-StatusCheckFailed",
+        "i-07b174574f402b435-awpjdepcc03-CPUUtilization",
+        "i-07b174574f402b435-awpjdepcc03-MemoryUtilization"
+    ],
+    "i-007079f89c354708f": [
+        "i-007079f89c354708f-AWOR-TSTCCWEB01-StatusCheckFailed",
+        "i-007079f89c354708f-AWOR-TSTCCWEB01-CPUUtilization"
+    ],
+    "i-019dda149903d9c63": [
+        "i-019dda149903d9c63-AWOR-PDTCCWEB01-StatusCheckFailed",
+        "i-019dda149903d9c63-AWOR-PDTCCWEB01-CPUUtilization",
+        "i-019dda149903d9c63-AWOR-PDTCCWEB01-MemoryUtilization"
+    ],
+    "i-0344f955e9c2de423": [
+        "i-0344f955e9c2de423-AWOR-PDAMDC02-MemoryUtilization"
+    ],
+    "i-02cc3bd372cd0e5c8": [
+        "i-02cc3bd372cd0e5c8-AWTJDE076-MemoryUtilization"
+    ],
+    "i-01c37d12c3ab10169": [
+        "i-01c37d12c3ab10169-AWTJDE077-StatusCheckFailed",
+        "i-01c37d12c3ab10169-AWTJDE077-CPUUtilization",
+        "i-01c37d12c3ab10169-AWTJDE077-MemoryUtilization"
+    ],
+    "i-082179afd03c3db75": [
+        "i-082179afd03c3db75-AWOR-PDMIM01-MemoryUtilization"
+    ],
+    "i-043b3b0d8c544ee26": [
+        "i-043b3b0d8c544ee26-IRVSQL21-DR-MemoryUtilization"
+    ],
+    "i-03f80f6701e5b3c5d": [
+        "i-03f80f6701e5b3c5d-AWOR-PDMIMDB01-MemoryUtilization"
+    ],
+    "i-064b8d84791d9b34f": [
+        "i-064b8d84791d9b34f-IRVINE503-StatusCheckFailed",
+        "i-064b8d84791d9b34f-IRVINE503-CPUUtilization"
+    ],
+    "i-050b59dd3f4e0aa04": [
+        "i-050b59dd3f4e0aa04-AWOR-DVSPCDB01-StatusCheckFailed",
+        "i-050b59dd3f4e0aa04-AWOR-DVSPCDB01-CPUUtilization",
+        "i-050b59dd3f4e0aa04-AWOR-DVSPCDB01-MemoryUtilization"
+    ],
+    "i-015050057c7898b2d": [
+        "i-015050057c7898b2d-AWORDVARADB01-MemoryUtilization"
+    ],
+    "i-07e7c177556675bc1": [
+        "i-07e7c177556675bc1-IRVINE873-MemoryUtilization"
+    ],
+    "i-0763dd43d93179d52": [
+        "i-0763dd43d93179d52-IRVSQLDEV02-StatusCheckFailed",
+        "i-0763dd43d93179d52-IRVSQLDEV02-CPUUtilization",
+        "i-0763dd43d93179d52-IRVSQLDEV02-MemoryUtilization"
+    ],
+    "i-0190b1f94437d2fbe": [
+        "i-0190b1f94437d2fbe-IrvBpcSql01-TST-StatusCheckFailed",
+        "i-0190b1f94437d2fbe-IrvBpcSql01-TST-CPUUtilization",
+        "i-0190b1f94437d2fbe-IrvBpcSql01-TST-MemoryUtilization"
+    ],
+    "i-0c1ebb03a7ed77f9f": [
+        "i-0c1ebb03a7ed77f9f-irvbizsql01-oq-StatusCheckFailed",
+        "i-0c1ebb03a7ed77f9f-irvbizsql01-oq-CPUUtilization",
+        "i-0c1ebb03a7ed77f9f-irvbizsql01-oq-MemoryUtilization"
+    ],
+    "i-0401216cdb10b908e": [
+        "i-0401216cdb10b908e-AWOR-OQSPCDB01-StatusCheckFailed",
+        "i-0401216cdb10b908e-AWOR-OQSPCDB01-CPUUtilization"
+    ],
+    "i-024785a76845f9e92": [
+        "i-024785a76845f9e92-AWORPDARAAPP03-MemoryUtilization"
+    ],
+    "i-0b69adf6c4ee40b8c": [
+        "i-0b69adf6c4ee40b8c-AWOROQARAAPP03-StatusCheckFailed",
+        "i-0b69adf6c4ee40b8c-AWOROQARAAPP03-CPUUtilization",
+        "i-0b69adf6c4ee40b8c-AWOROQARAAPP03-MemoryUtilization"
+    ],
+    "i-0a3f79dccb52da2c6": [
+        "i-0a3f79dccb52da2c6-IRVSECAIR05-MemoryUtilization"
+    ],
+    "i-09718f3916c319adb": [
+        "i-09718f3916c319adb-AWOR-DVPDMLDB01-MemoryUtilization"
+    ],
+    "i-0dea51075141a819b": [
+        "i-0dea51075141a819b-AWOR-DVPDMLAS01-StatusCheckFailed",
+        "i-0dea51075141a819b-AWOR-DVPDMLAS01-CPUUtilization"
+    ],
+    "i-0a75392ed64bca81c": [
+        "i-0a75392ed64bca81c-AWPJDEWL14-MemoryUtilization"
+    ],
+    "i-0e79195bc55229960": [
+        "i-0e79195bc55229960-AWOR-PDPDMLDB01-MemoryUtilization"
+    ],
+    "i-08ee0327a0e41f001": [
+        "i-08ee0327a0e41f001-AWOR-TSDWHDB01-StatusCheckFailed",
+        "i-08ee0327a0e41f001-AWOR-TSDWHDB01-CPUUtilization",
+        "i-08ee0327a0e41f001-AWOR-TSDWHDB01-MemoryUtilization"
+    ],
+    "i-0fc5a22b7510fe9fb": [
+        "i-0fc5a22b7510fe9fb-IRVITRSPT06-MemoryUtilization"
+    ],
+    "i-06f6dfa50f3f9306b": [
+        "i-06f6dfa50f3f9306b-AWOR-PDARADB02-MemoryUtilization"
+    ],
+    "i-057a62386eed7006e": [
+        "i-057a62386eed7006e-SLC2OLD-StatusCheckFailed",
+        "i-057a62386eed7006e-SLC2OLD-CPUUtilization",
+        "i-057a62386eed7006e-SLC2OLD-MemoryUtilization"
+    ],
+    "i-0aed74e6e655c2440": [
+        "i-0aed74e6e655c2440-IRVHFMSQL01-MemoryUtilization"
+    ],
+    "i-05a49f0e1dccc3ff5": [
+        "i-05a49f0e1dccc3ff5-AWOR-PDCYBWEB02-MemoryUtilization"
+    ],
+    "i-05a6d12252cb2a3cc": [
+        "i-05a6d12252cb2a3cc-AWOR-PDCYBPSM02-MemoryUtilization"
+    ],
+    "i-0022f668030e57b8c": [
+        "i-0022f668030e57b8c-DraWebPD01-MemoryUtilization"
+    ],
+    "i-0db2ea94f1fd9e899": [
+        "i-0db2ea94f1fd9e899-IRVLABFIL01-MemoryUtilization"
+    ],
+    "i-0b236a393b35fa3de": [
+        "i-0b236a393b35fa3de-AWOR-PDAMMID01-StatusCheckFailed",
+        "i-0b236a393b35fa3de-AWOR-PDAMMID01-CPUUtilization",
+        "i-0b236a393b35fa3de-AWOR-PDAMMID01-MemoryUtilization"
+    ],
+    "i-0733e102c6c04ba30": [
+        "i-0733e102c6c04ba30-AWOR-TSTOPPWEB01-StatusCheckFailed",
+        "i-0733e102c6c04ba30-AWOR-TSTOPPWEB01-CPUUtilization",
+        "i-0733e102c6c04ba30-AWOR-TSTOPPWEB01-MemoryUtilization"
+    ],
+    "i-065460cc0324c25fd": [
+        "i-065460cc0324c25fd-AWOR-PDTOPPWEB01-MemoryUtilization"
+    ],
+    "i-0dc20df3c1c0a8c58": [
+        "i-0dc20df3c1c0a8c58-AWOR-TSMESDBW01-StatusCheckFailed",
+        "i-0dc20df3c1c0a8c58-AWOR-TSMESDBW01-CPUUtilization",
+        "i-0dc20df3c1c0a8c58-AWOR-TSMESDBW01-MemoryUtilization"
+    ],
+    "i-0fb4a0898d9eed455": [
+        "i-0fb4a0898d9eed455-AWOR-PDGITAPP01-MemoryUtilization"
+    ],
+    "i-096b2f7934a824cb8": [
+        "i-096b2f7934a824cb8-asadmin-fe-proxy-common-StatusCheckFailed",
+        "i-096b2f7934a824cb8-asadmin-fe-proxy-common-CPUUtilization",
+        "i-096b2f7934a824cb8-asadmin-fe-proxy-common-MemoryUtilization"
+    ],
+    "i-0298e26173d93418f": [
+        "i-0298e26173d93418f-AwOr-TmTibBw02-MemoryUtilization"
+    ],
+    "i-034be8c35c1e9b5c6": [
+        "i-034be8c35c1e9b5c6-AWOR-TSLTRAPP01-StatusCheckFailed",
+        "i-034be8c35c1e9b5c6-AWOR-TSLTRAPP01-CPUUtilization",
+        "i-034be8c35c1e9b5c6-AWOR-TSLTRAPP01-MemoryUtilization"
+    ],
+    "i-0f481ef00f4a8543f": [
+        "i-0f481ef00f4a8543f-AWOR-PDLTRAPP01-MemoryUtilization"
+    ],
+    "i-0cb0d7e8493bd4962": [
+        "i-0cb0d7e8493bd4962-Awor-dvmeswrk04-StatusCheckFailed",
+        "i-0cb0d7e8493bd4962-Awor-dvmeswrk04-CPUUtilization",
+        "i-0cb0d7e8493bd4962-Awor-dvmeswrk04-MemoryUtilization"
+    ],
+    "i-0a6cfd2e03a063c6b": [
+        "i-0a6cfd2e03a063c6b-Awor-dvmeswrk06-StatusCheckFailed",
+        "i-0a6cfd2e03a063c6b-Awor-dvmeswrk06-CPUUtilization",
+        "i-0a6cfd2e03a063c6b-Awor-dvmeswrk06-MemoryUtilization"
+    ],
+    "i-0ea685a3d874c27b1": [
+        "i-0ea685a3d874c27b1-IrvBizOQ04-MemoryUtilization"
+    ],
+    "i-0f42991aa258ae95e": [
+        "i-0f42991aa258ae95e-IrvbizPY04-StatusCheckFailed",
+        "i-0f42991aa258ae95e-IrvbizPY04-CPUUtilization",
+        "i-0f42991aa258ae95e-IrvbizPY04-MemoryUtilization"
+    ],
+    "i-0f0b03130af11d0f9": [
+        "i-0f0b03130af11d0f9-Awor-tsmesbo02-StatusCheckFailed",
+        "i-0f0b03130af11d0f9-Awor-tsmesbo02-CPUUtilization",
+        "i-0f0b03130af11d0f9-Awor-tsmesbo02-MemoryUtilization"
+    ],
+    "i-01c49a1fd48cc29b2": [
+        "i-01c49a1fd48cc29b2-AWOR-DRSQLDB02-MemoryUtilization"
+    ],
+    "i-027eeabfeab37789a": [
+        "i-027eeabfeab37789a-AWOR-DRQMSDB01-MemoryUtilization"
+    ],
+    "i-0172170d254ac10b9": [
+        "i-0172170d254ac10b9-AWOR-TSPLMVDI01-StatusCheckFailed",
+        "i-0172170d254ac10b9-AWOR-TSPLMVDI01-CPUUtilization",
+        "i-0172170d254ac10b9-AWOR-TSPLMVDI01-MemoryUtilization"
+    ],
+    "i-0e10b45b8b4bff988": [
+        "i-0e10b45b8b4bff988-AWOR-PDCLZAPP01-MemoryUtilization"
+    ],
+    "i-0177b766836a47fbb": [
+        "i-0177b766836a47fbb-IRVBIZSQL01-DR-MemoryUtilization"
+    ],
+    "i-0c3272b18e861674b": [
+        "i-0c3272b18e861674b-AWOR-DRSPCDB01-MemoryUtilization"
+    ],
+    "i-00312032089f220e7": [
+        "i-00312032089f220e7-AWOR-PDINFAPP01-MemoryUtilization"
+    ],
+    "i-0e7e0ce6a939895b3": [
+        "i-0e7e0ce6a939895b3-IRVPLMISE02-PD-MemoryUtilization"
+    ],
+    "i-053c5731232ed3815": [
+        "i-053c5731232ed3815-AWORDVARAAPP02-MemoryUtilization"
+    ],
+    "i-0948d74eae3ce4a9d": [
+        "i-0948d74eae3ce4a9d-AWPJDEDB3-MemoryUtilization"
+    ],
+    "i-0bf153bd2e51d6366": [
+        "i-0bf153bd2e51d6366-SLC3-MemoryUtilization"
+    ],
+    "i-0781ab28c094092a9": [
+        "i-0781ab28c094092a9-AWOR-PDORAAPX01-MemoryUtilization"
+    ],
+    "i-05ca2de9a65273d0b": [
+        "i-05ca2de9a65273d0b-AWOR-TSPLMVDI05-MemoryUtilization"
+    ],
+    "i-0728b02c5feedc163": [
+        "i-0728b02c5feedc163-AWOR-TSPLMVDI07-MemoryUtilization"
+    ],
+    "i-06845f80e286e8088": [
+        "i-06845f80e286e8088-AWOR-TSPLMVDI06-MemoryUtilization"
+    ],
+    "i-012e78851506a2b30": [
+        "i-012e78851506a2b30-AWOR-TSPLMVDI03-MemoryUtilization"
+    ],
+    "i-008c1723b4fe4ab74": [
+        "i-008c1723b4fe4ab74-AWOR-TSPLMVDI02-MemoryUtilization"
+    ],
+    "i-0c669f34c7e82bce6": [
+        "i-0c669f34c7e82bce6-AWOR-TSPLMVDI09-MemoryUtilization"
+    ],
+    "i-025dd19b7ddb6db57": [
+        "i-025dd19b7ddb6db57-AWOR-TSPLMVDI04-MemoryUtilization"
+    ],
+    "i-0ee6e307398d3c333": [
+        "i-0ee6e307398d3c333-AWOR-TSPLMVDI10-MemoryUtilization"
+    ],
+    "i-0b9475e57ef3b57ae": [
+        "i-0b9475e57ef3b57ae-AWOR-TSPLMVDI08-MemoryUtilization"
+    ],
+    "i-0c006020166eea394": [
+        "i-0c006020166eea394-Awor-pdmesweb06-MemoryUtilization"
+    ],
+    "i-0de6e185c0b8edc90": [
+        "i-0de6e185c0b8edc90-USDRINPLMAPP01-MemoryUtilization"
+    ],
+    "i-06653c4b3c92b3aed": [
+        "i-06653c4b3c92b3aed-USDRPDPLMAPP01-MemoryUtilization"
+    ],
+    "i-0b018a888e99d8f08": [
+        "i-0b018a888e99d8f08-AWOR-PDT2PAS01-StatusCheckFailed",
+        "i-0b018a888e99d8f08-AWOR-PDT2PAS01-CPUUtilization",
+        "i-0b018a888e99d8f08-AWOR-PDT2PAS01-MemoryUtilization"
+    ],
+    "i-0e944660ac5fb39a2": [
+        "i-0e944660ac5fb39a2-IRVHFMFDM02-MemoryUtilization"
+    ],
+    "i-0e0cfbaddce4a2fbd": [
+        "i-0e0cfbaddce4a2fbd-IRVHFMWEB03-MemoryUtilization"
+    ],
+    "i-0a6a14fe04cd91b14": [
+        "i-0a6a14fe04cd91b14-AWOR-PDQLKSNS02-StatusCheckFailed",
+        "i-0a6a14fe04cd91b14-AWOR-PDQLKSNS02-CPUUtilization",
+        "i-0a6a14fe04cd91b14-AWOR-PDQLKSNS02-MemoryUtilization"
+    ],
+    "i-08f98116818f4c0d7": [
+        "i-08f98116818f4c0d7-AWORPDPLMAPP01-MemoryUtilization"
+    ],
+    "i-0115e68de92240ced": [
+        "i-0115e68de92240ced-AWOR-PDQLKNPR01-MemoryUtilization"
+    ],
+    "i-07d6f15170bf79339": [
+        "i-07d6f15170bf79339-AWPJDEWL20-MemoryUtilization"
+    ],
+    "i-0d383292a3da94a5f": [
+        "i-0d383292a3da94a5f-AWPJDEWL22-MemoryUtilization"
+    ],
+    "i-0ad01e57adc8177e8": [
+        "i-0ad01e57adc8177e8-AWPJDEWL24-MemoryUtilization"
+    ],
+    "i-0b960d52bbc1a341d": [
+        "i-0b960d52bbc1a341d-AWPJDEWL26-MemoryUtilization"
+    ],
+    "i-0baad4ad84ecd2f14": [
+        "i-0baad4ad84ecd2f14-IRVBIZPD04-MemoryUtilization"
+    ],
+    "i-0e165257a93d2d43c": [
+        "i-0e165257a93d2d43c-Awor-thqlknpr01-MemoryUtilization"
+    ],
+    "i-062e130b6a4695fa1": [
+        "i-062e130b6a4695fa1-AWOR-PDHRAPP01-MemoryUtilization"
+    ],
+    "i-0dfc77594d78655ef": [
+        "i-0dfc77594d78655ef-AWOR-PDAMDC22-MemoryUtilization"
+    ],
+    "i-0528649642bd44e9c": [
+        "i-0528649642bd44e9c-SLCPRN01-MemoryUtilization"
+    ],
+    "i-07589ade9a5d3de59": [
+        "i-07589ade9a5d3de59-AwOr-TsMovXfr01-StatusCheckFailed",
+        "i-07589ade9a5d3de59-AwOr-TsMovXfr01-CPUUtilization"
+    ],
+    "i-03a1ea9dff001cd8e": [
+        "i-03a1ea9dff001cd8e-AWOR-QALABAPP01-StatusCheckFailed",
+        "i-03a1ea9dff001cd8e-AWOR-QALABAPP01-CPUUtilization",
+        "i-03a1ea9dff001cd8e-AWOR-QALABAPP01-MemoryUtilization"
+    ],
+    "i-09ece954734546176": [
+        "i-09ece954734546176-AWOR-QALABSCH01-StatusCheckFailed",
+        "i-09ece954734546176-AWOR-QALABSCH01-CPUUtilization",
+        "i-09ece954734546176-AWOR-QALABSCH01-MemoryUtilization"
+    ],
+    "i-09e8b69b637fbd37d": [
+        "i-09e8b69b637fbd37d-AWOR-QALABAPP02-StatusCheckFailed",
+        "i-09e8b69b637fbd37d-AWOR-QALABAPP02-CPUUtilization",
+        "i-09e8b69b637fbd37d-AWOR-QALABAPP02-MemoryUtilization"
+    ],
+    "i-01e0ff356621c257d": [
+        "i-01e0ff356621c257d-IRVLBLSPC01-oq-MemoryUtilization"
+    ],
+    "i-0f9baae478c3c7edb": [
+        "i-0f9baae478c3c7edb-MEXFILPRT01-StatusCheckFailed",
+        "i-0f9baae478c3c7edb-MEXFILPRT01-CPUUtilization"
+    ],
+    "i-014a7f716fcb0eb39": [
+        "i-014a7f716fcb0eb39-IRVHFMFND02-MemoryUtilization"
+    ],
+    "i-01728a607346579e0": [
+        "i-01728a607346579e0-edwards-exch-fe-proxy-test-StatusCheckFailed",
+        "i-01728a607346579e0-edwards-exch-fe-proxy-test-CPUUtilization"
+    ],
+    "i-00dbee86fd54edd6a": [
+        "i-00dbee86fd54edd6a-AWOR-PDSCCMPR01-MemoryUtilization"
+    ],
+    "i-070a4d1853efc80a8": [
+        "i-070a4d1853efc80a8-AwOr-OqTibDb02-StatusCheckFailed",
+        "i-070a4d1853efc80a8-AwOr-OqTibDb02-CPUUtilization"
+    ],
+    "i-0e7dcccabb722b2d9": [
+        "i-0e7dcccabb722b2d9-AwOr-OqTibDbW01-StatusCheckFailed",
+        "i-0e7dcccabb722b2d9-AwOr-OqTibDbW01-CPUUtilization"
+    ],
+    "i-0fde70a4f3410438d": [
+        "i-0fde70a4f3410438d-AWOR-SSLABRCB01-StatusCheckFailed",
+        "i-0fde70a4f3410438d-AWOR-SSLABRCB01-CPUUtilization",
+        "i-0fde70a4f3410438d-AWOR-SSLABRCB01-MemoryUtilization"
+    ],
+    "i-08e2e5ed5f9d99916": [
+        "i-08e2e5ed5f9d99916-IRVJDETRX07-MemoryUtilization"
+    ],
+    "i-0678ab661cbeed790": [
+        "i-0678ab661cbeed790-IRVORACLN11-StatusCheckFailed",
+        "i-0678ab661cbeed790-IRVORACLN11-CPUUtilization"
+    ],
+    "i-02ce088c575c2b54f": [
+        "i-02ce088c575c2b54f-IRVORACLN12-StatusCheckFailed",
+        "i-02ce088c575c2b54f-IRVORACLN12-CPUUtilization",
+        "i-02ce088c575c2b54f-IRVORACLN12-MemoryUtilization"
+    ],
+    "i-040efbff1a773be64": [
+        "i-040efbff1a773be64-AWOR-PDDMOAPP01 -StatusCheckFailed",
+        "i-040efbff1a773be64-AWOR-PDDMOAPP01 -CPUUtilization"
+    ],
+    "i-03d550dafcb56ab76": [
+        "i-03d550dafcb56ab76-AWPJDELG03-MemoryUtilization"
+    ],
+    "i-0b72f3c603e85d63a": [
+        "i-0b72f3c603e85d63a-AWPJDELG05-MemoryUtilization"
+    ],
+    "i-04806635b6ec23568": [
+        "i-04806635b6ec23568-AWPJDELG06-MemoryUtilization"
+    ],
+    "i-0af3b3a5579190604": [
+        "i-0af3b3a5579190604-AWPJDELG11-MemoryUtilization"
+    ],
+    "i-078925a9cf5296d57": [
+        "i-078925a9cf5296d57-AWPJDELG16-MemoryUtilization"
+    ],
+    "i-0578adc4d39d25f56": [
+        "i-0578adc4d39d25f56-AWPJDELG17-StatusCheckFailed",
+        "i-0578adc4d39d25f56-AWPJDELG17-CPUUtilization",
+        "i-0578adc4d39d25f56-AWPJDELG17-MemoryUtilization"
+    ],
+    "i-0136d0edb4e62925d": [
+        "i-0136d0edb4e62925d-awor-dvsmoke01-StatusCheckFailed",
+        "i-0136d0edb4e62925d-awor-dvsmoke01-CPUUtilization",
+        "i-0136d0edb4e62925d-awor-dvsmoke01-MemoryUtilization"
+    ],
+    "i-0631a9bf9a3502841": [
+        "i-0631a9bf9a3502841-IRVLABAPP01-MemoryUtilization"
+    ],
+    "i-03dc148ab2cc5ad80": [
+        "i-03dc148ab2cc5ad80-AWOR-TSWPLAPP01-StatusCheckFailed",
+        "i-03dc148ab2cc5ad80-AWOR-TSWPLAPP01-CPUUtilization"
+    ],
+    "i-095dcaf5ca225e6a7": [
+        "i-095dcaf5ca225e6a7-IRVOLBECM01-QA-StatusCheckFailed",
+        "i-095dcaf5ca225e6a7-IRVOLBECM01-QA-CPUUtilization"
+    ],
+    "i-019901428d58961a0": [
+        "i-019901428d58961a0-IRVOLBSCH01-QA-MemoryUtilization"
+    ],
+    "i-0c51a5f192b566189": [
+        "i-0c51a5f192b566189-AWOR-PDQLIKPROXY02-MemoryUtilization"
+    ],
+    "i-0e5db27e01d16530a": [
+        "i-0e5db27e01d16530a-IRVJDE92BI-MemoryUtilization"
+    ],
+    "i-0cb9a4897bd98c2e2": [
+        "i-0cb9a4897bd98c2e2-Irvine902-MemoryUtilization"
+    ],
+    "i-0cfb6f734c9fb536b": [
+        "i-0cfb6f734c9fb536b-AWPJDEAI04-MemoryUtilization"
+    ],
+    "i-09de5fae08190a4bd": [
+        "i-09de5fae08190a4bd-AWOR-PDCTCAPP02-MemoryUtilization"
+    ],
+    "i-08670e064599f71d0": [
+        "i-08670e064599f71d0-AWOR-PDTABAPP02-MemoryUtilization"
+    ],
+    "i-0f700a23e3b82b0a9": [
+        "i-0f700a23e3b82b0a9-AWOR-DVMESDBW01-StatusCheckFailed",
+        "i-0f700a23e3b82b0a9-AWOR-DVMESDBW01-CPUUtilization"
+    ],
+    "i-09e7a697979c60c43": [
+        "i-09e7a697979c60c43-AWOR-PDQLKPUB02-MemoryUtilization"
+    ],
+    "i-0737fd8071dd88ffb": [
+        "i-0737fd8071dd88ffb-AWOR-DVUIPAPP01 Win 2016-StatusCheckFailed",
+        "i-0737fd8071dd88ffb-AWOR-DVUIPAPP01 Win 2016-CPUUtilization"
+    ],
+    "i-0a1a7b9064cdf6764": [
+        "i-0a1a7b9064cdf6764-AWOR-DVUIPAPP02 Win10-StatusCheckFailed",
+        "i-0a1a7b9064cdf6764-AWOR-DVUIPAPP02 Win10-CPUUtilization"
+    ],
+    "i-0d6206e33e928fa06": [
+        "i-0d6206e33e928fa06-AWOR-PDFSMAPP04-StatusCheckFailed",
+        "i-0d6206e33e928fa06-AWOR-PDFSMAPP04-CPUUtilization",
+        "i-0d6206e33e928fa06-AWOR-PDFSMAPP04-MemoryUtilization"
+    ],
+    "i-04a4a7d763ed32c60": [
+        "i-04a4a7d763ed32c60-AWOR-PDFSMAPP03-StatusCheckFailed",
+        "i-04a4a7d763ed32c60-AWOR-PDFSMAPP03-CPUUtilization",
+        "i-04a4a7d763ed32c60-AWOR-PDFSMAPP03-MemoryUtilization"
+    ],
+    "i-021ef3070aba1220e": [
+        "i-021ef3070aba1220e-AWOR-DVMESWRK03-MemoryUtilization"
+    ],
+    "i-0f3fa88eafff896e9": [
+        "i-0f3fa88eafff896e9-AWOR-DVMESWRK01-MemoryUtilization"
+    ],
+    "i-0d5858c427fb6d576": [
+        "i-0d5858c427fb6d576-AWOR-DVMESWRK02-MemoryUtilization"
+    ],
+    "i-0d4ae88996e4c0c63": [
+        "i-0d4ae88996e4c0c63-AWOR-DVDFSFSX04-StatusCheckFailed",
+        "i-0d4ae88996e4c0c63-AWOR-DVDFSFSX04-CPUUtilization",
+        "i-0d4ae88996e4c0c63-AWOR-DVDFSFSX04-MemoryUtilization"
+    ],
+    "i-056214181562f8732": [
+        "i-056214181562f8732-AWOR-DVCCRAPP01-MemoryUtilization"
+    ],
+    "i-03847b89299488980": [
+        "i-03847b89299488980-AWOR-DVCCRAPP02-StatusCheckFailed",
+        "i-03847b89299488980-AWOR-DVCCRAPP02-CPUUtilization",
+        "i-03847b89299488980-AWOR-DVCCRAPP02-MemoryUtilization"
+    ],
+    "i-02bcb09a31f9aa316": [
+        "i-02bcb09a31f9aa316-AWOR-TRPDMLAS01-MemoryUtilization"
+    ],
+    "i-045beba473f2cf3c3": [
+        "i-045beba473f2cf3c3-AWOR-PDDAGAPP02-MemoryUtilization"
+    ],
+    "i-0de85add1e1e7a272": [
+        "i-0de85add1e1e7a272-IRVJDEVTX01-MemoryUtilization"
+    ],
+    "i-04bc269c45a96c899": [
+        "i-04bc269c45a96c899-AWOR-PDPDMLAS01-MemoryUtilization"
+    ],
+    "i-0344c48b94747ccf0": [
+        "i-0344c48b94747ccf0-IRVMETCAL02-MemoryUtilization"
+    ],
+    "i-0799387fa39124c32": [
+        "i-0799387fa39124c32-AWOR-PDCCRDB02-MemoryUtilization"
+    ],
+    "i-08333bbf229da809d": [
+        "i-08333bbf229da809d-Victor-Test New-StatusCheckFailed",
+        "i-08333bbf229da809d-Victor-Test New-CPUUtilization"
+    ],
+    "i-0e6ee520fe4c62d37": [
+        "i-0e6ee520fe4c62d37-Awor-pdarcapp01-MemoryUtilization"
+    ],
+    "i-0716e0a30c832013d": [
+        "i-0716e0a30c832013d-USBR-PDPDMWRK01-MemoryUtilization"
+    ],
+    "i-0591a7dbf2ac7d451": [
+        "i-0591a7dbf2ac7d451-IrvQMSAPP01-MemoryUtilization"
+    ],
+    "i-0b336799e46c72f2f": [
+        "i-0b336799e46c72f2f-IrvQMSWEB01-MemoryUtilization"
+    ],
+    "i-0b58113e9c0a46f02": [
+        "i-0b58113e9c0a46f02-IRVVALGEN01-MemoryUtilization"
+    ],
+    "i-0f8af50589e6b0387": [
+        "i-0f8af50589e6b0387-AWPJDEDB4-StatusCheckFailed",
+        "i-0f8af50589e6b0387-AWPJDEDB4-CPUUtilization"
+    ],
+    "i-055dd0452fecd229d": [
+        "i-055dd0452fecd229d-AWOR-PDQMSAPP02-MemoryUtilization"
+    ],
+    "i-0409a9f87c44214ae": [
+        "i-0409a9f87c44214ae-IRVJDEMEX02-MemoryUtilization"
+    ],
+    "i-04bce85ebf1da2b6f": [
+        "i-04bce85ebf1da2b6f-AwOr-PdRssApp02-StatusCheckFailed",
+        "i-04bce85ebf1da2b6f-AwOr-PdRssApp02-CPUUtilization"
+    ],
+    "i-01e7879c2fd5369e1": [
+        "i-01e7879c2fd5369e1-AWOR-PDWPLAPP01-MemoryUtilization"
+    ],
+    "i-0d33fcf135a387736": [
+        "i-0d33fcf135a387736-IRVLBLSPC01-MemoryUtilization"
+    ],
+    "i-01fafc603c1a0c145": [
+        "i-01fafc603c1a0c145-IRVORACLN14-MemoryUtilization"
+    ],
+    "i-092e9a005b96515a3": [
+        "i-092e9a005b96515a3-IRVLBLPRG01-MemoryUtilization"
+    ],
+    "i-02df2bef3a5e0be3e": [
+        "i-02df2bef3a5e0be3e-IRVORACLN15-MemoryUtilization"
+    ],
+    "i-06ffac7af76b483de": [
+        "i-06ffac7af76b483de-IRVDIGWEB04-MemoryUtilization"
+    ],
+    "i-0b15c82083cc0dc8d": [
+        "i-0b15c82083cc0dc8d-AWOR-PDDMZWEB01-MemoryUtilization"
+    ],
+    "i-066b794391011c9dc": [
+        "i-066b794391011c9dc-IRVDIGWEB21-MemoryUtilization"
+    ],
+    "i-0462b02d8434f15c5": [
+        "i-0462b02d8434f15c5-IRVLBLLFT02-MemoryUtilization"
+    ],
+    "i-0940879a798b550e7": [
+        "i-0940879a798b550e7-AWOR-TSOLAPDB01-MemoryUtilization"
+    ],
+    "i-017da3a42826bfe16": [
+        "i-017da3a42826bfe16-AWOR-TSOLAPPB01-MemoryUtilization"
+    ],
+    "i-0eca8b024a8b646e7": [
+        "i-0eca8b024a8b646e7-AWOR-QAVAIAPP01 - Snowblower - Failed Conversion-StatusCheckFailed",
+        "i-0eca8b024a8b646e7-AWOR-QAVAIAPP01 - Snowblower - Failed Conversion-CPUUtilization"
+    ],
+    "i-04897cb1b06a7428d": [
+        "i-04897cb1b06a7428d-AWOR-PDVAIAPP01-MemoryUtilization"
+    ],
+    "i-09a77170e25738f66": [
+        "i-09a77170e25738f66-AWTJDESCH02-MemoryUtilization"
+    ],
+    "i-0e9cdd073cfdf7391": [
+        "i-0e9cdd073cfdf7391-AWOR-PDBKPSRV01-MemoryUtilization"
+    ],
+    "i-0481f1e314b502154": [
+        "i-0481f1e314b502154-AwOr-OqTibFil11-StatusCheckFailed",
+        "i-0481f1e314b502154-AwOr-OqTibFil11-CPUUtilization",
+        "i-0481f1e314b502154-AwOr-OqTibFil11-MemoryUtilization"
+    ],
+    "i-063057f3ebaf35572": [
+        "i-063057f3ebaf35572-irvbizsql01-pd-MemoryUtilization"
+    ],
+    "i-08d3e9c5f65721210": [
+        "i-08d3e9c5f65721210-AWOR-PDSPCDB01-MemoryUtilization"
+    ],
+    "i-0caed3a39590c6ce8": [
+        "i-0caed3a39590c6ce8-AWOR-PDCSWDB01-MemoryUtilization"
+    ],
+    "i-05e45d11fc9730422": [
+        "i-05e45d11fc9730422-IRVSQLPRD01-StatusCheckFailed",
+        "i-05e45d11fc9730422-IRVSQLPRD01-CPUUtilization",
+        "i-05e45d11fc9730422-IRVSQLPRD01-MemoryUtilization"
+    ],
+    "i-0630f0ccddbb8b736": [
+        "i-0630f0ccddbb8b736-AWOR-DVCYBPSM01-MemoryUtilization"
+    ],
+    "i-0dff01a5a00e1fff4": [
+        "i-0dff01a5a00e1fff4-AWOR-PDCYBWEB01-MemoryUtilization"
+    ],
+    "i-07a1f7f97f365a55a": [
+        "i-07a1f7f97f365a55a-AWOR-PDCYBPSM01-MemoryUtilization"
+    ],
+    "i-0005f4c20697e7680": [
+        "i-0005f4c20697e7680-AWOR-PDCYBVAU01-MemoryUtilization"
+    ],
+    "i-08030dd2308f35a35": [
+        "i-08030dd2308f35a35-AWOR-PDCYBCPM01-MemoryUtilization"
+    ],
+    "i-03685fcc958ed6c29": [
+        "i-03685fcc958ed6c29-AWOR-DVATAAPP01-StatusCheckFailed",
+        "i-03685fcc958ed6c29-AWOR-DVATAAPP01-CPUUtilization",
+        "i-03685fcc958ed6c29-AWOR-DVATAAPP01-MemoryUtilization"
+    ],
+    "i-0e0c21d7f6826a539": [
+        "i-0e0c21d7f6826a539-AWOR-DVCYBPSMP01-StatusCheckFailed",
+        "i-0e0c21d7f6826a539-AWOR-DVCYBPSMP01-CPUUtilization",
+        "i-0e0c21d7f6826a539-AWOR-DVCYBPSMP01-MemoryUtilization"
+    ],
+    "i-0f81425b58a47ec9f": [
+        "i-0f81425b58a47ec9f-AWOR-PDPAWAPP01-MemoryUtilization"
+    ],
+    "i-0d6e5e635bf1b21c3": [
+        "i-0d6e5e635bf1b21c3-AWOR-PDWEPAPP01-MemoryUtilization"
+    ],
+    "i-0de7f69cab2e90279": [
+        "i-0de7f69cab2e90279-AWOR-PDCYBPSMP01-MemoryUtilization"
+    ],
+    "i-040235efbf830045f": [
+        "i-040235efbf830045f-IRVMKSINT01-OQ-StatusCheckFailed",
+        "i-040235efbf830045f-IRVMKSINT01-OQ-CPUUtilization"
+    ],
+    "i-05c43f95ca3c39a21": [
+        "i-05c43f95ca3c39a21-AWOR-TRLABSCH01-StatusCheckFailed",
+        "i-05c43f95ca3c39a21-AWOR-TRLABSCH01-CPUUtilization",
+        "i-05c43f95ca3c39a21-AWOR-TRLABSCH01-MemoryUtilization"
+    ],
+    "i-05e9557ce60362fb2": [
+        "i-05e9557ce60362fb2-AWOR-TRLABAPP01-StatusCheckFailed",
+        "i-05e9557ce60362fb2-AWOR-TRLABAPP01-CPUUtilization",
+        "i-05e9557ce60362fb2-AWOR-TRLABAPP01-MemoryUtilization"
+    ],
+    "i-039a4ae3101d8ad2a": [
+        "i-039a4ae3101d8ad2a-AwOr-TmTibBw01-MemoryUtilization"
+    ],
+    "i-012a74ec811ec6906": [
+        "i-012a74ec811ec6906-AWOR-QALABFIL01-StatusCheckFailed",
+        "i-012a74ec811ec6906-AWOR-QALABFIL01-CPUUtilization",
+        "i-012a74ec811ec6906-AWOR-QALABFIL01-MemoryUtilization"
+    ],
+    "i-02e1bf90d4000f785": [
+        "i-02e1bf90d4000f785-AWOR-PDPDWCL01-StatusCheckFailed",
+        "i-02e1bf90d4000f785-AWOR-PDPDWCL01-CPUUtilization",
+        "i-02e1bf90d4000f785-AWOR-PDPDWCL01-MemoryUtilization"
+    ],
+    "i-024c36882b851917b": [
+        "i-024c36882b851917b-AWOR-TSATAAPP01-StatusCheckFailed",
+        "i-024c36882b851917b-AWOR-TSATAAPP01-CPUUtilization",
+        "i-024c36882b851917b-AWOR-TSATAAPP01-MemoryUtilization"
+    ],
+    "i-07136efa423c226c9": [
+        "i-07136efa423c226c9-AWOR-TSATAAPP02-StatusCheckFailed",
+        "i-07136efa423c226c9-AWOR-TSATAAPP02-CPUUtilization",
+        "i-07136efa423c226c9-AWOR-TSATAAPP02-MemoryUtilization"
+    ],
+    "i-0fc685cbbb5aa6e08": [
+        "i-0fc685cbbb5aa6e08-AWOR-TSATASRV01-StatusCheckFailed",
+        "i-0fc685cbbb5aa6e08-AWOR-TSATASRV01-CPUUtilization",
+        "i-0fc685cbbb5aa6e08-AWOR-TSATASRV01-MemoryUtilization"
+    ],
+    "i-0e773d0fbba917e97": [
+        "i-0e773d0fbba917e97-IRVLBLSDL01-DV-StatusCheckFailed",
+        "i-0e773d0fbba917e97-IRVLBLSDL01-DV-CPUUtilization",
+        "i-0e773d0fbba917e97-IRVLBLSDL01-DV-MemoryUtilization"
+    ],
+    "i-0155f5f1efd9dcab1": [
+        "i-0155f5f1efd9dcab1-IRVLBLSDLBA-DV-MemoryUtilization"
+    ],
+    "i-010133531ca571af8": [
+        "i-010133531ca571af8-IRVLBLCAR01-PD-StatusCheckFailed",
+        "i-010133531ca571af8-IRVLBLCAR01-PD-CPUUtilization",
+        "i-010133531ca571af8-IRVLBLCAR01-PD-MemoryUtilization"
+    ],
+    "i-04d4ffd9b38073763": [
+        "i-04d4ffd9b38073763-IRVLBLSDL01-PD-MemoryUtilization"
+    ],
+    "i-0e0ba7ca2f42bfca9": [
+        "i-0e0ba7ca2f42bfca9-IRVLBLCAR01-OQ-StatusCheckFailed",
+        "i-0e0ba7ca2f42bfca9-IRVLBLCAR01-OQ-CPUUtilization",
+        "i-0e0ba7ca2f42bfca9-IRVLBLCAR01-OQ-MemoryUtilization"
+    ],
+    "i-037ed8c6a000bf975": [
+        "i-037ed8c6a000bf975-IRVLBLSDLBA-OQ-StatusCheckFailed",
+        "i-037ed8c6a000bf975-IRVLBLSDLBA-OQ-CPUUtilization",
+        "i-037ed8c6a000bf975-IRVLBLSDLBA-OQ-MemoryUtilization"
+    ],
+    "i-017cd8b52c397b28f": [
+        "i-017cd8b52c397b28f-IRVLBLSDLBA-PD-MemoryUtilization"
+    ],
+    "i-08eef0eb86cafe52f": [
+        "i-08eef0eb86cafe52f-IRVLBLSDL01-OQ-StatusCheckFailed",
+        "i-08eef0eb86cafe52f-IRVLBLSDL01-OQ-CPUUtilization",
+        "i-08eef0eb86cafe52f-IRVLBLSDL01-OQ-MemoryUtilization"
+    ],
+    "i-01545641aeebab1e0": [
+        "i-01545641aeebab1e0-IRVLBLCAR01-DV-StatusCheckFailed",
+        "i-01545641aeebab1e0-IRVLBLCAR01-DV-CPUUtilization",
+        "i-01545641aeebab1e0-IRVLBLCAR01-DV-MemoryUtilization"
+    ],
+    "i-00dff7131183330cf": [
+        "i-00dff7131183330cf-AwOr-DvTibBw01-MemoryUtilization"
+    ],
+    "i-0879183fba8a76fcb": [
+        "i-0879183fba8a76fcb-AWOR-PDAMUTIL01-MemoryUtilization"
+    ],
+    "i-08dad8e0ed74a1fcc": [
+        "i-08dad8e0ed74a1fcc-AWTJDE075-StatusCheckFailed",
+        "i-08dad8e0ed74a1fcc-AWTJDE075-CPUUtilization",
+        "i-08dad8e0ed74a1fcc-AWTJDE075-MemoryUtilization"
+    ],
+    "i-012b620f2175d251e": [
+        "i-012b620f2175d251e-AWOR-DVAMDC02-StatusCheckFailed",
+        "i-012b620f2175d251e-AWOR-DVAMDC02-CPUUtilization",
+        "i-012b620f2175d251e-AWOR-DVAMDC02-MemoryUtilization"
+    ],
+    "i-050476cb8699f9caf": [
+        "i-050476cb8699f9caf-AWOR-TSDEVOP01-StatusCheckFailed",
+        "i-050476cb8699f9caf-AWOR-TSDEVOP01-CPUUtilization",
+        "i-050476cb8699f9caf-AWOR-TSDEVOP01-MemoryUtilization"
+    ],
+    "i-0997d920bf5909ce9": [
+        "i-0997d920bf5909ce9-AWOR-PDADSYNC01-MemoryUtilization"
+    ],
+    "i-081522c8972566737": [
+        "i-081522c8972566737-AWOR-PDEWDC20-MemoryUtilization"
+    ],
+    "i-038357cc9bf1c438d": [
+        "i-038357cc9bf1c438d-AWOR-PDAMDC20-MemoryUtilization"
+    ],
+    "i-0af97481a5bf3b42a": [
+        "i-0af97481a5bf3b42a-AwOr-PdTibBw04-MemoryUtilization"
+    ],
+    "i-03855aea63227a3ac": [
+        "i-03855aea63227a3ac-AwOr-PdTibBw03-MemoryUtilization"
+    ],
+    "i-0636df03bea1bbeb6": [
+        "i-0636df03bea1bbeb6-AWOR-PDSCCMFSP1-MemoryUtilization"
+    ],
+    "i-0ac1c26c5c89160bf": [
+        "i-0ac1c26c5c89160bf-AWOR-OS2016-StatusCheckFailed",
+        "i-0ac1c26c5c89160bf-AWOR-OS2016-CPUUtilization",
+        "i-0ac1c26c5c89160bf-AWOR-OS2016-MemoryUtilization"
+    ],
+    "i-0e99d91137d8b2d02": [
+        "i-0e99d91137d8b2d02-AWOR-PDPSAAPP01-StatusCheckFailed",
+        "i-0e99d91137d8b2d02-AWOR-PDPSAAPP01-CPUUtilization"
+    ],
+    "i-0946384fc6c97a48d": [
+        "i-0946384fc6c97a48d-AWOR-PDIVFAPP01-StatusCheckFailed",
+        "i-0946384fc6c97a48d-AWOR-PDIVFAPP01-CPUUtilization",
+        "i-0946384fc6c97a48d-AWOR-PDIVFAPP01-MemoryUtilization"
+    ],
+    "i-06e99fbe7731020db": [
+        "i-06e99fbe7731020db-AWOR-PDSCCMDP01-StatusCheckFailed",
+        "i-06e99fbe7731020db-AWOR-PDSCCMDP01-CPUUtilization",
+        "i-06e99fbe7731020db-AWOR-PDSCCMDP01-MemoryUtilization"
+    ],
+    "i-08097055401306842": [
+        "i-08097055401306842-awor-tspbcapp01-MemoryUtilization"
+    ],
+    "i-08965792429319f23": [
+        "i-08965792429319f23-asadmin-fe-proxy-common-MemoryUtilization"
+    ],
+    "i-01a2fcdb9579ae66f": [
+        "i-01a2fcdb9579ae66f-IRVMKSINT01-MemoryUtilization"
+    ],
+    "i-0b28ca6b91a6c79c0": [
+        "i-0b28ca6b91a6c79c0-AWOR-TSWAP01Z-StatusCheckFailed",
+        "i-0b28ca6b91a6c79c0-AWOR-TSWAP01Z-CPUUtilization",
+        "i-0b28ca6b91a6c79c0-AWOR-TSWAP01Z-MemoryUtilization"
+    ],
+    "i-03fed095fe998763e": [
+        "i-03fed095fe998763e-AWOR-PDAMUTIL02-MemoryUtilization"
+    ],
+    "i-039b0c5892f04055a": [
+        "i-039b0c5892f04055a-IRVEXCHYB04-MemoryUtilization"
+    ],
+    "i-06f330fb74a298cb9": [
+        "i-06f330fb74a298cb9-IRVEXCHYB05-MemoryUtilization"
+    ],
+    "i-048d10b3800e994b1": [
+        "i-048d10b3800e994b1-awor-PDpbcapp01-MemoryUtilization"
+    ],
+    "i-07561ef488a6f44ce": [
+        "i-07561ef488a6f44ce-AWOR-PDPAWEXT01-StatusCheckFailed",
+        "i-07561ef488a6f44ce-AWOR-PDPAWEXT01-CPUUtilization"
+    ],
+    "i-0f769c50a2bd977c8": [
+        "i-0f769c50a2bd977c8-AWOR-PDPAWRED01-StatusCheckFailed",
+        "i-0f769c50a2bd977c8-AWOR-PDPAWRED01-CPUUtilization",
+        "i-0f769c50a2bd977c8-AWOR-PDPAWRED01-MemoryUtilization"
+    ],
+    "i-0dea41587596dac60": [
+        "i-0dea41587596dac60-AWOR-PDPAWRED02-StatusCheckFailed",
+        "i-0dea41587596dac60-AWOR-PDPAWRED02-CPUUtilization",
+        "i-0dea41587596dac60-AWOR-PDPAWRED02-MemoryUtilization"
+    ],
+    "i-0125d68ef90782a70": [
+        "i-0125d68ef90782a70-AWOR-TSEXCH02-MemoryUtilization"
+    ],
+    "i-0137c01c33bd064af": [
+        "i-0137c01c33bd064af-AWOR-TSEXCH01-MemoryUtilization"
+    ],
+    "i-05cfe60fc3605998a": [
+        "i-05cfe60fc3605998a-Awor-dvmeswrk05-MemoryUtilization"
+    ],
+    "i-0cb56ebe50cbf8e0c": [
+        "i-0cb56ebe50cbf8e0c-AWOR-DVSQLDB02-StatusCheckFailed",
+        "i-0cb56ebe50cbf8e0c-AWOR-DVSQLDB02-CPUUtilization",
+        "i-0cb56ebe50cbf8e0c-AWOR-DVSQLDB02-MemoryUtilization"
+    ],
+    "i-0630e6d6ff0aa9aee": [
+        "i-0630e6d6ff0aa9aee-AWTJDESQL1-MemoryUtilization"
+    ],
+    "i-0ac2f28e3e025496c": [
+        "i-0ac2f28e3e025496c-AWOR-PDATAAPP01-MemoryUtilization"
+    ],
+    "i-03991d1fa3db8e7d4": [
+        "i-03991d1fa3db8e7d4-AWOR-PDATAAPP02-MemoryUtilization"
+    ],
+    "i-05331ef59ff45cd70": [
+        "i-05331ef59ff45cd70-AWPJDEDB1-MemoryUtilization"
+    ],
+    "i-01168288eda85fc1e": [
+        "i-01168288eda85fc1e-AWOR-TSSNOAPP01-StatusCheckFailed",
+        "i-01168288eda85fc1e-AWOR-TSSNOAPP01-CPUUtilization",
+        "i-01168288eda85fc1e-AWOR-TSSNOAPP01-MemoryUtilization"
+    ],
+    "i-0e730d59615eeccfa": [
+        "i-0e730d59615eeccfa-AWOR-PDSNOAPP01-MemoryUtilization"
+    ],
+    "i-0a1f8aaf1e6bb1eee": [
+        "i-0a1f8aaf1e6bb1eee-AWOR-PDSNOAPP02-MemoryUtilization"
+    ],
+    "i-0fda191b5a251854f": [
+        "i-0fda191b5a251854f-AWOR-DVQDAAPP01-StatusCheckFailed",
+        "i-0fda191b5a251854f-AWOR-DVQDAAPP01-CPUUtilization",
+        "i-0fda191b5a251854f-AWOR-DVQDAAPP01-MemoryUtilization"
+    ],
+    "i-0db5693bdb712c0b1": [
+        "i-0db5693bdb712c0b1-AWOR-DVTMRAPP01-MemoryUtilization"
+    ],
+    "i-04e1ba2b2ea99228a": [
+        "i-04e1ba2b2ea99228a-AwOr-OqTibBw01-MemoryUtilization"
+    ],
+    "i-0561e15803ecce81e": [
+        "i-0561e15803ecce81e-AwOr-OqTibBw02-MemoryUtilization"
+    ],
+    "i-0b65a6ee384204b48": [
+        "i-0b65a6ee384204b48-AWOR-DVQLKAPP02-MemoryUtilization"
+    ],
+    "i-06aff2b0e10c200b3": [
+        "i-06aff2b0e10c200b3-AWOR-PDCSIAPP01-MemoryUtilization"
+    ],
+    "i-0fc021b26033accf3": [
+        "i-0fc021b26033accf3-AWOR-PDCSIDB01-MemoryUtilization"
+    ],
+    "i-0f127c134986ec52c": [
+        "i-0f127c134986ec52c-AWOR-PDRFXAPP02-MemoryUtilization"
+    ],
+    "i-06e2f4e8bfba017de": [
+        "i-06e2f4e8bfba017de-AWOR-PDMESCIO01-MemoryUtilization"
+    ],
+    "i-0d58491de02f96a65": [
+        "i-0d58491de02f96a65-AWOR-DVTHVDB01-MemoryUtilization"
+    ],
+    "i-0568909b3d6baacf0": [
+        "i-0568909b3d6baacf0-AWTJDESQL2-MemoryUtilization"
+    ],
+    "i-07616edae3ff85c37": [
+        "i-07616edae3ff85c37-AWPJDEWL01-StatusCheckFailed",
+        "i-07616edae3ff85c37-AWPJDEWL01-CPUUtilization",
+        "i-07616edae3ff85c37-AWPJDEWL01-MemoryUtilization"
+    ],
+    "i-0029f9b0e3f1af57b": [
+        "i-0029f9b0e3f1af57b-AWOR-PDDIRAPP01-MemoryUtilization"
+    ],
+    "i-04ce83a178d8c5315": [
+        "i-04ce83a178d8c5315-AWOR-PDDIRAPP02-MemoryUtilization"
+    ],
+    "i-0078319493774b9bb": [
+        "i-0078319493774b9bb-AWORTRPLMAPP01-StatusCheckFailed",
+        "i-0078319493774b9bb-AWORTRPLMAPP01-CPUUtilization",
+        "i-0078319493774b9bb-AWORTRPLMAPP01-MemoryUtilization"
+    ],
+    "i-0b1d27dc0f6ac1e14": [
+        "i-0b1d27dc0f6ac1e14-AWOR-PDTHVDB01-StatusCheckFailed",
+        "i-0b1d27dc0f6ac1e14-AWOR-PDTHVDB01-CPUUtilization",
+        "i-0b1d27dc0f6ac1e14-AWOR-PDTHVDB01-MemoryUtilization"
+    ],
+    "i-0fb7b3feb92d378d6": [
+        "i-0fb7b3feb92d378d6-AWOR-TSQMSRPT01-StatusCheckFailed",
+        "i-0fb7b3feb92d378d6-AWOR-TSQMSRPT01-CPUUtilization",
+        "i-0fb7b3feb92d378d6-AWOR-TSQMSRPT01-MemoryUtilization"
+    ],
+    "i-0f95165fe9f7e70a4": [
+        "i-0f95165fe9f7e70a4-AWOR-PDNSOPLP01-StatusCheckFailed",
+        "i-0f95165fe9f7e70a4-AWOR-PDNSOPLP01-CPUUtilization"
+    ],
+    "i-00f64bff3450e3d6e": [
+        "i-00f64bff3450e3d6e-AWOR-PDREDDC30-StatusCheckFailed",
+        "i-00f64bff3450e3d6e-AWOR-PDREDDC30-CPUUtilization",
+        "i-00f64bff3450e3d6e-AWOR-PDREDDC30-MemoryUtilization"
+    ],
+    "i-0b247a8a48089f3db": [
+        "i-0b247a8a48089f3db-AWORDVPLMAPP02-StatusCheckFailed",
+        "i-0b247a8a48089f3db-AWORDVPLMAPP02-CPUUtilization",
+        "i-0b247a8a48089f3db-AWORDVPLMAPP02-MemoryUtilization"
+    ],
+    "i-077e6f16893e7b71e": [
+        "i-077e6f16893e7b71e-IRVSQLDB01-DR-MemoryUtilization"
+    ],
+    "i-0f274930b1565276a": [
+        "i-0f274930b1565276a-IRVOLBSQL01-DR-StatusCheckFailed",
+        "i-0f274930b1565276a-IRVOLBSQL01-DR-CPUUtilization",
+        "i-0f274930b1565276a-IRVOLBSQL01-DR-MemoryUtilization"
+    ],
+    "i-06ca8d2398c0a9f3d": [
+        "i-06ca8d2398c0a9f3d-Awor-pdmesweb05-MemoryUtilization"
+    ],
+    "i-0a5512eb03cef0927": [
+        "i-0a5512eb03cef0927-DRALBLLFT01-MemoryUtilization"
+    ],
+    "i-014768cd77388730a": [
+        "i-014768cd77388730a-Irvine813-StatusCheckFailed",
+        "i-014768cd77388730a-Irvine813-CPUUtilization"
+    ],
+    "i-0bc81afdfad889219": [
+        "i-0bc81afdfad889219-AWPJDEADF1-MemoryUtilization"
+    ],
+    "i-08c4455fb37731bb3": [
+        "i-08c4455fb37731bb3-AWOR-PDSCCMSS01-MemoryUtilization"
+    ],
+    "i-0efe021fe253c6f44": [
+        "i-0efe021fe253c6f44-AWOR-PDPRGAPP01-MemoryUtilization"
+    ],
+    "i-0019b7e08b7628780": [
+        "i-0019b7e08b7628780-AwOr-TsTibBw01-MemoryUtilization"
+    ],
+    "i-0af50554d9057ad09": [
+        "i-0af50554d9057ad09-AWOR-PDTANMOD01-MemoryUtilization"
+    ],
+    "i-0e9083fb938a9c3af": [
+        "i-0e9083fb938a9c3af-AWOR-PDTANAPP01-StatusCheckFailed",
+        "i-0e9083fb938a9c3af-AWOR-PDTANAPP01-CPUUtilization",
+        "i-0e9083fb938a9c3af-AWOR-PDTANAPP01-MemoryUtilization"
+    ],
+    "i-01139a307ce530f6b": [
+        "i-01139a307ce530f6b-IrvBizOQ03-StatusCheckFailed",
+        "i-01139a307ce530f6b-IrvBizOQ03-CPUUtilization",
+        "i-01139a307ce530f6b-IrvBizOQ03-MemoryUtilization"
+    ],
+    "i-012d9819551ef3e83": [
+        "i-012d9819551ef3e83-AWTJDEWL16-MemoryUtilization"
+    ],
+    "i-08c5d1ba901154a8d": [
+        "i-08c5d1ba901154a8d-IrvCOGGWP02-MemoryUtilization"
+    ],
+    "i-0e997fc035833c238": [
+        "i-0e997fc035833c238-AWOR-DVWPLAPP01-StatusCheckFailed",
+        "i-0e997fc035833c238-AWOR-DVWPLAPP01-CPUUtilization",
+        "i-0e997fc035833c238-AWOR-DVWPLAPP01-MemoryUtilization"
+    ],
+    "i-0a8ce901326240cac": [
+        "i-0a8ce901326240cac-IRVLBLCMS01-StatusCheckFailed",
+        "i-0a8ce901326240cac-IRVLBLCMS01-CPUUtilization",
+        "i-0a8ce901326240cac-IRVLBLCMS01-MemoryUtilization"
+    ],
+    "i-0bd2edd6489855333": [
+        "i-0bd2edd6489855333-AWORDVPLMAPP09-MemoryUtilization"
+    ],
+    "i-0d68c5ccd8e0a8d87": [
+        "i-0d68c5ccd8e0a8d87-AWORFASCLS01-mediator-StatusCheckFailed",
+        "i-0d68c5ccd8e0a8d87-AWORFASCLS01-mediator-CPUUtilization"
+    ],
+    "i-0356edd8e62c34f5b": [
+        "i-0356edd8e62c34f5b-AWORFASCLS01-01-StatusCheckFailed",
+        "i-0356edd8e62c34f5b-AWORFASCLS01-01-CPUUtilization"
+    ],
+    "i-0a9b65d3d1b9bf436": [
+        "i-0a9b65d3d1b9bf436-AWOR-PDAMDC21-MemoryUtilization"
+    ],
+    "i-09ca2765d9264041d": [
+        "i-09ca2765d9264041d-AWOR-PDEXCEDG01-StatusCheckFailed",
+        "i-09ca2765d9264041d-AWOR-PDEXCEDG01-CPUUtilization",
+        "i-09ca2765d9264041d-AWOR-PDEXCEDG01-MemoryUtilization"
+    ],
+    "i-0385b83457b96028d": [
+        "i-0385b83457b96028d-AWOR-PDEXCEDG02-MemoryUtilization"
+    ],
+    "i-04c874b95dd3d49b6": [
+        "i-04c874b95dd3d49b6-AWTJDE074-StatusCheckFailed",
+        "i-04c874b95dd3d49b6-AWTJDE074-CPUUtilization",
+        "i-04c874b95dd3d49b6-AWTJDE074-MemoryUtilization"
+    ],
+    "i-09e13770642f370cb": [
+        "i-09e13770642f370cb-AWOR-PDWCVAPP20-MemoryUtilization"
+    ],
+    "i-048e90b6b5aff9914": [
+        "i-048e90b6b5aff9914-AWOR-PDPAFCWEB01-StatusCheckFailed",
+        "i-048e90b6b5aff9914-AWOR-PDPAFCWEB01-CPUUtilization"
+    ],
+    "i-06ffdb4a562962112": [
+        "i-06ffdb4a562962112-AWOR-TSTEDG01-StatusCheckFailed",
+        "i-06ffdb4a562962112-AWOR-TSTEDG01-CPUUtilization",
+        "i-06ffdb4a562962112-AWOR-TSTEDG01-MemoryUtilization"
+    ],
+    "i-014b81f6aad7d23ae": [
+        "i-014b81f6aad7d23ae-AWOR-PDT1PAS01-StatusCheckFailed",
+        "i-014b81f6aad7d23ae-AWOR-PDT1PAS01-CPUUtilization",
+        "i-014b81f6aad7d23ae-AWOR-PDT1PAS01-MemoryUtilization"
+    ],
+    "i-06f51638d0eddcce5": [
+        "i-06f51638d0eddcce5-AWOR-PDCYBEPM01-StatusCheckFailed",
+        "i-06f51638d0eddcce5-AWOR-PDCYBEPM01-CPUUtilization",
+        "i-06f51638d0eddcce5-AWOR-PDCYBEPM01-MemoryUtilization"
+    ],
+    "i-02733e313b9dc69cc": [
+        "i-02733e313b9dc69cc-IRVHFMWEB04-MemoryUtilization"
+    ],
+    "i-016f474c998b2ea66": [
+        "i-016f474c998b2ea66-AWOR-PDQLKGEO01-MemoryUtilization"
+    ],
+    "i-013c92c02e5fb983a": [
+        "i-013c92c02e5fb983a-AWOR-PDQLKNPR02-MemoryUtilization"
+    ],
+    "i-07ef30b83a26f8623": [
+        "i-07ef30b83a26f8623-AWOR-PDSQLDB03-MemoryUtilization"
+    ],
+    "i-0f71ae483f2b66860": [
+        "i-0f71ae483f2b66860-AWPJDEWL21-MemoryUtilization"
+    ],
+    "i-0d826f9e35096f4c4": [
+        "i-0d826f9e35096f4c4-AWPJDEWL23-MemoryUtilization"
+    ],
+    "i-0d90cda09109f7e62": [
+        "i-0d90cda09109f7e62-AWPJDEWL25-StatusCheckFailed",
+        "i-0d90cda09109f7e62-AWPJDEWL25-CPUUtilization",
+        "i-0d90cda09109f7e62-AWPJDEWL25-MemoryUtilization"
+    ],
+    "i-0388b8f2b737b79bf": [
+        "i-0388b8f2b737b79bf-AWPJDEWL27-MemoryUtilization"
+    ],
+    "i-02eb2d8728f8241ba": [
+        "i-02eb2d8728f8241ba-AWOR-SSEAJBW01-StatusCheckFailed",
+        "i-02eb2d8728f8241ba-AWOR-SSEAJBW01-CPUUtilization",
+        "i-02eb2d8728f8241ba-AWOR-SSEAJBW01-MemoryUtilization"
+    ],
+    "i-04c133c5084af696f": [
+        "i-04c133c5084af696f-AWOR-DVEQMAPP01-StatusCheckFailed",
+        "i-04c133c5084af696f-AWOR-DVEQMAPP01-CPUUtilization",
+        "i-04c133c5084af696f-AWOR-DVEQMAPP01-MemoryUtilization"
+    ],
+    "i-02866a3c53db8cb55": [
+        "i-02866a3c53db8cb55-AWOR-PDFTP01-MemoryUtilization"
+    ],
+    "i-074d0edcd8dffcff0": [
+        "i-074d0edcd8dffcff0-AWTJDE062-StatusCheckFailed",
+        "i-074d0edcd8dffcff0-AWTJDE062-CPUUtilization"
+    ],
+    "i-024e418fede1b9e32": [
+        "i-024e418fede1b9e32-AWTJDE056-StatusCheckFailed",
+        "i-024e418fede1b9e32-AWTJDE056-CPUUtilization",
+        "i-024e418fede1b9e32-AWTJDE056-MemoryUtilization"
+    ],
+    "i-0d7079a9c280e9aaa": [
+        "i-0d7079a9c280e9aaa-AWTJDE072-StatusCheckFailed",
+        "i-0d7079a9c280e9aaa-AWTJDE072-CPUUtilization",
+        "i-0d7079a9c280e9aaa-AWTJDE072-MemoryUtilization"
+    ],
+    "i-07606c8cf7d857487": [
+        "i-07606c8cf7d857487-AWTJDE063-StatusCheckFailed",
+        "i-07606c8cf7d857487-AWTJDE063-CPUUtilization"
+    ],
+    "i-0e5c96acb9da91447": [
+        "i-0e5c96acb9da91447-AWTJDE073-StatusCheckFailed",
+        "i-0e5c96acb9da91447-AWTJDE073-CPUUtilization",
+        "i-0e5c96acb9da91447-AWTJDE073-MemoryUtilization"
+    ],
+    "i-0ee888fb2ee07f13a": [
+        "i-0ee888fb2ee07f13a-AWPJDELG14-MemoryUtilization"
+    ],
+    "i-0eb4cd5c79a89f9e5": [
+        "i-0eb4cd5c79a89f9e5-AWOR-DVEDLDB01-StatusCheckFailed",
+        "i-0eb4cd5c79a89f9e5-AWOR-DVEDLDB01-CPUUtilization",
+        "i-0eb4cd5c79a89f9e5-AWOR-DVEDLDB01-MemoryUtilization"
+    ],
+    "i-0ef8b8babc3813aef": [
+        "i-0ef8b8babc3813aef-AWOR-SSTIBJBL01-StatusCheckFailed",
+        "i-0ef8b8babc3813aef-AWOR-SSTIBJBL01-CPUUtilization"
+    ],
+    "i-0f121075b4c810b51": [
+        "i-0f121075b4c810b51-AWPJDESCH01-MemoryUtilization"
+    ],
+    "i-019d005e80f5e69a5": [
+        "i-019d005e80f5e69a5-AWOR-PDQLKPUB01-MemoryUtilization"
+    ],
+    "i-0e65a285a03bbedb6": [
+        "i-0e65a285a03bbedb6-AWOR-PDWVSAPP01-StatusCheckFailed",
+        "i-0e65a285a03bbedb6-AWOR-PDWVSAPP01-CPUUtilization",
+        "i-0e65a285a03bbedb6-AWOR-PDWVSAPP01-MemoryUtilization"
+    ],
+    "i-0fb85e8205934b7b7": [
+        "i-0fb85e8205934b7b7-DRASQLPD01-MemoryUtilization"
+    ],
+    "i-062bb2c0b59406965": [
+        "i-062bb2c0b59406965-DRASQLTST01-StatusCheckFailed",
+        "i-062bb2c0b59406965-DRASQLTST01-CPUUtilization",
+        "i-062bb2c0b59406965-DRASQLTST01-MemoryUtilization"
+    ],
+    "i-07658127840150c40": [
+        "i-07658127840150c40-AwOr-TsMovApp01-StatusCheckFailed",
+        "i-07658127840150c40-AwOr-TsMovApp01-CPUUtilization",
+        "i-07658127840150c40-AwOr-TsMovApp01-MemoryUtilization"
+    ],
+    "i-01ea4412b8671e50f": [
+        "i-01ea4412b8671e50f-AWOR-PDBMSAPP01-MemoryUtilization"
+    ],
+    "i-0c7403883548e7e57": [
+        "i-0c7403883548e7e57-awor-pdbmsdb01-MemoryUtilization"
+    ],
+    "i-03eac6a9a045708dd": [
+        "i-03eac6a9a045708dd-AWOR-PDSQLDB04-MemoryUtilization"
+    ],
+    "i-01e2676ae9addc453": [
+        "i-01e2676ae9addc453-AWOR-DVSQLDB04-StatusCheckFailed",
+        "i-01e2676ae9addc453-AWOR-DVSQLDB04-CPUUtilization",
+        "i-01e2676ae9addc453-AWOR-DVSQLDB04-MemoryUtilization"
+    ],
+    "i-0957bd0fe95c1e0c2": [
+        "i-0957bd0fe95c1e0c2-AWOR-QAPRTG01-StatusCheckFailed",
+        "i-0957bd0fe95c1e0c2-AWOR-QAPRTG01-CPUUtilization"
+    ],
+    "i-0fccda5bae617f8ba": [
+        "i-0fccda5bae617f8ba-SAOSQLORA01-StatusCheckFailed",
+        "i-0fccda5bae617f8ba-SAOSQLORA01-CPUUtilization",
+        "i-0fccda5bae617f8ba-SAOSQLORA01-MemoryUtilization"
+    ],
+    "i-0fdb723d997ae289b": [
+        "i-0fdb723d997ae289b-SAOFILPRT02-MemoryUtilization"
+    ],
+    "i-047f100dd87e9be10": [
+        "i-047f100dd87e9be10-edwards-exch-fe-proxy-test-StatusCheckFailed",
+        "i-047f100dd87e9be10-edwards-exch-fe-proxy-test-CPUUtilization"
+    ],
+    "i-032a7c452648bc5d4": [
+        "i-032a7c452648bc5d4-AWOR-PDCCURBD01-MemoryUtilization"
+    ],
+    "i-0e8d960a914e3328c": [
+        "i-0e8d960a914e3328c-AWOR-QAPDMLAS01-StatusCheckFailed",
+        "i-0e8d960a914e3328c-AWOR-QAPDMLAS01-CPUUtilization",
+        "i-0e8d960a914e3328c-AWOR-QAPDMLAS01-MemoryUtilization"
+    ],
+    "i-0c0a6040ba5e3a3cb": [
+        "i-0c0a6040ba5e3a3cb-IRVHFMREP02-MemoryUtilization"
+    ],
+    "i-0d339ec5c8a4a9c29": [
+        "i-0d339ec5c8a4a9c29-AWOR-DVWCVAPP23-MemoryUtilization"
+    ],
+    "i-044d21f3b36e867a6": [
+        "i-044d21f3b36e867a6-AWOR-TSWCVAPP24-StatusCheckFailed",
+        "i-044d21f3b36e867a6-AWOR-TSWCVAPP24-CPUUtilization",
+        "i-044d21f3b36e867a6-AWOR-TSWCVAPP24-MemoryUtilization"
+    ],
+    "i-09a4d895d41b07c9d": [
+        "i-09a4d895d41b07c9d-AWOR-QAWCVAPP25-StatusCheckFailed",
+        "i-09a4d895d41b07c9d-AWOR-QAWCVAPP25-CPUUtilization",
+        "i-09a4d895d41b07c9d-AWOR-QAWCVAPP25-MemoryUtilization"
+    ],
+    "i-01de9c127ae31c18d": [
+        "i-01de9c127ae31c18d-AWOR-TRWCVAPP26-StatusCheckFailed",
+        "i-01de9c127ae31c18d-AWOR-TRWCVAPP26-CPUUtilization",
+        "i-01de9c127ae31c18d-AWOR-TRWCVAPP26-MemoryUtilization"
+    ],
+    "i-041f2dc5a8f247140": [
+        "i-041f2dc5a8f247140-IRVINE724-StatusCheckFailed",
+        "i-041f2dc5a8f247140-IRVINE724-CPUUtilization"
+    ],
+    "i-028f44c59472c344e": [
+        "i-028f44c59472c344e-IRVLABSCH02-StatusCheckFailed",
+        "i-028f44c59472c344e-IRVLABSCH02-CPUUtilization",
+        "i-028f44c59472c344e-IRVLABSCH02-MemoryUtilization"
+    ],
+    "i-089259b10ff48073d": [
+        "i-089259b10ff48073d-AWOR-DVLNXAPP01-StatusCheckFailed",
+        "i-089259b10ff48073d-AWOR-DVLNXAPP01-CPUUtilization"
+    ],
+    "i-00e6a99907f612192": [
+        "i-00e6a99907f612192-AWOR-PDSECVUL02-StatusCheckFailed",
+        "i-00e6a99907f612192-AWOR-PDSECVUL02-CPUUtilization",
+        "i-00e6a99907f612192-AWOR-PDSECVUL02-MemoryUtilization"
+    ],
+    "i-0d9d03b1e88f8e189": [
+        "i-0d9d03b1e88f8e189-AWOR-DVSECPRX01-MemoryUtilization"
+    ],
+    "i-00ff9e20b18002c18": [
+        "i-00ff9e20b18002c18-AWPJDELG01-MemoryUtilization"
+    ],
+    "i-08647d4ad13d1f5f3": [
+        "i-08647d4ad13d1f5f3-AWPJDELG02-MemoryUtilization"
+    ],
+    "i-091299054e1f8754c": [
+        "i-091299054e1f8754c-AWPJDELG04-MemoryUtilization"
+    ],
+    "i-03aaf2a8e9557c185": [
+        "i-03aaf2a8e9557c185-AWPJDELG07-MemoryUtilization"
+    ],
+    "i-0557fba7c56fdbd7d": [
+        "i-0557fba7c56fdbd7d-AWPJDELG08-MemoryUtilization"
+    ],
+    "i-03706f8aa018ff2fd": [
+        "i-03706f8aa018ff2fd-AWPJDELG10-MemoryUtilization"
+    ],
+    "i-0577f2ca79db97202": [
+        "i-0577f2ca79db97202-AWPJDELG12-MemoryUtilization"
+    ],
+    "i-0ad9dffce33e60156": [
+        "i-0ad9dffce33e60156-AWPJDELG15-MemoryUtilization"
+    ],
+    "i-0cfa48841a828ecc8": [
+        "i-0cfa48841a828ecc8-AWTJDELG09-MemoryUtilization"
+    ],
+    "i-0f7518e2a0327c720": [
+        "i-0f7518e2a0327c720-AWOR-PDPSDWEB01-MemoryUtilization"
+    ],
+    "i-0bfeb8d054583c0c1": [
+        "i-0bfeb8d054583c0c1-edwards-ibcm-fe-proxy-prod-StatusCheckFailed",
+        "i-0bfeb8d054583c0c1-edwards-ibcm-fe-proxy-prod-CPUUtilization"
+    ],
+    "i-0bfa55dcaab652ac3": [
+        "i-0bfa55dcaab652ac3-AWOR-PDMESBO04-MemoryUtilization"
+    ],
+    "i-0ee27ebd2f06d22ab": [
+        "i-0ee27ebd2f06d22ab-AWOR-PDMESBO02-MemoryUtilization"
+    ],
+    "i-08318bd26b7728bb9": [
+        "i-08318bd26b7728bb9-AWOR-PDMESBO03-MemoryUtilization"
+    ],
+    "i-0d3a154b2395d084f": [
+        "i-0d3a154b2395d084f-AWOR-PDMESBO05-MemoryUtilization"
+    ],
+    "i-03e9a54d4f32aca8b": [
+        "i-03e9a54d4f32aca8b-AWOR-OQMESBO03-MemoryUtilization"
+    ],
+    "i-0a0a08cd689b820c0": [
+        "i-0a0a08cd689b820c0-AWOR-OQMESBO02-StatusCheckFailed",
+        "i-0a0a08cd689b820c0-AWOR-OQMESBO02-CPUUtilization",
+        "i-0a0a08cd689b820c0-AWOR-OQMESBO02-MemoryUtilization"
+    ],
+    "i-08d52cf319bb885aa": [
+        "i-08d52cf319bb885aa-AWOR-DVLNXSQL01-StatusCheckFailed",
+        "i-08d52cf319bb885aa-AWOR-DVLNXSQL01-CPUUtilization",
+        "i-08d52cf319bb885aa-AWOR-DVLNXSQL01-MemoryUtilization"
+    ],
+    "i-024ed90cd6e03a9df": [
+        "i-024ed90cd6e03a9df-AWOR-DVLNXSQL02-MemoryUtilization"
+    ],
+    "i-0aa90d025de8abbee": [
+        "i-0aa90d025de8abbee-AWOR-TSSASAPP01-MemoryUtilization"
+    ],
+    "i-05bb6fef8b3af94b2": [
+        "i-05bb6fef8b3af94b2-IRVOLBECM01-PRD-MemoryUtilization"
+    ],
+    "i-0fb8946b88a75d80c": [
+        "i-0fb8946b88a75d80c-IRVOLBSCH01-PRD-MemoryUtilization"
+    ],
+    "i-0c033709318cb8071": [
+        "i-0c033709318cb8071-AWOR-PDTANAPP02-CPUUtilization",
+        "i-0c033709318cb8071-AWOR-PDTANAPP02-MemoryUtilization"
+    ],
+    "i-0a0dc338a145e4d41": [
+        "i-0a0dc338a145e4d41-AWOR-PDQLKSNS03-MemoryUtilization"
+    ],
+    "i-006bdd8443314ff64": [
+        "i-006bdd8443314ff64-AWPJDEAI03-MemoryUtilization"
+    ],
+    "i-002341d22593d454a": [
+        "i-002341d22593d454a-AWPJDEBSS3-MemoryUtilization"
+    ],
+    "i-03f38d022faf00924": [
+        "i-03f38d022faf00924-AWTJDEBSS4-StatusCheckFailed",
+        "i-03f38d022faf00924-AWTJDEBSS4-CPUUtilization",
+        "i-03f38d022faf00924-AWTJDEBSS4-MemoryUtilization"
+    ],
+    "i-001e863a65d4a31b9": [
+        "i-001e863a65d4a31b9-AWTJDEAI05-MemoryUtilization"
+    ],
+    "i-0eab768a3f72498c2": [
+        "i-0eab768a3f72498c2-AWTJDEADF2-StatusCheckFailed",
+        "i-0eab768a3f72498c2-AWTJDEADF2-CPUUtilization",
+        "i-0eab768a3f72498c2-AWTJDEADF2-MemoryUtilization"
+    ],
+    "i-083498bfcf2cf4265": [
+        "i-083498bfcf2cf4265-AWOR-PDCTCAPP01-MemoryUtilization"
+    ],
+    "i-04710f3ce54c65589": [
+        "i-04710f3ce54c65589-AWOR-PDTABAPP01-MemoryUtilization"
+    ],
+    "i-0e2acfa5b53df6788": [
+        "i-0e2acfa5b53df6788-AWOR-DVMESBO02-MemoryUtilization"
+    ],
+    "i-028d0b8ee0eaae386": [
+        "i-028d0b8ee0eaae386-AWOR-DVORAAPX02-StatusCheckFailed",
+        "i-028d0b8ee0eaae386-AWOR-DVORAAPX02-CPUUtilization",
+        "i-028d0b8ee0eaae386-AWOR-DVORAAPX02-MemoryUtilization"
+    ],
+    "i-0e40f7eecb373fb52": [
+        "i-0e40f7eecb373fb52-AWOR-PDNETBAPP1-MemoryUtilization"
+    ],
+    "i-0c08a2146bd72aa45": [
+        "i-0c08a2146bd72aa45-AWOR-PDCVDAPP02-MemoryUtilization"
+    ],
+    "i-0a38fb77f7ea628ba": [
+        "i-0a38fb77f7ea628ba-AWOR-QACTCAPP01-StatusCheckFailed",
+        "i-0a38fb77f7ea628ba-AWOR-QACTCAPP01-CPUUtilization"
+    ],
+    "i-00f14e5e8b8d2134a": [
+        "i-00f14e5e8b8d2134a-AWOR-PDOPTAPP01-MemoryUtilization"
+    ],
+    "i-086c66c595acc83b6": [
+        "i-086c66c595acc83b6-IRVIPRAPP01-MemoryUtilization"
+    ],
+    "i-0f15d5a8deadc24ce": [
+        "i-0f15d5a8deadc24ce-AWOR-QACTXFIL01-MemoryUtilization"
+    ],
+    "i-0243ab7358cc46462": [
+        "i-0243ab7358cc46462-AWOR-PDAGTApp01-MemoryUtilization"
+    ],
+    "i-07c3263f414203f27": [
+        "i-07c3263f414203f27-AWOR-PDDGOAPP01-MemoryUtilization"
+    ],
+    "i-0995e62fc82431090": [
+        "i-0995e62fc82431090-IRVTHVSAS01-MemoryUtilization"
+    ],
+    "i-07ecec10e2f76b95b": [
+        "i-07ecec10e2f76b95b-TRN-RND-PAN-A-StatusCheckFailed",
+        "i-07ecec10e2f76b95b-TRN-RND-PAN-A-CPUUtilization"
+    ],
+    "i-0bd8187802fabadbf": [
+        "i-0bd8187802fabadbf-BOGFILPRT01-MemoryUtilization"
+    ],
+    "i-04cbcefc911611fed": [
+        "i-04cbcefc911611fed-AWOR-PDFSMAPP02-MemoryUtilization"
+    ],
+    "i-074e1a6752f51500d": [
+        "i-074e1a6752f51500d-AWOR-PDFSMAPP01-MemoryUtilization"
+    ],
+    "i-03caa59ef5ccecd2d": [
+        "i-03caa59ef5ccecd2d-AWOR-PDDELTAPP01-MemoryUtilization"
+    ],
+    "i-0ebab42db7a3d8be2": [
+        "i-0ebab42db7a3d8be2-AWOR-PDFSMAPP07-StatusCheckFailed",
+        "i-0ebab42db7a3d8be2-AWOR-PDFSMAPP07-CPUUtilization",
+        "i-0ebab42db7a3d8be2-AWOR-PDFSMAPP07-MemoryUtilization"
+    ],
+    "i-0b6b5af9d67387f56": [
+        "i-0b6b5af9d67387f56-AWOR-PDFSMAPP06-MemoryUtilization"
+    ],
+    "i-0d166bb7515230eaf": [
+        "i-0d166bb7515230eaf-AWOR-PDFSMAPP05-StatusCheckFailed",
+        "i-0d166bb7515230eaf-AWOR-PDFSMAPP05-CPUUtilization",
+        "i-0d166bb7515230eaf-AWOR-PDFSMAPP05-MemoryUtilization"
+    ],
+    "i-06fe0ce6c21d26b18": [
+        "i-06fe0ce6c21d26b18-AWOR-OQQMSDB01-StatusCheckFailed",
+        "i-06fe0ce6c21d26b18-AWOR-OQQMSDB01-CPUUtilization"
+    ],
+    "i-0134c9839ba7c29f0": [
+        "i-0134c9839ba7c29f0-AWOR-PDSASAPP01-MemoryUtilization"
+    ],
+    "i-0eaa08d8815331cd8": [
+        "i-0eaa08d8815331cd8-AWOR-DVJDAAPP01-StatusCheckFailed",
+        "i-0eaa08d8815331cd8-AWOR-DVJDAAPP01-CPUUtilization"
+    ],
+    "i-01d3b5f17030f4a89": [
+        "i-01d3b5f17030f4a89-AWOR-DVMADAPP02-MemoryUtilization"
+    ],
+    "i-05d5b0a3c7ea9861d": [
+        "i-05d5b0a3c7ea9861d-AWOR-DVDFSFSX03-MemoryUtilization"
+    ],
+    "i-0996c44404d687c9e": [
+        "i-0996c44404d687c9e-els-nginx-sccm-prd-StatusCheckFailed",
+        "i-0996c44404d687c9e-els-nginx-sccm-prd-CPUUtilization",
+        "i-0996c44404d687c9e-els-nginx-sccm-prd-MemoryUtilization"
+    ],
+    "i-043b878ffa59777f0": [
+        "i-043b878ffa59777f0-AWOR-PDCCRAPP01-StatusCheckFailed",
+        "i-043b878ffa59777f0-AWOR-PDCCRAPP01-CPUUtilization",
+        "i-043b878ffa59777f0-AWOR-PDCCRAPP01-MemoryUtilization"
+    ],
+    "i-0104147faa9eb8aa7": [
+        "i-0104147faa9eb8aa7-AWOR-PDCCRAPP02-MemoryUtilization"
+    ],
+    "i-0489fca285fc866c9": [
+        "i-0489fca285fc866c9-AwOr-DvArcApp01-StatusCheckFailed",
+        "i-0489fca285fc866c9-AwOr-DvArcApp01-CPUUtilization"
+    ],
+    "i-037009b9cf191f9b6": [
+        "i-037009b9cf191f9b6-AWOR-TS170APP01-StatusCheckFailed",
+        "i-037009b9cf191f9b6-AWOR-TS170APP01-CPUUtilization",
+        "i-037009b9cf191f9b6-AWOR-TS170APP01-MemoryUtilization"
+    ],
+    "i-06246f2038a6b80b7": [
+        "i-06246f2038a6b80b7-AWOR-PD170APP01-StatusCheckFailed",
+        "i-06246f2038a6b80b7-AWOR-PD170APP01-CPUUtilization",
+        "i-06246f2038a6b80b7-AWOR-PD170APP01-MemoryUtilization"
+    ],
+    "i-02b29a283b577a0f9": [
+        "i-02b29a283b577a0f9-AWOR-PDAZUPRX01-MemoryUtilization"
+    ],
+    "i-093e166aaac4cd3da": [
+        "i-093e166aaac4cd3da-AWOR-PDDAGAPP01-MemoryUtilization"
+    ],
+    "i-0f1941f80b04d3910": [
+        "i-0f1941f80b04d3910-AwOr-PdMovApp01-MemoryUtilization"
+    ],
+    "i-068336b5b07d3dc0d": [
+        "i-068336b5b07d3dc0d-AWOR-QACVDAPP03-MemoryUtilization"
+    ],
+    "i-0d6ebf3da2e2dc8cb": [
+        "i-0d6ebf3da2e2dc8cb-AWOR-QACVDAPP04-MemoryUtilization"
+    ],
+    "i-074aa98cba006be07": [
+        "i-074aa98cba006be07-AWOR-PDPROAPP01-CPUUtilization",
+        "i-074aa98cba006be07-AWOR-PDPROAPP01-MemoryUtilization"
+    ],
+    "i-00d8d564407e166eb": [
+        "i-00d8d564407e166eb-AWOR-QAPROAPP01-MemoryUtilization"
+    ],
+    "i-0d9237a7cc1e47ab0": [
+        "i-0d9237a7cc1e47ab0-IRVDIGWEB13-MemoryUtilization"
+    ],
+    "i-0d41a8eea908b7cb2": [
+        "i-0d41a8eea908b7cb2-AWOR-OQQLKSNS01-StatusCheckFailed",
+        "i-0d41a8eea908b7cb2-AWOR-OQQLKSNS01-CPUUtilization",
+        "i-0d41a8eea908b7cb2-AWOR-OQQLKSNS01-MemoryUtilization"
+    ],
+    "i-05cc401df3e1dfefe": [
+        "i-05cc401df3e1dfefe-AWOR-TSJDAAPP01-StatusCheckFailed",
+        "i-05cc401df3e1dfefe-AWOR-TSJDAAPP01-CPUUtilization"
+    ],
+    "i-037a98e67fc2fba01": [
+        "i-037a98e67fc2fba01-AWOR-PDMOVXFR01-StatusCheckFailed",
+        "i-037a98e67fc2fba01-AWOR-PDMOVXFR01-CPUUtilization"
+    ],
+    "i-07c2b3f73879785b9": [
+        "i-07c2b3f73879785b9-AWOR-PDECMDB04-MemoryUtilization"
+    ],
+    "i-0848e967487e689cf": [
+        "i-0848e967487e689cf-AWOR-PDFSMAPP09-StatusCheckFailed",
+        "i-0848e967487e689cf-AWOR-PDFSMAPP09-CPUUtilization"
+    ],
+    "i-0786e16dfd7a74160": [
+        "i-0786e16dfd7a74160-AWOR-PDFSMAPP10-StatusCheckFailed",
+        "i-0786e16dfd7a74160-AWOR-PDFSMAPP10-CPUUtilization",
+        "i-0786e16dfd7a74160-AWOR-PDFSMAPP10-MemoryUtilization"
+    ],
+    "i-00c94279e5842f091": [
+        "i-00c94279e5842f091-AWOR-PDECMAPP01-MemoryUtilization"
+    ],
+    "i-0a36b699f8a808e84": [
+        "i-0a36b699f8a808e84-AWOR-QAECMDB04-MemoryUtilization"
+    ],
+    "i-0ec66c0556feed657": [
+        "i-0ec66c0556feed657-AWOR-PDCCRDB01-MemoryUtilization"
+    ],
+    "i-014f66736c1802e9b": [
+        "i-014f66736c1802e9b-AWOR-PDJDAAPP01-MemoryUtilization"
+    ],
+    "i-030a527f961f712a4": [
+        "i-030a527f961f712a4-AWOR-PDRDSLIC01-MemoryUtilization"
+    ],
+    "i-0fe54e40e93ac3333": [
+        "i-0fe54e40e93ac3333-AWTJDE078-MemoryUtilization"
+    ],
+    "i-0a4a7fd2dcc0c14a5": [
+        "i-0a4a7fd2dcc0c14a5-AWTJDE079-StatusCheckFailed",
+        "i-0a4a7fd2dcc0c14a5-AWTJDE079-CPUUtilization",
+        "i-0a4a7fd2dcc0c14a5-AWTJDE079-MemoryUtilization"
+    ],
+    "i-04a7eb1410ef8f7b0": [
+        "i-04a7eb1410ef8f7b0-AWTJDE080-StatusCheckFailed",
+        "i-04a7eb1410ef8f7b0-AWTJDE080-CPUUtilization",
+        "i-04a7eb1410ef8f7b0-AWTJDE080-MemoryUtilization"
+    ],
+    "i-0d789f21e457d15b3": [
+        "i-0d789f21e457d15b3-AWTJDE082-MemoryUtilization"
+    ],
+    "i-0072490efa1e62e8e": [
+        "i-0072490efa1e62e8e-AWTJDE081-MemoryUtilization"
+    ],
+    "i-0b18a56eec88e66cd": [
+        "i-0b18a56eec88e66cd-AWOR-DVPITWEB01-MemoryUtilization"
+    ],
+    "i-0621f13e960b96360": [
+        "i-0621f13e960b96360-AWOR-DVPDMLAPP1-MemoryUtilization"
+    ],
+    "i-05a7a8cd282928536": [
+        "i-05a7a8cd282928536-AWOR-PDTOMAPP01-MemoryUtilization"
+    ],
+    "i-0fa6e1d7c1d852c0c": [
+        "i-0fa6e1d7c1d852c0c-AWOR-DVLABAPP02-MemoryUtilization"
+    ],
+    "i-021112a7290dfab21": [
+        "i-021112a7290dfab21-AWOR-PDSECPAS01-StatusCheckFailed",
+        "i-021112a7290dfab21-AWOR-PDSECPAS01-CPUUtilization"
+    ],
+    "i-02e7e1890c718f9ed": [
+        "i-02e7e1890c718f9ed-AWTJDE083-MemoryUtilization"
+    ],
+    "i-072021aca899012d1": [
+        "i-072021aca899012d1-IrvLABAPP02-MemoryUtilization"
+    ],
+    "i-055e4ea3af8b55edb": [
+        "i-055e4ea3af8b55edb-AWTJDE084-StatusCheckFailed",
+        "i-055e4ea3af8b55edb-AWTJDE084-CPUUtilization",
+        "i-055e4ea3af8b55edb-AWTJDE084-MemoryUtilization"
+    ],
+    "i-03faf1031a913dc0f": [
+        "i-03faf1031a913dc0f-AwOr-OqTibAdm01-MemoryUtilization"
+    ],
+    "i-0fc0351a35a9a0f0d": [
+        "i-0fc0351a35a9a0f0d-AWOR-TSRHEL8 (MING\\Tomas)-StatusCheckFailed",
+        "i-0fc0351a35a9a0f0d-AWOR-TSRHEL8 (MING\\Tomas)-CPUUtilization"
+    ],
+    "i-0825f58949a0ad97d": [
+        "i-0825f58949a0ad97d-AWOR-PDMKSVDI10-StatusCheckFailed",
+        "i-0825f58949a0ad97d-AWOR-PDMKSVDI10-CPUUtilization"
+    ],
+    "i-046e44e30979bf23b": [
+        "i-046e44e30979bf23b-AWOR-PDMKSVDI02-StatusCheckFailed",
+        "i-046e44e30979bf23b-AWOR-PDMKSVDI02-CPUUtilization"
+    ],
+    "i-0ee7761eff04db36d": [
+        "i-0ee7761eff04db36d-AWOR-PDMKSVDI08-StatusCheckFailed",
+        "i-0ee7761eff04db36d-AWOR-PDMKSVDI08-CPUUtilization"
+    ],
+    "i-0f09678bf2267e716": [
+        "i-0f09678bf2267e716-AWOR-PDMKSVDI09-StatusCheckFailed",
+        "i-0f09678bf2267e716-AWOR-PDMKSVDI09-CPUUtilization"
+    ],
+    "i-0ceed607956eea281": [
+        "i-0ceed607956eea281-AWOR-PDMKSVDI05-StatusCheckFailed",
+        "i-0ceed607956eea281-AWOR-PDMKSVDI05-CPUUtilization"
+    ],
+    "i-0d2c8143a92c7eab0": [
+        "i-0d2c8143a92c7eab0-AWOR-PDMKSVDI06-StatusCheckFailed",
+        "i-0d2c8143a92c7eab0-AWOR-PDMKSVDI06-CPUUtilization"
+    ],
+    "i-09639ef7bcd963f5e": [
+        "i-09639ef7bcd963f5e-AWOR-PDMKSVDI04-StatusCheckFailed",
+        "i-09639ef7bcd963f5e-AWOR-PDMKSVDI04-CPUUtilization"
+    ],
+    "i-0e7cd6cf4cc766d3e": [
+        "i-0e7cd6cf4cc766d3e-AWOR-PDMKSVDI07-StatusCheckFailed",
+        "i-0e7cd6cf4cc766d3e-AWOR-PDMKSVDI07-CPUUtilization"
+    ],
+    "i-01e0983e0d518c8da": [
+        "i-01e0983e0d518c8da-AWOR-PDMKSVDI01-StatusCheckFailed",
+        "i-01e0983e0d518c8da-AWOR-PDMKSVDI01-CPUUtilization"
+    ],
+    "i-0479a420f05ab362c": [
+        "i-0479a420f05ab362c-AWOR-PDMKSVDI03-StatusCheckFailed",
+        "i-0479a420f05ab362c-AWOR-PDMKSVDI03-CPUUtilization"
+    ],
+    "i-07046d57098f2f872": [
+        "i-07046d57098f2f872-AWOR-PDUIPAPP04-StatusCheckFailed",
+        "i-07046d57098f2f872-AWOR-PDUIPAPP04-CPUUtilization"
+    ],
+    "i-0c9cc9fdb6c90f2fd": [
+        "i-0c9cc9fdb6c90f2fd-AWOR-PDMKSVDI13-StatusCheckFailed",
+        "i-0c9cc9fdb6c90f2fd-AWOR-PDMKSVDI13-CPUUtilization"
+    ],
+    "i-042423e81973ee064": [
+        "i-042423e81973ee064-AWOR-PDMKSVDI12-StatusCheckFailed",
+        "i-042423e81973ee064-AWOR-PDMKSVDI12-CPUUtilization"
+    ],
+    "i-009b385669d6e1f81": [
+        "i-009b385669d6e1f81-AWOR-PDMKSVDI11-StatusCheckFailed",
+        "i-009b385669d6e1f81-AWOR-PDMKSVDI11-CPUUtilization"
+    ],
+    "i-048f25a9f5ae9d204": [
+        "i-048f25a9f5ae9d204-IrvITRSPT04-MemoryUtilization"
+    ],
+    "i-00b4918afb9608d2d": [
+        "i-00b4918afb9608d2d-AWOR-TSPDMLAS01-MemoryUtilization"
+    ],
+    "i-0cd52042e48347ae5": [
+        "i-0cd52042e48347ae5-AWOR-PDOLAPDB01-MemoryUtilization"
+    ],
+    "i-00fc92d246f2d87ab": [
+        "i-00fc92d246f2d87ab-AWOR-PDOLAPPB01-MemoryUtilization"
+    ],
+    "i-0fbb4468a18f62843": [
+        "i-0fbb4468a18f62843-Mings file copy test Delete after 11/10/19-StatusCheckFailed",
+        "i-0fbb4468a18f62843-Mings file copy test Delete after 11/10/19-CPUUtilization"
+    ],
+    "i-0ed338b05ecc8e78a": [
+        "i-0ed338b05ecc8e78a-AWOR-PDSLWDB01-MemoryUtilization"
+    ],
+    "i-08615acf34e0fa6a2": [
+        "i-08615acf34e0fa6a2-Irvhfmsql01-dr-StatusCheckFailed",
+        "i-08615acf34e0fa6a2-Irvhfmsql01-dr-CPUUtilization",
+        "i-08615acf34e0fa6a2-Irvhfmsql01-dr-MemoryUtilization"
+    ],
+    "i-06583b205d327276f": [
+        "i-06583b205d327276f-AwOr-PdTibDbW01-MemoryUtilization"
+    ],
+    "i-06c9bda04aa30f6d1": [
+        "i-06c9bda04aa30f6d1-AWOR-PDPLMDBW01-MemoryUtilization"
+    ],
+    "i-0927d6c71bf5b7a96": [
+        "i-0927d6c71bf5b7a96-AWOR-PDARADBW01-MemoryUtilization"
+    ],
+    "i-082a75f0bd5e1f845": [
+        "i-082a75f0bd5e1f845-AWOR-PDMESDBW01-MemoryUtilization"
+    ],
+    "i-01024016c922de94f": [
+        "i-01024016c922de94f-AWOR-PDCYBPSM03-StatusCheckFailed",
+        "i-01024016c922de94f-AWOR-PDCYBPSM03-CPUUtilization",
+        "i-01024016c922de94f-AWOR-PDCYBPSM03-MemoryUtilization"
+    ],
+    "i-02dce6e7aeea7300a": [
+        "i-02dce6e7aeea7300a-AWOR-PDDHCP02-StatusCheckFailed",
+        "i-02dce6e7aeea7300a-AWOR-PDDHCP02-CPUUtilization",
+        "i-02dce6e7aeea7300a-AWOR-PDDHCP02-MemoryUtilization"
+    ],
+    "i-0141623f4d9cf4017": [
+        "i-0141623f4d9cf4017-AWOR-PDPXPDBW01-StatusCheckFailed",
+        "i-0141623f4d9cf4017-AWOR-PDPXPDBW01-CPUUtilization",
+        "i-0141623f4d9cf4017-AWOR-PDPXPDBW01-MemoryUtilization"
+    ],
+    "i-0defb63bf3eeb8e53": [
+        "i-0defb63bf3eeb8e53-AWOR-PDTABAPP03-MemoryUtilization"
+    ],
+    "i-0d58b9eea2c43ed5b": [
+        "i-0d58b9eea2c43ed5b-Irvine815-StatusCheckFailed",
+        "i-0d58b9eea2c43ed5b-Irvine815-CPUUtilization",
+        "i-0d58b9eea2c43ed5b-Irvine815-MemoryUtilization"
+    ]
+}
