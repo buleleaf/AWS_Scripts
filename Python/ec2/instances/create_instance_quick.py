@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import time
 import boto3
 from collections import defaultdict

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import random
 import string
 import boto3
@@ -38,90 +40,6 @@ def create_instance(region, ami, subnet_id, keyname):
                         "Key": "Name",
                         "Value": "dmansfield-test"
                     }
-                    # {
-                    #     "Key": "Application",
-                    #     "Value": "Test"
-                    # },
-                    # {
-                    #     "Key": "ApplicationTier",
-                    #     "Value": "Application"
-                    # },
-                    # {
-                    #     "Key": "ApplicationTierLevel",
-                    #     "Value": "No Tier"
-                    # },
-                    # {
-                    #     "Key": "Managed",
-                    #     "Value": "Yes"
-                    # },
-                    # {
-                    #     "Key": "Environment",
-                    #     "Value": "Test"
-                    # },
-                    # {
-                    #     "Key": "Name",
-                    #     "Value": 'ONICA-TEST-LINUX'
-                    # },
-                    # {
-                    #     "Key": "CorpInfoMSP:TakeNightlySnapshot",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key": "FileBackup",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key": "MonitoredServices",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key":"RequestNumber",
-                    #     "Value":"Test"
-                    # },
-                    # {
-                    #     "Key": "OperationalHours",
-                    #     "Value": "24x7"
-                    # },
-                    # {
-                    #     "Key": "ReviewDate",
-                    #     "Value": "6/25/2019"
-                    # },
-                    # {
-                    #     "Key": "CostCenter",
-                    #     "Value": "n/a"
-                    # },
-                    # {
-                    #     "Key": "ServiceLocation",
-                    #     "Value": "Irvine"
-                    # },
-                    # {
-                    #     "Key": "ServiceOwner",
-                    #     "Value": "n/a"
-                    # },
-                    # {
-                    #     "Key": "TechnicalOwner",
-                    #     "Value": "david.mansfield@rackspace.com"
-                    # },
-                    # {
-                    #     "Key": "ContactPreference",
-                    #     "Value": "Email"
-                    # },
-                    # {
-                    #     "Key": "PatchGroup",
-                    #     "Value": "PilotAutoReboot"
-                    # },
-                    # {
-                    #     "Key": "Schedule",
-                    #     "Value": "24x7"
-                    # },
-                    # {
-                    #     "Key": "Purpose",
-                    #     "Value": "N/A"
-                    # },
-                    # {
-                    #     "Key": "Validated",
-                    #     "Value": "No"
-                    # }
                 ]
             },
             {
@@ -131,90 +49,6 @@ def create_instance(region, ami, subnet_id, keyname):
                         "Key": "Name",
                         "Value": "dmansfield-test"
                     }
-                    # {
-                    #     "Key": "Application",
-                    #     "Value": "Test"
-                    # },
-                    # {
-                    #     "Key": "ApplicationTier",
-                    #     "Value": "Application"
-                    # },
-                    # {
-                    #     "Key": "ApplicationTierLevel",
-                    #     "Value": "No Tier"
-                    # },
-                    # {
-                    #     "Key": "Managed",
-                    #     "Value": "Yes"
-                    # },
-                    # {
-                    #     "Key": "Environment",
-                    #     "Value": "Test"
-                    # },
-                    # {
-                    #     "Key": "Name",
-                    #     "Value": 'ONICA-TEST-LINUX'
-                    # },
-                    # {
-                    #     "Key": "CorpInfoMSP:TakeNightlySnapshot",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key": "FileBackup",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key": "MonitoredServices",
-                    #     "Value": "No"
-                    # },
-                    # {
-                    #     "Key":"RequestNumber",
-                    #     "Value":"Test"
-                    # },
-                    # {
-                    #     "Key": "OperationalHours",
-                    #     "Value": "24x7"
-                    # },
-                    # {
-                    #     "Key": "ReviewDate",
-                    #     "Value": "6/25/2019"
-                    # },
-                    # {
-                    #     "Key": "CostCenter",
-                    #     "Value": "n/a"
-                    # },
-                    # {
-                    #     "Key": "ServiceLocation",
-                    #     "Value": "Irvine"
-                    # },
-                    # {
-                    #     "Key": "ServiceOwner",
-                    #     "Value": "n/a"
-                    # },
-                    # {
-                    #     "Key": "TechnicalOwner",
-                    #     "Value": "david.mansfield@rackspace.com"
-                    # },
-                    # {
-                    #     "Key": "ContactPreference",
-                    #     "Value": "Email"
-                    # },
-                    # {
-                    #     "Key": "PatchGroup",
-                    #     "Value": "PilotAutoReboot"
-                    # },
-                    # {
-                    #     "Key": "Schedule",
-                    #     "Value": "24x7"
-                    # },
-                    # {
-                    #     "Key": "Purpose",
-                    #     "Value": "N/A"
-                    # },
-                    # {
-                    #     "Key": "Validated",
-                    #     "Value": "No"
-                    # }
                 ]
             }
         ]
@@ -222,9 +56,9 @@ def create_instance(region, ami, subnet_id, keyname):
     return(instance)
 
 def main():
-    region = 'us-west-2'
-    ami = 'ami-077475371a476c548' # Windows 2019 Base
-    subnet_id = 'subnet-0580e4b1ffde93c4e'
+    region = 'us-east-1'
+    ami = 'ami-0d5eff06f840b45e9' # AL2
+    subnet_id = 'subnet-0a0190770c49480f8'
     keyname = 'dmansfield'
 
     create_instance(region, ami, subnet_id, keyname)
