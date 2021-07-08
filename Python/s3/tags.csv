@@ -1,0 +1,2 @@
+Application,Environment,CostCenter,Owner,Company,TechnicalOwner,TechOwnerEmail,SSMEnvironment,VantaOwner,VantaNonProd,VantaDescription,VantaContainsUserData,VantaUserDataStored,VantaNoAlert
+appops,dev,000000,Prodly,Prodly,Prodly,devops@prodly.co,dev,drudman@prodly.co,true,"AppOps client app for Dev",false,"User emails and phone numbers","Not used in production."
