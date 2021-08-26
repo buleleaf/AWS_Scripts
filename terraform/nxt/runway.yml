@@ -1,0 +1,116 @@
+deployments:
+  - modules:
+      - name: Terraform State Bootstrap
+        path: tfstate.cfn
+        tags:
+          - tfstate
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      customer: nxt
+      region: ${env AWS_REGION}
+    regions:
+      - ca-central-1
+  - modules:
+      - path: core.tf
+        name: Network-VPC-Subnets
+        tags:
+          - core
+      - name: AWS Backup
+        path: aws-backup.tf
+        tags:
+          - aws-backup
+      - path: cloudfront.tf
+        name: Cloudfront Static client with S3 as the origin
+        tags:
+          - cloudfront
+      - path: efs.tf
+        name: EFS
+        tags:
+          - efs
+          - just-efs
+      - path: databases/postgres.tf
+        name: PostgreSQL
+        tags:
+          - postgres
+      - path: ecr.tf
+        name: ECR
+        tags:
+          - ecr
+      - name: EKS
+        path: eks-base.tf
+        tags:
+          - eks
+          - eks-base
+      - name: Generate kubeconfig.cfn
+        path: gen-kubeconfig.cfn  # just generating the local kubeconfig file
+        tags:
+          - eks
+          - gen-kubeconfig
+      - name: EKS ALB Controller
+        path: eks-aws-lb.tf
+        tags:
+          - eks
+          - eks-aws-lb
+      - name: EKS EFS Controller
+        path: efs-driver.k8s
+        tags:
+          - eks
+          - efs
+          - eks-efs
+      - name: Metrics Server
+        path: metrics-server.k8s
+        tags:
+          - eks
+          - metrics-server
+      - name: Dashboard
+        path: dashboard.k8s
+        tags:
+          - eks
+          - eks-dashboard
+      - name: app-django
+        path: app-django.k8s
+        tags:
+          - django
+      - name: EKS Monitoring Setup
+        path: eks-monitoring-setup.k8s
+        tags:
+          - eks
+          - eks-monitoring-setup
+          - eks-monitoring
+          - monitoring
+      - name: EKS Monitoring
+        path: eks-monitoring.k8s
+        tags:
+          - eks
+          - eks-monitoring-main
+          - eks-monitoring
+          - monitoring
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: ${env AWS_REGION}
+      kubectl-access-role-arn: YOURROLEARNHERE
+    module_options:
+      terraform_version: 0.15.1
+      terraform_backend_config:
+        region: ca-central-1
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions:
+      - ca-central-1
+  - modules:
+      - path: waf.tf
+        name: WAF
+        tags:
+          - waf
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: us-east-1
+    module_options:
+      terraform_version: 0.15.1
+      terraform_backend_config:
+        region: ca-central-1
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName::region=ca-central-1}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName::region=ca-central-1}
+    regions:
+      - us-east-1
+

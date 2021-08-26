@@ -1,0 +1,60 @@
+{
+    "TagSet": [
+        {
+            "Key": "Application",
+            "Value": "appops"
+        },
+        {
+            "Key": "Environment",
+            "Value": "dev"
+        },
+        {
+            "Key": "CostCenter",
+            "Value": "000000"
+        },
+        {
+            "Key": "Owner",
+            "Value": "Prodly"
+        },
+        {
+            "Key": "Company",
+            "Value": "Prodly"
+        },
+        {
+            "Key": "TechnicalOwner",
+            "Value": "Prodly"
+        },
+        {
+            "Key": "TechOwnerEmail",
+            "Value": "devops@prodly.co"
+        },
+        {
+            "Key": "SSMEnvironment",
+            "Value": "Non Production"
+        },
+        {
+            "Key": "VantaOwner",
+            "Value": "drudman@prodly.co"
+        },
+        {
+            "Key": "VantaNonProd",
+            "Value": "true"
+        },
+        {
+            "Key": "VantaDescription",
+            "Value": "S3 Bucket for Dev"
+        },
+        {
+            "Key": "VantaContainsUserData",
+            "Value": "false"
+        },
+        {
+            "Key": "VantaUserDataStored",
+            "Value": "User emails and phone numbers"
+        },
+        {
+            "Key": "VantaNoAlert",
+            "Value": "Not used in production."
+        }
+    ]
+}

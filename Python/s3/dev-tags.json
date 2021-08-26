@@ -1,0 +1,28 @@
+{
+    "TagSet": [
+        {
+            "Key": "VantaOwner",
+            "Value": "drudman@prodly.co"
+        },
+        {
+            "Key": "VantaNonProd",
+            "Value": "true"
+        },
+        {
+            "Key": "VantaDescription",
+            "Value": "S3 Bucket for Dev"
+        },
+        {
+            "Key": "VantaContainsUserData",
+            "Value": "false"
+        },
+        {
+            "Key": "VantaUserDataStored",
+            "Value": "User emails and phone numbers"
+        },
+        {
+            "Key": "VantaNoAlert",
+            "Value": "Not used in production."
+        }
+    ]
+}
