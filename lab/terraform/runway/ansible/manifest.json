@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1631806626,
+      "files": null,
+      "artifact_id": "us-east-2:ami-0124023913558f463",
+      "packer_run_uuid": "37fd9d90-ddb1-823b-720e-757c66971df2",
+      "custom_data": null
+    },
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1631818379,
+      "files": null,
+      "artifact_id": "us-east-2:ami-06ce8f54e76495fed",
+      "packer_run_uuid": "ffbe2ca0-98d4-5cd1-3670-06aeff985a19",
+      "custom_data": {
+        "my_custom_data": "ansible-ami"
+      }
+    }
+  ],
+  "last_run_uuid": "ffbe2ca0-98d4-5cd1-3670-06aeff985a19"
+}

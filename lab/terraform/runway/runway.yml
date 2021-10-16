@@ -1,0 +1,38 @@
+runway_version: 2.4.2
+deployments:
+  - modules:
+      - name: Terraform State Bootstrap
+        path: tfstate.cfn
+        tags:
+          - core
+          - tfstate
+    parameters:
+      namespace: ${var namespace}
+      customer: dmansfield
+      region: ${env AWS_REGION}
+    regions:
+      - ${var region}
+  - modules:
+      - path: core.tf
+        name: Network-VPC-Subnets
+        tags:
+          - core
+    parameters:
+      namespace: ${var namespace}
+      region: ${var region}
+    module_options:
+      terraform_version: 0.15.1
+      terraform_backend_config:
+        region: ${var region}
+        bucket: ${cfn ${var namespace}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${var namespace}-tf-state.TerraformStateTableName}
+    regions:
+      - us-east-2
+
+variables:
+  region: us-east-2
+  # accounts:
+  #   alt:
+  #     id: "395611358874"
+  #     role: arn:aws:iam::395611358874:role/runway-test-infrastructure-gh-action-runner
+  namespace: dmansfield-lab

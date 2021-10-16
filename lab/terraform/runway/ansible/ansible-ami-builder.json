@@ -1,0 +1,78 @@
+{
+    "variables": {
+        "aws_region": "us-east-2",
+        "ami_name": "ansible-AL2-ami-{{timestamp}}",
+        "creator": "{{env `USER`}}",
+        "instance_type": "t2.small",
+        "git_commit_message": "",
+        "git_commit_id": "",
+        "source_ami_id": "",
+        "environment": "common"
+    },
+    "builders": [
+        {
+            "type": "amazon-ebs",
+            "region": "{{user `aws_region`}}",
+            "source_ami": "{{user `source_ami_id`}}",
+            "iam_instance_profile": "test-packer-ec2",
+            "vpc_id": "vpc-064ee0332602accae",
+            "subnet_id": "subnet-09af869213a41eeec",
+            "associate_public_ip_address": "true",
+            "source_ami_filter": {
+                "filters": {
+                    "architecture": "x86_64",
+                    "name": "amzn2-ami-minimal-hvm-*",
+                    "virtualization-type": "hvm"
+                },
+                "owners": [
+                    "amazon"
+                ],
+                "most_recent": true
+            },
+            "instance_type": "{{user `instance_type`}}",
+            "launch_block_device_mappings": [
+                {
+                    "device_name": "/dev/xvda",
+                    "volume_type": "gp2",
+                    "volume_size": 20,
+                    "delete_on_termination": true
+                }
+            ],
+            "ssh_username": "ec2-user",
+            "ssh_pty": true,
+            "run_tags": {
+                "creator": "{{user `creator`}}"
+            },
+            "tags": {
+                "environment": "{{user `environment`}}"
+            },
+            "ami_name": "{{user `environment`}}-{{user `ami_name`}}",
+            "ami_description": "Ansible AMI",
+            "encrypt_boot": true
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": ["sudo yum update -y && sudo amazon-linux-extras install ansible2 -y"]
+        },
+        {
+            "type": "ansible-local",
+            "playbook_file": "./httpd-playbook.yml"
+        }
+    ],
+    "post-processors": [
+      {
+        "type": "manifest",
+        "output": "manifest.json",
+        "strip_path": true,
+        "custom_data": {
+          "my_custom_data": "ansible-ami"
+        }
+      },
+      {
+        "type": "shell-local",
+        "script": "update-ssm-param.sh"
+      }
+    ]
+}
