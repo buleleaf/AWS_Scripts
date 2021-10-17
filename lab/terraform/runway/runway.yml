@@ -8,15 +8,19 @@ deployments:
           - tfstate
     parameters:
       namespace: ${var namespace}
-      customer: dmansfield
+      # customer: dmansfield
       region: ${env AWS_REGION}
     regions:
       - ${var region}
   - modules:
-      - path: core.tf
-        name: Network-VPC-Subnets
+      - name: Network-VPC-Subnets
+        path: core.tf
         tags:
           - core
+      - name: Packer POC
+        path: packer-poc-golden-ami/web-app.tf
+        tags:
+          - packer-poc
     parameters:
       namespace: ${var namespace}
       region: ${var region}
@@ -27,7 +31,7 @@ deployments:
         bucket: ${cfn ${var namespace}-tf-state.TerraformStateBucketName}
         dynamodb_table: ${cfn ${var namespace}-tf-state.TerraformStateTableName}
     regions:
-      - us-east-2
+      - ${var region}
 
 variables:
   region: us-east-2

@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "name": "amazon-ebs",
+      "builder_type": "amazon-ebs",
+      "build_time": 1631828796,
+      "files": null,
+      "artifact_id": "us-east-1:ami-0ec3b3da2ec1ac1b5",
+      "packer_run_uuid": "a38ff610-cba4-1b17-897b-562349e60b9d",
+      "custom_data": {
+        "my_custom_data": "ansible-ami"
+      }
+    }
+  ],
+  "last_run_uuid": "a38ff610-cba4-1b17-897b-562349e60b9d"
+}

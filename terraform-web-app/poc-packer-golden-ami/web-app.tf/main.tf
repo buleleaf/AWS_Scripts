@@ -1,5 +1,6 @@
-## ASG Security Group
-resource "aws_security_group" "this" {
+## ASG Resources
+
+resource "aws_security_group" "asg" {
   name   = local.name_prefix
   vpc_id = var.vpc_id
   egress {
@@ -44,29 +45,60 @@ resource "aws_launch_template" "this" {
   iam_instance_profile {
     name = aws_iam_instance_profile.ecs_server_profile.arn
   }
-  image_id = jsondecode(data.aws_ssm_parameter.latest-ecs.value).image_id
+  image_id = jsondecode(data.aws_ssm_parameter.latest-ami.value).image_id
   key_name = var.instance_keypair
   vpc_security_group_ids = [
     aws_security_group.this.id
   ]
 }
 
+
+# ALB Resources
+
+resource "aws_security_group" "alb" {
+  name   = local.name_prefix
+  vpc_id = var.vpc_id
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
 resource "aws_lb" "this" {
   name               = local.name_prefix
-  internal           = false
+  internal           = true
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.lb_sg.id]
+  security_groups    = [aws_security_group.alb.id]
   subnets            = aws_subnet.public.*.id
 
   enable_deletion_protection = true
 
-  access_logs {
-    bucket  = aws_s3_bucket.lb_logs.bucket
-    prefix  = "test-lb"
-    enabled = true
-  }
-
   tags = {
-    Environment = "production"
+    Environment = var.environment
   }
+}
+
+resource "aws_lb_listener" "front_end" {
+  load_balancer_arn = aws_lb.front_end.arn
+  port              = "80"
+  protocol          = "HTTP"
+
+  default_action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.front_end.arn
+  }
+}
+
+resource "aws_lb_target_group" "front_end" {
+  name     = local.name_prefix
+  port     = 80
+  protocol = "HTTP"
+  vpc_id   = aws_vpc.main.id
+}
+
+resource "aws_autoscaling_attachment" "asg_attachment_alb" {
+  autoscaling_group_name = aws_autoscaling_group.this.id
+  alb_target_group_arn   = aws_lb_target_group.front_end.arn
 }

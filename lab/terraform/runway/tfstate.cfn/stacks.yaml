@@ -7,5 +7,5 @@ stacks:
   tf-state:
     template_path: templates/tf_state.yml
     variables:
-      BucketName: ${customer}-${namespace}-${region}-terraform-state
+      BucketName: ${namespace}-${region}-terraform-state
       TableName: ${namespace}-${region}-terraform-lock

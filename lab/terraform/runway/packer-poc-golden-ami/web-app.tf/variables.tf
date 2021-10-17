@@ -1,3 +1,10 @@
+variable "environment" {
+  type        = string
+  default     = "lab"
+  description = "Region the resources will be created in."
+}
+
+
 variable "region" {
   type        = string
   default     = "us-east-1"
@@ -6,14 +13,19 @@ variable "region" {
 
 variable "vpc_id" {
   type        = string
-  default     = "vpc-061a960d39acfeb6a"
+  default     = "vpc-0430ee9743ba4738b"
   description = "VPC the resources will be created in."
 }
 
 # Subnets: talent-segregated-Fronts
-variable "subnet_id" {
+variable "asg_subnet" {
   type    = string
-  default = ["subnet-007f105c6372d7d3c"]
+  default = "subnet-0ba4ecdb549bfba42"
+}
+
+variable "alb_subnets" {
+  type    = list
+  default = ["subnet-0ba4ecdb549bfba42","subnet-0e5886630f95279c2"]
 }
 
 variable "instance_type" {
