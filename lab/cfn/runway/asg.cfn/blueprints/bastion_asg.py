@@ -240,7 +240,6 @@ class BlueprintClass(Blueprint):
             InstanceType=variables['bastionInstanceType'].ref,
             InstanceMonitoring=True,
             KeyName=variables['KeyName'].ref,
-            # SecurityGroups=variables['AttachedSgs'] + [Ref(bastionsercuritygroup)],
             SecurityGroups=variables['AttachedSgs'],
             UserData=variables['UserData'],
         ))
