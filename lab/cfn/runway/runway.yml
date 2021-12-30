@@ -1,0 +1,279 @@
+ignore_git_branch: true
+runway_version: 2.4.2
+
+deployments:
+  - name: Terraform State Bootstrap
+    modules:
+      - name: tfstate
+        path: tfstate.cfn
+        tags:
+          - tfstate
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      customer: venterra
+      region: ${env AWS_REGION}
+    regions: &regions
+      - us-east-2
+    assume_role: ${var accounts.${env DEPLOY_ENVIRONMENT}.role}
+    account_id: ${var accounts.${env DEPLOY_ENVIRONMENT}.id}
+  - name: Network
+    modules:
+      - path: core.tf
+        name: Network-VPC-Subnets
+        tags:
+          - core
+      - path: transit-gateway.tf
+        name: transit-gateway
+        tags:
+          - transit-gateway
+      - path: vpn.tf
+        name: vpn
+        tags:
+          - vpn
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: ${env AWS_REGION}
+    module_options:
+      terraform_version: 0.15.1
+      terraform_backend_config:
+        region: ${env AWS_REGION}
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions: *regions
+    assume_role: ${var accounts.${env DEPLOY_ENVIRONMENT}.role}
+    account_id: ${var accounts.${env DEPLOY_ENVIRONMENT}.id}
+  - name: Administration
+    modules:
+      - path: ssm-patch-manager.tf
+        name: SSM Patch Manager
+        tags:
+          - ssm-patch
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: ${env AWS_REGION}
+    module_options:
+      terraform_version: 0.15.1
+      terraform_backend_config:
+        region: ${env AWS_REGION}
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions: *regions
+    assume_role: ${var accounts.${env DEPLOY_ENVIRONMENT}.role}
+    account_id: ${var accounts.${env DEPLOY_ENVIRONMENT}.id}
+  - name: Bits
+    modules:
+      - path: ec2-domain-controllers.tf
+        name: Windows Domain Controllers on EC2
+        tags:
+          - ec2-dc
+      - path: pa_monitor.tf
+        name: PA monitor Windows on EC2
+        tags:
+          - ec2-mon
+      - path: bits-RDS-Server.tf
+        name: Windows RDS Server on EC2
+        tags:
+          - ec2-rds
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: ${env AWS_REGION}
+    module_options:
+      terraform_version: ${var terraform_version}
+      terraform_backend_config:
+        region: ${env AWS_REGION}
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions: *regions
+    assume_role: ${var accounts.${env DEPLOY_ENVIRONMENT}.role}
+    account_id: ${var accounts.${env DEPLOY_ENVIRONMENT}.id}
+  - name: Devops
+    modules:
+      - path: obfuscated-backups.tf
+        name: Obfuscated Backups
+        tags:
+          - obf-backups
+      - path: ecr.tf
+        name: ecr
+        tags:
+          - ecr
+      - path: installer-file-storage.tf
+        name: S3 Bucket for installer files
+        tags:
+          - installer-files
+      - path: teamcity-backups.tf
+        name: teamcity backups S3
+        tags:
+          - teamcity-backups
+      - path: iam.tf
+        name: create iam users and roles
+        tags:
+          - iam
+      - path: security-groups.tf
+        name: Security Groups
+        environments:
+          devops: true
+          devops-qa: true
+        tags:
+          - security-groups
+      - path: linux-ec2-instance.tf
+        name: Create Linux EC2 Instance
+        tags:
+          - linux-ec2
+      - path: windows-ec2-instance.tf
+        name: Create Windows EC2 Instance
+        tags:
+          - windows-ec2-instance
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+      region: ${env AWS_REGION}
+    module_options:
+      terraform_version: ${var terraform_version}
+      terraform_backend_config:
+        region: ${env AWS_REGION}
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions: *regions
+    assume_role: ${var accounts.${env DEPLOY_ENVIRONMENT}.role}
+    account_id: ${var accounts.${env DEPLOY_ENVIRONMENT}.id}
+  # Deployments in master/payer account
+  - name: Common
+    account_id: ${var accounts.common.id}
+    modules:
+      - name: Guard Duty
+        path: guard-duty.sls
+        environments:
+          common: true
+        tags:
+          - guard-duty
+      - name: Tagging Compliance AWS Config
+        path: config-tag-compliance.sls
+        environments:
+          common: true
+        tags:
+          - tag-compliance
+      - name: SSO Permission Sets
+        path: sso-permission-sets.tf
+        environments:
+          common: true
+        tags:
+          - sso-permission-sets
+      - name: Tagging Governance
+        path: tagginggovernance.tf
+        environments:
+          common: true
+        tags:
+          - tagginggovernance         
+    module_options:
+      terraform_version: ${var terraform_version}
+      terraform_backend_config:
+        region: ${env AWS_REGION}
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName}
+    regions: *regions
+  - name: Security - Guard Duty - Administration
+    account_id: ${var accounts.security.id}
+    assume_role: ${var accounts.security.role}
+    regions:
+      - &src_region us-east-1
+    modules:
+      - name: Guard Duty Notifications IAM
+        path: guard-duty-notify/iam.cfn
+        tags:
+          - security-guard-duty-notify
+        parameters:
+          namespace: ${env DEPLOY_ENVIRONMENT}
+          eventbusname: "CrossRegionDestinationBus"
+      - path: guard-duty-notify.tf
+        name: guard-duty-notify
+        tags:
+          - guard-duty-notify
+    module_options:
+      terraform_version: ${var terraform_version}
+      terraform_backend_config:
+        region: us-east-2
+        bucket: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateBucketName::region=us-east-2}
+        dynamodb_table: ${cfn ${env DEPLOY_ENVIRONMENT}-tf-state.TerraformStateTableName::region=us-east-2}
+  - name: Security - Guard Duty - Forward
+    account_id: ${var accounts.security.id}
+    assume_role: ${var accounts.security.role}
+    regions:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-south-1
+      - ap-southeast-1
+      - ap-southeast-2
+      - eu-central-1
+      - sa-east-1
+    modules:
+      - name: Guard Duty Notifications for All Regions in Security
+        path: guard-duty-notify/forwarder.cfn
+        tags:
+          - security-guard-duty-notify
+        parameters:
+          namespace: ${env DEPLOY_ENVIRONMENT}
+          src_region: *src_region
+
+variables:
+  terraform_version: 0.15.1
+  accounts:
+    common:
+      id: 201785698446
+      role: ""
+    bits:
+      id: 569097056014
+      role: arn:aws:iam::569097056014:role/AWSControlTowerExecution
+    bitsqa:
+      id: 015273483868
+      role: arn:aws:iam::015273483868:role/AWSControlTowerExecution
+    cybersecurity:
+      id: 524072042714
+      role: arn:aws:iam::524072042714:role/AWSControlTowerExecution
+    device-farm:
+      id: 683199764768
+      role: arn:aws:iam::683199764768:role/AWSControlTowerExecution
+    devops:
+      id: 968342640269
+      role: arn:aws:iam::968342640269:role/AWSControlTowerExecution
+    devops-qa:
+      id: 786792327600
+      role: arn:aws:iam::786792327600:role/AWSControlTowerExecution
+    fintech:
+      id: 921456674312
+      role: arn:aws:iam::921456674312:role/AWSControlTowerExecution
+    logarchive:
+      id: 696590845014
+      role: arn:aws:iam::696590845014:role/AWSControlTowerExecution
+    logarchive-qa:
+      id: 700002367666
+      role: arn:aws:iam::700002367666:role/AWSControlTowerExecution
+    prod:
+      id: 716067678923
+      role: arn:aws:iam::716067678923:role/AWSControlTowerExecution
+    qa:
+      id: 085881551722
+      role: arn:aws:iam::085881551722:role/AWSControlTowerExecution
+    security:
+      id: 213457441998
+      role: arn:aws:iam::213457441998:role/AWSControlTowerExecution
+    sharednetwork-nonprod:
+      id: 159251243617
+      role: arn:aws:iam::159251243617:role/AWSControlTowerExecution
+    sharednetwork-prod:
+      id: 805731545040
+      role: arn:aws:iam::805731545040:role/AWSControlTowerExecution
+    staging:
+      id: 556520816253
+      role: arn:aws:iam::556520816253:role/AWSControlTowerExecution
+    transit-gateway:
+      id: 893858012103
+      role: arn:aws:iam::893858012103:role/AWSControlTowerExecution
