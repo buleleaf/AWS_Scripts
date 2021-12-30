@@ -1,0 +1,23 @@
+namespace: ${customer}-${environment}
+stacker_bucket: ${stacker_bucket_name}
+sys_path: ./
+common_parameters: &common_parameters
+  CustomerName: ${customer}
+  EnvironmentName: ${environment}
+
+tags: ${tags}
+
+stacks:
+  bastion-host-private:
+    class_path: blueprints.bastion_asg.BlueprintClass
+    variables:
+      << : *common_parameters
+      VpcId: ${xref ${common_namespace}-core-vpc::VPC}
+      AMI: ${ami}
+      bastionInstanceType: ${bastion_instance_type}
+      KeyName: ${ssh_key_name}
+      bastionSubnetIds: ${xref ${common_namespace}-core-vpc::PriSubnet1},${xref ${common_namespace}-core-vpc::PriSubnet2}
+      bastionInstanceType: t3.micro
+      UserData: ${file parameterized-b64:file://userdata/${userdata}.yml}
+      AttachedSgs:
+        - ${eb_app_sg}
