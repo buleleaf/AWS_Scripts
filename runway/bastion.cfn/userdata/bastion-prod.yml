@@ -1,0 +1,28 @@
+#cloud-config
+repo_update: true
+repo_upgrade: all
+packages:
+ - python
+ - python-pip
+ - python-boto
+ - aws-cfn-bootstrap
+ - python3
+ - amazon-ssm-agent
+ - socat
+write_files:
+
+ - path: /tmp/setup.sh
+   permissions: '0755'
+   content: |
+     #!/bin/bash
+
+     sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm -y
+     sudo systemctl enable amazon-ssm-agent
+     sudo systemctl start amazon-ssm-agent
+
+     export VANTA_KEY=$(aws --region=us-east-2 ssm get-parameter --name "vanta_key" --with-decryption --output text --query Parameter.Value)
+     bash -c "$(curl -L https://raw.githubusercontent.com/VantaInc/vanta-agent-scripts/master/install-linux.sh)"
+
+     sudo socat TCP-LISTEN:5432,fork TCP:db.prodly.co:5432 &
+runcmd:
+ - /tmp/setup.sh
