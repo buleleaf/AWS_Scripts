@@ -1,0 +1,390 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  Customer:
+    Description: What is the name of the application? This is used to tag resources
+    Type: String
+    MinLength: '3'
+    MaxLength: '25'
+    AllowedPattern: "[a-z1-9]*"
+    ConstraintDescription: must be all lower case with no spaces
+  Environment:
+    Description: What is the environment type, e.g. alpha/beta/prod/test.
+    Type: String
+  VPCCidr:
+    Description: CIDR block for entire VPC (e.g. 10.1.2.3/22)
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+  PublicSubnet1:
+    Description: CIDR block for Public subnets
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+  PublicSubnet2:
+    Description: CIDR block for Public subnets
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+  PrivateSubnet1:
+    Description: CIDR block for Private subnets
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+  PrivateSubnet2:
+    Description: CIDR block for Private subnets
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    Default: 0.0.0.0/0
+    AllowedPattern: "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})"
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+Mappings: {}
+Conditions:
+  ProvisionProdResources:
+    Fn::Or:
+    - Fn::Equals:
+      - prd
+      - Ref: Environment
+    - Fn::Equals:
+      - prod
+      - Ref: Environment
+  ProvisionNonProdResources:
+    Fn::Or:
+    - Fn::Equals:
+      - alpha
+      - Ref: Environment
+    - Fn::Equals:
+      - beta
+      - Ref: Environment
+    - Fn::Equals:
+      - dev
+      - Ref: Environment
+    - Fn::Equals:
+      - stg
+      - Ref: Environment
+    - Fn::Equals:
+      - test
+      - Ref: Environment
+Resources:
+  VPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock:
+        Ref: VPCCidr
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+      - Key: app
+        Value:
+          Ref: Customer
+      - Key: stack
+        Value:
+          Ref: Environment
+      - Key: layer
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+      - Key: app
+        Value:
+          Ref: Customer
+      - Key: stack
+        Value:
+          Ref: Environment
+      - Key: layer
+  AttachInternetGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId:
+        Ref: VPC
+      InternetGatewayId:
+        Ref: InternetGateway
+  VirtualPrivateGateway:
+    Type: AWS::EC2::VPNGateway
+    Properties:
+      Type: ipsec.1
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+      - Key: app
+        Value:
+          Ref: Customer
+      - Key: stack
+        Value:
+          Ref: Environment
+      - Key: layer
+  AttachIVirtualPrivateGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId:
+        Ref: VPC
+      VpnGatewayId:
+        Ref: VirtualPrivateGateway
+  PublicSubnetAZ1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: VPC
+      CidrBlock:
+        Ref: PublicSubnet1
+      AvailabilityZone:
+        Fn::Select:
+        - '0'
+        - Fn::GetAZs: ''
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment  
+            - public
+            - Fn::Select:
+              - '0'
+              - Fn::GetAZs: ''
+  PublicSubnetAZ2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: VPC
+      CidrBlock:
+        Ref: PublicSubnet2
+      AvailabilityZone:
+        Fn::Select:
+        - '1'
+        - Fn::GetAZs: ''
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment  
+            - public
+            - Fn::Select:
+              - '0'
+              - Fn::GetAZs: ''
+  PrivateSubneAZ1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: VPC
+      CidrBlock:
+        Ref: PrivateSubnet1
+      AvailabilityZone:
+        Fn::Select:
+        - '1'
+        - Fn::GetAZs: ''
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment  
+            - private
+            - Fn::Select:
+              - '0'
+              - Fn::GetAZs: ''
+  PrivateSubneAZ2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId:
+        Ref: VPC
+      CidrBlock:
+        Ref: PrivateSubnet2
+      AvailabilityZone:
+        Fn::Select:
+        - '0'
+        - Fn::GetAZs: ''
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment  
+            - private
+            - Fn::Select:
+              - '0'
+              - Fn::GetAZs: ''
+  InternetRouteTable:
+    Type: AWS::EC2::RouteTable
+    DependsOn: AttachIVirtualPrivateGateway
+    Properties:
+      VpcId:
+        Ref: VPC
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+            - internet
+  VGWRoutePropInternetRouteTable:
+    Type: AWS::EC2::VPNGatewayRoutePropagation
+    Properties:
+      RouteTableIds:
+      - Ref: InternetRouteTable
+      VpnGatewayId:
+        Ref: VirtualPrivateGateway
+  InternalRouteTableAZ1:
+    Type: AWS::EC2::RouteTable
+    DependsOn: AttachIVirtualPrivateGateway
+    Properties:
+      VpcId:
+        Ref: VPC
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+            - Fn::Select:
+              - '0'
+              - Fn::GetAZs: ''
+      - Key: stack
+        Value:
+          Ref: Environment
+  InternalRouteTableAZ2:
+    Type: AWS::EC2::RouteTable
+    DependsOn: AttachIVirtualPrivateGateway
+    Properties:
+      VpcId:
+        Ref: VPC
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - "-"
+          - - Ref: Customer
+            - Ref: Environment
+            - Fn::Select:
+              - '1'
+              - Fn::GetAZs: ''
+      - Key: stack
+        Value:
+          Ref: Environment
+  # VGWRoutePropInternalRouteTable:
+  #   Type: AWS::EC2::VPNGatewayRoutePropagation
+  #   Properties:
+  #     RouteTableIds:
+  #     - Ref: InternalRouteTableAZ1
+  #     - Ref: InternalRouteTableAZ2
+  #     VpnGatewayId:
+  #       Ref: VirtualPrivateGateway
+  InternetRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: InternetRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId:
+        Ref: InternetGateway
+  InternalRouteAZ1:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: InternalRouteTableAZ1
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId:
+        Ref: NATAZ1
+  InternalRouteAZ2PRD:
+    Type: AWS::EC2::Route
+    Condition: ProvisionProdResources
+    Properties:
+      RouteTableId:
+        Ref: InternalRouteTableAZ2
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId:
+        Ref: NATAZ2
+  InternalRouteAZ2NonPRD:
+    Type: AWS::EC2::Route
+    Condition: ProvisionNonProdResources
+    Properties:
+      RouteTableId:
+        Ref: InternalRouteTableAZ2
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId:
+        Ref: NATAZ1
+  PublicSubnetRouteTableAssociation1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: PublicSubnetAZ1
+      RouteTableId:
+        Ref: InternalRouteTableAZ1
+  PublicSubnetRouteTableAssociation2:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: PublicSubnetAZ2
+      RouteTableId:
+        Ref: InternalRouteTableAZ2
+  PublicSubnetRouteTableAssociation1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: PublicSubnetAZ1
+      RouteTableId:
+        Ref: InternalRouteTableAZ1
+  PublicSubnetRouteTableAssociation2:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: PublicSubnetAZ2
+      RouteTableId:
+        Ref: InternalRouteTableAZ2
+
+Outputs:
+  VPC:
+    Description: VPC
+    Value:
+      Ref: VPC
+  PublicSubnets:
+    Description: Public Subnets
+    Value:
+      Fn::Join:
+      - ''
+      - - Ref: PublicSubnetAZ1
+        - ","
+        - Ref: PublicSubnetAZ1
+  PrivateSubnets:
+    Description: Private Subnets
+    Value:
+      Fn::Join:
+      - ''
+      - - Ref: PrivateSubnetAZ1
+        - ","
+        - Ref: PrivateSubnetAZ1
