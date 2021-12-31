@@ -1,16 +1,22 @@
 ignore_git_branch: true
-runway_version: 2.4.2
+runway_version: 2.4.4
 
 deployments:
   - name: Common
     account_id: ${var accounts.sandbox.id}
     modules:
+      - name: core 
+        path: core.cfn
+        tags:
+          - core     
       - name: ASG 
         path: asg.cfn
         tags:
-          - asg     
-    module_options:
-    regions: us-east-2
+          - asg
+    parameters:
+      namespace: ${env DEPLOY_ENVIRONMENT}
+    regions:
+      - us-east-2
 
 variables:
   accounts:

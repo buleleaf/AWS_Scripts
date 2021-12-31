@@ -68,11 +68,11 @@ class Vpc(Blueprint):
                 'PrivateAZ%i' % (i + 1),
                 Not(Equals(Ref('PrivateSubnet%i' % (i + 1)), ''))
             )
-            template.add_condition(
-                'CreateNATGateway%i' % (i + 1),
-                And(Condition('PublicAZ%i' % (i + 1)),
-                    Condition('PrivateAZ%i' % (i + 1)))
-            )
+            # template.add_condition(
+            #     'CreateNATGateway%i' % (i + 1),
+            #     And(Condition('PublicAZ%i' % (i + 1)),
+            #         Condition('PrivateAZ%i' % (i + 1)))
+            # )
 
     def add_resources(self):
         """Add resources to template."""
@@ -223,16 +223,16 @@ class Vpc(Blueprint):
             )
 
         # NAT Gateways
-        for i in range(AZS):
-            template.add_resource(
-                ec2.NatGateway(
-                    'NATGateway%i' % (i + 1),
-                    Condition='CreateNATGateway%i' % (i + 1),
-                    AllocationId=GetAtt('NAT%iElasticIP' % (i + 1),
-                                        'AllocationId'),
-                    SubnetId=Ref('PubSubnet%i' % (i + 1))
-                )
-            )
+        # for i in range(AZS):
+        #     template.add_resource(
+        #         ec2.NatGateway(
+        #             'NATGateway%i' % (i + 1),
+        #             Condition='CreateNATGateway%i' % (i + 1),
+        #             AllocationId=GetAtt('NAT%iElasticIP' % (i + 1),
+        #                                 'AllocationId'),
+        #             SubnetId=Ref('PubSubnet%i' % (i + 1))
+        #         )
+        #     )
 
         # Route tables
         publicroutetable = template.add_resource(
@@ -342,14 +342,14 @@ class Vpc(Blueprint):
 
 # Helper section to enable easy blueprint -> template generation
 # (just run `python <thisfile>` to output the json)
-if __name__ == "__main__":
-    from stacker.context import Context  # pylint: disable=C0412
-    from utils import standalone_output  # pylint: disable=relative-import
+# if __name__ == "__main__":
+#     from stacker.context import Context  # pylint: disable=C0412
+#     from utils import standalone_output  # pylint: disable=relative-import
 
-    standalone_output.json(
-        blueprint=BlueprintClass(
-            'test',
-            Context({"namespace": "test"}),
-            None
-        )
-    )
+#     standalone_output.json(
+#         blueprint=BlueprintClass(
+#             'test',
+#             Context({"namespace": "test"}),
+#             None
+#         )
+#     )

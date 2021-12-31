@@ -1,0 +1,17 @@
+namespace: ${customer}-${environment}
+cfngin_bucket: ${stacker_bucket_name}
+common_parameters: &common_parameters
+  Customer: ${customer}
+  Environment: ${environment}
+
+
+stacks:
+  core-vpc:
+    template_path: ./templates/core.yml
+    variables:
+      <<: *common_parameters
+      VPCCidr: ${vpc_cidr}
+      PublicSubnet1: ${public_subnet_1}
+      PublicSubnet2: ${public_subnet_2}
+      PrivateSubnet1: ${private_subnet_1}
+      PrivateSubnet2: ${private_subnet_2}

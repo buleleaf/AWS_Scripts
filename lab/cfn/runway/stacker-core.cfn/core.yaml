@@ -1,0 +1,24 @@
+namespace: ${customer}-${environment}
+cfngin_bucket: ${stacker_bucket_name}
+sys_path: ./
+
+common_parameters: &common_parameters
+  CustomerName: ${customer}
+  EnvironmentName: ${environment}
+
+
+stacks:
+  core-vpc:
+    class_path: blueprints.vpc.Vpc
+    enabled: true
+    variables:
+      <<: *common_parameters
+      VpcInstanceTenancy: ${default vpc_instance_tenancy::default}
+      VpcCidr: ${vpc_cidr}
+      PublicSubnet1: ${public_subnet_1}
+      PublicSubnet2: ${public_subnet_2}
+      PublicSubnet3: ${public_subnet_3}
+      PrivateSubnet1: ${private_subnet_1}
+      PrivateSubnet2: ${private_subnet_2}
+      PrivateSubnet3: ${private_subnet_3}
+      AzOffset: ${vpc_az_offset}
